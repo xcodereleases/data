@@ -15,7 +15,8 @@ let xcodes7: Array<Xcode> = [
           requires: "10.11",
           sdks: SDKs(macOS: V("15E60"), iOS: V("13E230"), watchOS: V("13V143"), tvOS: V("13Y227")),
           compilers: Compilers(llvm: V("3.8.0"), clang: V("703.0.31", "7.3.0"), swift: V("703.0.18.8", "2.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW217"))),
 
     Xcode(version: V("7D1012", "7.3.1", .gmSeed(1)),
           date: (2016, 04, 19),
@@ -27,7 +28,8 @@ let xcodes7: Array<Xcode> = [
           requires: "10.11",
           sdks: SDKs(macOS: V("15E60"), iOS: V("13E230"), watchOS: V("13V143"), tvOS: V("13Y227")),
           compilers: Compilers(llvm: V("3.8.0"), clang: V("703.0.29", "7.3.0"), swift: V("703.0.18.1", "2.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.3/Xcode_7.3.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.3/Xcode_7.3.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW233"))),
 
     Xcode(version: V("7D162j", "7.3", .beta(5)),
           date: (2016, 03, 01),
@@ -49,7 +51,8 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.5",
           sdks: SDKs(macOS: V("15C43"), iOS: V("13C75"), watchOS: V("13S660"), tvOS: V("13U79")),
           compilers: Compilers(llvm: V("3.7.0"), clang: V("700.1.81", "7.0.2"), swift: V("700.1.101.15", "2.1.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.2.1/Xcode_7.2.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.2.1/Xcode_7.2.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW264"))),
 
     Xcode(version: V("7D129n", "7.3", .beta(2)),
           date: (2016, 01, 25),
@@ -66,13 +69,15 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.5",
           sdks: SDKs(macOS: V("15C43"), iOS: V("13C75"), watchOS: V("13S660"), tvOS: V("13U78")),
           compilers: Compilers(llvm: V("3.7.0"), clang: V("700.1.81", "7.0.2"), swift: V("700.1.101.15", "2.1.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.2/Xcode_7.2.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.2/Xcode_7.2.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW270"))),
 
     Xcode(version: V("7B1005", "7.1.1"),
           date: (2015, 11, 05),
           requires: "10.10.5",
           sdks: SDKs(macOS: V("15A278"), iOS: V("13B137"), watchOS: V("13S343"), tvOS: V("13T393")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.1.1/Xcode_7.1.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.1.1/Xcode_7.1.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW291"))),
 
     Xcode(version: V("7C62b", "7.2", .beta(4)),
           date: (2015, 11, 03),
@@ -99,7 +104,8 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.5",
           sdks: SDKs(macOS: V("15A278"), iOS: V("13B137"), watchOS: V("13S343"), tvOS: V("13T393")),
           compilers: Compilers(llvm: V("3.7.0"), clang: V("700.1.76", "7.0.0"), swift: V("700.1.101.6", "2.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.1/Xcode_7.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.1/Xcode_7.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW300"))),
 
     Xcode(version: V("7B85", "7.1", .beta(3)),
           date: (2015, 10, 06),
@@ -111,7 +117,8 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.3",
           sdks: SDKs(macOS: V("15A278"), iOS: V("13A340"), watchOS: V("13S343")),
           compilers: Compilers(llvm: V("3.7.0"), clang: V("700.0.72", "7.0.0"), swift: V("700.0.59", "2.0")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.0.1/Xcode_7.0.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7.0.1/Xcode_7.0.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW324"))),
 
     Xcode(version: V("7B75", "7.1", .beta(2)),
           date: (2015, 09, 23),
@@ -123,7 +130,8 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.3",
           sdks: SDKs(macOS: V("15A278"), iOS: V("13A340"), watchOS: V("13S343")),
           compilers: Compilers(llvm: V("3.7.0"), clang: V("700.0.72", "7.0.0"), swift: V("700.0.59", "2.0")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7/Xcode_7.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_7/Xcode_7.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW326"))),
 
     Xcode(version: V("7B60", "7.1", .beta(1)),
           date: (2015, 09, 09),

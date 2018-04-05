@@ -23,7 +23,8 @@ let xcodes9: Array<Xcode> = [
           requires: "10.13.2",
           sdks: SDKs(macOS: V("17E189"), iOS: V("15E217"), watchOS: V("15T212"), tvOS: V("15L211")),
           compilers: Compilers(clang: V("902.0.39.1", "9.1.0"), swift: V("902.0.48", "4.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.3/Xcode_9.3.xip"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.3/Xcode_9.3.xip"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1"))),
     
 
     Xcode(version: V("9Q127n", "9.3", .beta(4)),
@@ -60,7 +61,8 @@ let xcodes9: Array<Xcode> = [
           requires: "10.12.6",
           sdks: SDKs(macOS: V("17C76"), iOS: V("15C107"), watchOS: V("15S100"), tvOS: V("15K104")),
           compilers: Compilers(clang: V("900.0.39.2", "9.0.0"), swift: V("900.0.74.1", "4.0.3")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.2/Xcode_9.2.xip"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.2/Xcode_9.2.xip"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW936"))),
 
     Xcode(version: V("9C34b", "9.2", .beta(2)),
           date: (2017, 11, 06),
@@ -81,14 +83,16 @@ let xcodes9: Array<Xcode> = [
           requires: "10.12.6",
           sdks: SDKs(macOS: V("17B41"), iOS: V("15B87"), watchOS: V("15R844"), tvOS: V("15J580")),
           compilers: Compilers(clang: V("900.0.38", "9.0.0"), swift: V("900.0.69.2", "4.0.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.1/Xcode_9.1.xip"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.1/Xcode_9.1.xip"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW881"))),
 
     Xcode(version: V("9A1004", "9.0.1"),
           date: (2017, 10, 15),
           requires: "10.12.6",
           sdks: SDKs(macOS: V("17A360"), iOS: V("15A372"), watchOS: V("15R372"), tvOS: V("15J380")),
           compilers: Compilers(clang: V("900.0.38", "9.0.0"), swift: V("900.0.65.2", "4.0")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.0.1/Xcode_9.0.1.xip"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.0.1/Xcode_9.0.1.xip"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW922"))),
 
     Xcode(version: V("9B46", "9.1", .beta(2)),
           date: (2017, 10, 09),
@@ -109,7 +113,8 @@ let xcodes9: Array<Xcode> = [
           requires: "10.12.6",
           sdks: SDKs(macOS: V("17A360"), iOS: V("15A372"), watchOS: V("15R372"), tvOS: V("15J380")),
           compilers: Compilers(clang: V("900.0.37", "9.0.0"), swift: V("900.0.65", "4.0")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9/Xcode_9.xip"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9/Xcode_9.xip"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW878"))),
 
     Xcode(version: V("9M214v", "9.0", .beta(6)),
           date: (2017, 08, 21),

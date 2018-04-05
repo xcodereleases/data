@@ -15,7 +15,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.10",
           sdks: SDKs(macOS: [V("13F34"), V("14D125")], iOS: V("12H141")),
           compilers: Compilers(llvm: V("3.6.0"), clang: V("602.0.53", "6.1.0"), swift: V("602.0.53.1", "1.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.4/Xcode_6.4.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.4/Xcode_6.4.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW364"))),
 
     Xcode(version: V("6E31c", "6.4", .beta(4)),
           date: (2015, 06, 09),
@@ -27,7 +28,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.10",
           sdks: SDKs(macOS: [V("13F34"), V("14D125")], iOS: V("12F69")),
           compilers: Compilers(llvm: V("3.6.0"), clang: V("602.0.53", "6.1.0"), swift: V("602.0.53.1", "1.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.3.2/Xcode_6.3.2.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.3.2/Xcode_6.3.2.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW368"))),
 
     Xcode(version: V("6E23", "6.4", .beta(3)),
           date: (2015, 05, 11),
@@ -42,7 +44,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.10",
           sdks: SDKs(macOS: [V("13F34"), V("14D125")], iOS: V("12F69")),
           compilers: Compilers(llvm: V("3.6.0"), clang: V("602.0.49", "6.1.0"), swift: V("602.0.49.6", "1.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.3.1/Xcode_6.3.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.3.1/Xcode_6.3.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW370"))),
 
     Xcode(version: V("6E7", "6.4", .beta(1)),
           date: (2015, 04, 13),
@@ -53,7 +56,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.10",
           sdks: SDKs(macOS: [V("13F34"), V("14D125")], iOS: V("12F69")),
           compilers: Compilers(llvm: V("3.6.0"), clang: V("602.0.49", "6.1.0"), swift: V("602.0.49.3", "1.2")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.3/Xcode_6.3.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.3/Xcode_6.3.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW378"))),
 
     Xcode(version: V("6D554n", "6.3", .beta(4)),
           date: (2015, 03, 24),
@@ -68,7 +72,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.9.4",
           sdks: SDKs(macOS: [V("13F26"), V("14A383")], iOS: V("12D508")),
           compilers: Compilers(llvm: V("3.5"), clang: V("600.0.57", "6.0"), swift: V("600.0.57.4", "1.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.2/Xcode_6.2.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_6.2/Xcode_6.2.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW412"))),
 
     Xcode(version: V("6D532l", "6.3", .beta(2)),
           date: (2015, 02, 23),
@@ -99,7 +104,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.9.4",
           sdks: SDKs(macOS: [V("13F26"), V("14A382")], iOS: V("12A365")),
           compilers: Compilers(llvm: V("3.5"), clang: V("600.0.56", "6.0"), swift: V("600.0.56.1", "1.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW423"))),
 
     Xcode(version: V("6C86e", "6.2", .beta(1)),
           date: (2014, 11, 18),
@@ -113,7 +119,8 @@ let xcodes6: Array<Xcode> = [
           date: (2014, 10, 20),
           requires: "10.9.4",
           compilers: Compilers(llvm: V("3.5"), clang: V("600.0.54", "6.0"), swift: V("600.0.54.20", "1.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_6.1/56841_xcode_6.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_6.1/56841_xcode_6.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW432"))),
 
     Xcode(version: V("6A1046a", "6.1", .beta(3)),
           date: (2014, 10, 13),
@@ -128,7 +135,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.9.4",
           sdks: SDKs(macOS: V("13F26"), iOS: V("12A365")),
           compilers: Compilers(llvm: V("3.5"), clang: V("600.0.51", "6.0"), swift: V("600.0.51.4", "1.0")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_6.0.1/xcode_6.0.1.dmg"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_6.0.1/xcode_6.0.1.dmg"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW450"))),
 
     Xcode(version: V("6A1027", "6.1", .beta(1)),
           date: (2014, 09, 09),
@@ -136,7 +144,8 @@ let xcodes6: Array<Xcode> = [
 
     Xcode(version: V("6A313", "6.0"),
           date: (2014, 09, 09),
-          requires: "10.9.4"),
+          requires: "10.9.4",
+          links: Links(notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW453"))),
 
     Xcode(version: V("6A280n", "6.0", .beta(7)),
           date: (2014, 09, 02),
