@@ -23,6 +23,7 @@
 		552FE3CC207550D300AF684D /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CB207550D300AF684D /* Version.swift */; };
 		552FE3CE207550E300AF684D /* SDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CD207550E300AF684D /* SDKs.swift */; };
 		552FE3D02075510700AF684D /* YMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CF2075510700AF684D /* YMD.swift */; };
+		552FE3EC2076790600AF684D /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3EB2076790600AF684D /* Link.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,7 @@
 		552FE3CB207550D300AF684D /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		552FE3CD207550E300AF684D /* SDKs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKs.swift; sourceTree = "<group>"; };
 		552FE3CF2075510700AF684D /* YMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMD.swift; sourceTree = "<group>"; };
+		552FE3EB2076790600AF684D /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				552FE3CB207550D300AF684D /* Version.swift */,
 				552FE3CD207550E300AF684D /* SDKs.swift */,
 				552FE3CF2075510700AF684D /* YMD.swift */,
+				552FE3EB2076790600AF684D /* Link.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552FE3EC2076790600AF684D /* Link.swift in Sources */,
 				552FE3A62074412700AF684D /* main.swift in Sources */,
 				552FE3CC207550D300AF684D /* Version.swift in Sources */,
 				552FE3BE207546AA00AF684D /* Xcode6.swift in Sources */,

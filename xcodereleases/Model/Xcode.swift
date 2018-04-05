@@ -15,19 +15,17 @@ struct Xcode: Codable {
     let version: Version
     let date: YMD
     let requires: String
-    let sdks: SDKs
-    let compilers: Compilers
-    let download: URL?
-    let notes: URL?
+    let sdks: SDKs?
+    let compilers: Compilers?
+    let links: Links?
     
-    init(name: String = "Xcode", version: Version, date: (Int, Int, Int), requires: String, sdks: SDKs = SDKs(), compilers: Compilers = Compilers(), download: String? = nil, notes: String? = nil) {
+    init(name: String = "Xcode", version: Version, date: (Int, Int, Int), requires: String, sdks: SDKs? = nil, compilers: Compilers? = nil, links: Links? = nil) {
         self.name = name
         self.version = version;
         self.date = YMD(date);
         self.requires = requires;
         self.sdks = sdks;
         self.compilers = compilers
-        self.download = download.flatMap { URL(string: $0) }
-        self.notes = notes.flatMap { URL(string: $0) }
+        self.links = links
     }
 }
