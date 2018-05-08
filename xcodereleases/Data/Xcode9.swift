@@ -22,7 +22,8 @@ let xcodes9: Array<Xcode> = [
           requires: "10.13.2",
           sdks: SDKs(macOS: V("17E189"), iOS: V("15F5037c"), watchOS: V("15T212"), tvOS: V("15L5536b")),
           compilers: Compilers(clang: V("902.0.39.1", "9.1.0"), swift: V("902.0.50", "4.1.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta.xip"))),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta.xip"),
+                       notes: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta_Release_Notes.pdf"))),
     
 
     Xcode(version: V("9E145", "9.3"),
