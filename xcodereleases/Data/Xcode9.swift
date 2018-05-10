@@ -20,15 +20,24 @@ let xcodes9: Array<Xcode> = [
     Xcode(version: V("9Q1004a", "9.4", .beta(1)),
           date: (2018, 04, 02),
           requires: "10.13.2",
-          sdks: SDKs(macOS: V("17E189"), iOS: V("15F5037c"), watchOS: V("15T212"), tvOS: V("15L5536b")),
+          sdks: SDKs(macOS: V("17E189", "10.13.4"), iOS: V("15F5037c", "11.4"), watchOS: V("15T212", "4.3"), tvOS: V("15L5536b")),
           compilers: Compilers(clang: V("902.0.39.1", "9.1.0"), swift: V("902.0.50", "4.1.1")),
           links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta.xip"))),
+    
+    
+    Xcode(version: V("9E501", "9.3.1"),
+          date: (2018, 05, 10),
+          requires: "10.13.2",
+          sdks: SDKs(macOS: V("17E189", "10.13.4"), iOS: V("15E217", "11.3"), watchOS: V("15T212", "4.3"), tvOS: V("15L211", "11.3")),
+          compilers: Compilers(clang: V("902.0.39.1", "9.1.0"), swift: V("902.0.48902.0.48", "4.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.3.1/Xcode_9.3.1.xip"),
+                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1"))),
     
 
     Xcode(version: V("9E145", "9.3"),
           date: (2018, 03, 29),
           requires: "10.13.2",
-          sdks: SDKs(macOS: V("17E189"), iOS: V("15E217"), watchOS: V("15T212"), tvOS: V("15L211")),
+          sdks: SDKs(macOS: V("17E189", "10.13.4"), iOS: V("15E217", "11.3"), watchOS: V("15T212", "4.3"), tvOS: V("15L211", "11.3")),
           compilers: Compilers(clang: V("902.0.39.1", "9.1.0"), swift: V("902.0.48", "4.1")),
           links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.3/Xcode_9.3.xip"),
                        notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1"))),
