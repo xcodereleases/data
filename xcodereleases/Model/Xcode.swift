@@ -8,7 +8,7 @@
 
 import Foundation
 
-let xcodes: Array<Xcode> = xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
+let xcodes: Array<Xcode> = xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
 
 struct Xcode: Codable {
     let name: String

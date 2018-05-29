@@ -24,6 +24,7 @@
 		552FE3CE207550E300AF684D /* SDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CD207550E300AF684D /* SDKs.swift */; };
 		552FE3D02075510700AF684D /* YMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CF2075510700AF684D /* YMD.swift */; };
 		552FE3EC2076790600AF684D /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3EB2076790600AF684D /* Link.swift */; };
+		55F3756C20BE0EBD00E7D742 /* Xcode10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3756B20BE0EBD00E7D742 /* Xcode10.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +58,7 @@
 		552FE3CD207550E300AF684D /* SDKs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKs.swift; sourceTree = "<group>"; };
 		552FE3CF2075510700AF684D /* YMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMD.swift; sourceTree = "<group>"; };
 		552FE3EB2076790600AF684D /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		55F3756B20BE0EBD00E7D742 /* Xcode10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode10.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		552FE3C52075476E00AF684D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				55F3756B20BE0EBD00E7D742 /* Xcode10.swift */,
 				552FE3C32075472200AF684D /* Xcode9.swift */,
 				552FE3C12075470000AF684D /* Xcode8.swift */,
 				552FE3BF207546D200AF684D /* Xcode7.swift */,
@@ -193,6 +196,7 @@
 				552FE3C22075470000AF684D /* Xcode8.swift in Sources */,
 				552FE3BA2075465000AF684D /* Xcode4.swift in Sources */,
 				552FE3B6207545EE00AF684D /* Xcode2.swift in Sources */,
+				55F3756C20BE0EBD00E7D742 /* Xcode10.swift in Sources */,
 				552FE3CE207550E300AF684D /* SDKs.swift in Sources */,
 				552FE3D02075510700AF684D /* YMD.swift in Sources */,
 				552FE3B82075461100AF684D /* Xcode3.swift in Sources */,
