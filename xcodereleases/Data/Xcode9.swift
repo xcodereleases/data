@@ -9,6 +9,14 @@
 import Foundation
 
 let xcodes9: Array<Xcode> = [
+    Xcode(version: V("9F2000", "9.4.1"),
+          date: (2018, 06, 19),
+          requires: "10.13.2",
+          sdks: SDKs(macOS: V("17E189", "10.13.4"), iOS: V("15F79", "11.4"), watchOS: V("15T212", "4.3"), tvOS: V("15L576", "11.4")),
+          compilers: Compilers(clang: V("902.0.39.2", "9.1.0"), swift: V("902.0.54", "4.1.2")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_9.4.1/Xcode_9.4.1.xip"),
+                       notes: Link("https://developer.apple.com/library/archive/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1"))),
+    
     Xcode(version: V("9F1027a", "9.4"),
           date: (2018, 05, 29),
           requires: "10.13.2",
