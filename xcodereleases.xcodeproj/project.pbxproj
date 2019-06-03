@@ -24,6 +24,7 @@
 		552FE3CE207550E300AF684D /* SDKs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CD207550E300AF684D /* SDKs.swift */; };
 		552FE3D02075510700AF684D /* YMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3CF2075510700AF684D /* YMD.swift */; };
 		552FE3EC2076790600AF684D /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552FE3EB2076790600AF684D /* Link.swift */; };
+		556CC3E422A5B5750070A144 /* Xcode11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556CC3E322A5B5750070A144 /* Xcode11.swift */; };
 		55F3756C20BE0EBD00E7D742 /* Xcode10.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F3756B20BE0EBD00E7D742 /* Xcode10.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		552FE3CD207550E300AF684D /* SDKs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKs.swift; sourceTree = "<group>"; };
 		552FE3CF2075510700AF684D /* YMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YMD.swift; sourceTree = "<group>"; };
 		552FE3EB2076790600AF684D /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		556CC3E322A5B5750070A144 /* Xcode11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode11.swift; sourceTree = "<group>"; };
 		55F3756B20BE0EBD00E7D742 /* Xcode10.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xcode10.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +103,7 @@
 		552FE3C52075476E00AF684D /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				556CC3E322A5B5750070A144 /* Xcode11.swift */,
 				55F3756B20BE0EBD00E7D742 /* Xcode10.swift */,
 				552FE3C32075472200AF684D /* Xcode9.swift */,
 				552FE3C12075470000AF684D /* Xcode8.swift */,
@@ -155,12 +158,16 @@
 		552FE39A2074412700AF684D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Xcode Releases";
 				TargetAttributes = {
 					552FE3A12074412700AF684D = {
 						CreatedOnToolsVersion = 9.3;
+					};
+					55BA69D9225BAB1000AABBC4 = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -170,6 +177,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 552FE3992074412700AF684D;
 			productRefGroup = 552FE3A32074412700AF684D /* Products */;
@@ -199,6 +207,7 @@
 				55F3756C20BE0EBD00E7D742 /* Xcode10.swift in Sources */,
 				552FE3CE207550E300AF684D /* SDKs.swift in Sources */,
 				552FE3D02075510700AF684D /* YMD.swift in Sources */,
+				556CC3E422A5B5750070A144 /* Xcode11.swift in Sources */,
 				552FE3B82075461100AF684D /* Xcode3.swift in Sources */,
 				552FE3BC2075467D00AF684D /* Xcode5.swift in Sources */,
 				552FE3C0207546D200AF684D /* Xcode7.swift in Sources */,
