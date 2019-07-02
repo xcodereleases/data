@@ -9,6 +9,7 @@
 import Foundation
 
 let xcodes9: Array<Xcode> = [
+    
     Xcode(version: V("9F2000", "9.4.1"),
           date: (2018, 06, 19),
           requires: "10.13.2",
