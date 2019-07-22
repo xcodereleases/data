@@ -10,6 +10,14 @@ import Foundation
 
 let xcodes10: Array<Xcode> = [
     
+    Xcode(version: V("10G8", "10.3", .gm),
+          date: (2019, 07, 22),
+          requires: "10.14.3",
+          sdks: SDKs(macOS: V("18G74", "10.14.6"), iOS: V("16G73", "12.4"), watchOS: V("16U567", "5.3"), tvOS: V("16M567", "12.4")),
+          compilers: Compilers(clang: V("1001.0.46.4", "10.0.1"), swift: V("1001.0.82.4", "5.0.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_10_3_release_notes/"))),
+    
     Xcode(version: V("10E1001", "10.2.1", .gm),
           date: (2019, 04, 17),
           requires: "10.14.3",
