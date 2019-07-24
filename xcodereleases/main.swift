@@ -8,6 +8,8 @@
 
 import Foundation
 
+let xcodes: Array<Xcode> = xcodes11 + xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
+
 var encoder = JSONEncoder()
 //encoder.outputFormatting = .prettyPrinted
 do {
