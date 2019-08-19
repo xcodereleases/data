@@ -9,6 +9,22 @@
 import Foundation
 
 let xcodes11: Array<Xcode> = [
+
+    Xcode(version: V("11M392q", "11.0", .beta(6)),
+          date: (2019, 08, 19),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A536d", "10.15"), iOS: V("17A5556d", "13.0"), watchOS: V("17R5556d", "6.0"), tvOS: V("17J5549c", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.5", "11.0.0"), swift: V("1100.0.270.6", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_6/Xcode_11_Beta_6.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_6_release_notes"))),
+    
+    Xcode(version: V("11M382q", "11.0", .beta(5)),
+          date: (2019, 07, 29),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A526e", "10.15"), iOS: V("17A5547d", "13.0"), watchOS: V("17R5546d", "6.0"), tvOS: V("17J5540d", "13.0")),
+          compilers: Compilers(clang: V("1100.0.32.5", "11.0.0"), swift: V("1100.0.266.1", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_5/Xcode_11_Beta_5.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_5_release_notes"))),
     
     Xcode(version: V("11M374r", "11.0", .beta(4)),
           date: (2019, 07, 17),
