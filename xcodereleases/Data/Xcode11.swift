@@ -9,6 +9,14 @@
 import Foundation
 
 let xcodes11: Array<Xcode> = [
+    
+    Xcode(version: V("11A419c", "11.0", .gmSeed(1)),
+          date: (2019, 09, 10),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A547", "10.15"), iOS: V("17A566", "13.0"), watchOS: V("17R566", "6.0"), tvOS: V("17J559", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.8", "11.0.0"), swift: V("1100.0.270.13", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed/Xcode_11_GM_Seed.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes"))),
 
     Xcode(version: V("11M392q", "11.0", .beta(6)),
           date: (2019, 08, 19),
