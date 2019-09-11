@@ -8,21 +8,21 @@
 
 import Foundation
 
-struct Link: Codable {
-    let url: URL
-    let sizeMB: Int?
+public struct Link: Codable {
+    public let url: URL
+    public let sizeMB: Int?
     
-    init(_ string: String, _ size: Int? = nil) {
+    public init(_ string: String, _ size: Int? = nil) {
         self.url = URL(string: string)!
         self.sizeMB = size
     }
 }
 
-struct Links: Codable {
-    let download: Link?
-    let notes: Link?
+public struct Links: Codable {
+    public let download: Link?
+    public let notes: Link?
     
-    init(download: Link? = nil, notes: Link? = nil) {
+    public init(download: Link? = nil, notes: Link? = nil) {
         self.download = download
         self.notes = notes
     }

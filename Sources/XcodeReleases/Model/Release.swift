@@ -8,13 +8,13 @@
 
 import Foundation
 
-enum Release: Codable {
+public enum Release: Codable {
     
-    enum CodingKeys: String, CodingKey {
+    public enum CodingKeys: String, CodingKey {
         case gm, gmSeed, beta, dp
     }
     
-    var isGM: Bool {
+    public var isGM: Bool {
         guard case .gm = self else { return false }
         return true
     }
@@ -24,7 +24,7 @@ enum Release: Codable {
     case beta(Int)
     case dp(Int)
     
-    init(from decoder: Decoder) throws {
+    public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         if let _ = try container.decodeIfPresent(Bool.self, forKey: .gm) {
             self = .gm
@@ -39,7 +39,7 @@ enum Release: Codable {
         }
     }
     
-    func encode(to encoder: Encoder) throws {
+    public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)
         switch self {
         case .gm: try container.encode(true, forKey: .gm)

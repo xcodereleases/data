@@ -1,2 +1,3 @@
-# data
-The data generator that powers xcodereleases.com
+# XcodeReleases
+
+The data and generator that powers xcodereleases.com
