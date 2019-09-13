@@ -10,8 +10,28 @@ import WebKit
 
 class Step: NSObject, WKNavigationDelegate {
     
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        // load up the new dom
+    let context: Scraper
+    
+    init(context: Scraper) {
+        self.context = context
+    }
+    
+    func start() { }
+    func end() { }
+    
+}
+
+class LoadDownloadsPage: Step {
+    
+    override func start() {
+        context.load(page: "https://developer.apple.com/download") { page in
+            guard let p = page else { return }
+            guard let u = self.context.currentURL() else { return }
+            if u.host == "idmsa.apple.com" {
+                print("login")
+            }
+            print("\(u.absoluteString)")
+        }
     }
     
 }
