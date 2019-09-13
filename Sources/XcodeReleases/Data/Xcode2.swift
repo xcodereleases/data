@@ -21,7 +21,7 @@ let xcodes2: Array<Xcode> = [
           date: (2006, 10, 30),
           requires: "10.4",
           links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/xcode_2.4.1/xcode_2.4.1_8m1910_6936315.dmg"),
-                       notes: Link("https://download.developer.apple.com/Developer_Tools/xcode_2.4.1/xcode_2.4.1_8m1910_6936315.dmg"))),
+                       notes: Link("https://download.developer.apple.com/Developer_Tools/xcode_2.4.1/xcode_2.4.1.readme.pdf"))),
     
     Xcode(version: V("8K1079", "2.4"),
           date: (2006, 08, 17),

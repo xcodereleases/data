@@ -17,7 +17,15 @@ let xcodes11: Array<Xcode> = [
           compilers: Compilers(clang: V("1100.0.33.8", "11.0.0"), swift: V("1100.0.270.13", "5.1")),
           links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed/Xcode_11_GM_Seed.xip"),
                        notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes"))),
-
+    
+    Xcode(version: V("11M392r", "11.0", .beta(7)),
+          date: (2019, 08, 27),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A536d", "10.15"), iOS: V("17A5556d", "13.0"), watchOS: V("17R5556d", "6.0"), tvOS: V("17J5549c", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.5", "11.0.0"), swift: V("1100.0.270.6", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_7/Xcode_11_Beta_7.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_7_release_notes"))),
+    
     Xcode(version: V("11M392q", "11.0", .beta(6)),
           date: (2019, 08, 19),
           requires: "10.14.4",
