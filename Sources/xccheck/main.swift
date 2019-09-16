@@ -15,14 +15,10 @@ class XCCheckDelegate: NSObject, NSApplicationDelegate {
     let scraper = Scraper()
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        print("Hello world!")
-        
         scraper.run()
     }
     
 }
-
-print(CommandLine.arguments)
 
 var delegate: XCCheckDelegate? = XCCheckDelegate()
 NSApplication.shared.delegate = delegate

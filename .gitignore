@@ -67,3 +67,4 @@ fastlane/screenshots
 fastlane/test_output
 xcuserdata
 .DS_Store
+Sources/.DS_Store
