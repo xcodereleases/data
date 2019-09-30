@@ -6,6 +6,8 @@
 //  Copyright © 2018 Xcode Releases. All rights reserved.
 //
 
+import xcmodel
+
 let xcodes1: Array<Xcode> = [
     
     Xcode(name: "Xcode Tools",

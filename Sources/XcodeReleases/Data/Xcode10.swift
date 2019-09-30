@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import xcmodel
 
 let xcodes10: Array<Xcode> = [
     

@@ -7,8 +7,33 @@
 //
 
 import Foundation
+import xcmodel
 
 let xcodes11: Array<Xcode> = [
+
+    Xcode(version: V("11A1027", "11.1", .gmSeed(1)),
+          date: (2019, 09, 24),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A547", "10.15"), iOS: V("17A820", "13.1"), watchOS: V("17R566", "6.0"), tvOS: V("17J559", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.8", "11.0.0"), swift: V("1100.0.270.13", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.1_GM_Seed/Xcode_11.1_GM_Seed.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/"))),
+
+    Xcode(version: V("11A420a", "11.0", .gm),
+          date: (2019, 09, 20),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A547", "10.15"), iOS: V("17A566", "13.0"), watchOS: V("17R566", "6.0"), tvOS: V("17J559", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.8", "11.0.0"), swift: V("1100.0.270.13", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11/Xcode_11.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes"))),
+
+    Xcode(version: V("11A420a", "11.0", .gmSeed(2)),
+          date: (2019, 09, 16),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A547", "10.15"), iOS: V("17A566", "13.0"), watchOS: V("17R566", "6.0"), tvOS: V("17J559", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.8", "11.0.0"), swift: V("1100.0.270.13", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed_2/Xcode_11_GM_Seed_2.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes"))),
     
     Xcode(version: V("11A419c", "11.0", .gmSeed(1)),
           date: (2019, 09, 10),
