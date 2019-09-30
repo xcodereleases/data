@@ -5,11 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "XcodeReleases",
-    platforms: [
-        .macOS(.v10_14),
-    ],
+    platforms: [.macOS(.v10_12), .iOS(.v10), .watchOS(.v3), .tvOS(.v10)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
+        .library(name: "XCModel", targets: ["XCModel"]),
         .library(name: "XcodeReleases", targets: ["XcodeReleases"]),
         .executable(name: "json-export", targets: ["json-export"]),
         .executable(name: "xccheck", targets: ["xccheck"])
@@ -21,8 +20,9 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
-        .target(name: "XcodeReleases", dependencies: []),
+        .target(name: "XCModel", dependencies: []),
+        .target(name: "XcodeReleases", dependencies: ["XCModel"]),
+        .target(name: "xccheck", dependencies: ["XCModel"]),
         .target(name: "json-export", dependencies: ["XcodeReleases"]),
-        .target(name: "xccheck", dependencies: ["XcodeReleases"])
     ]
 )

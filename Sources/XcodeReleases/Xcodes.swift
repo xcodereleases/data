@@ -1,3 +1,13 @@
+//
+//  Xcodes.swift
+//  xcodereleases
+//
+//  Created by Xcode Releases on 9/30/19.
+//  Copyright © 2019 Xcode Releases. All rights reserved.
+//
+
+import Foundation
+import XCModel
 
 extension Xcode {
     

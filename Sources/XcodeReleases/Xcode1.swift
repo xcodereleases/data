@@ -6,7 +6,7 @@
 //  Copyright © 2018 Xcode Releases. All rights reserved.
 //
 
-import xcmodel
+import XCModel
 
 let xcodes1: Array<Xcode> = [
     

@@ -8,7 +8,7 @@
 
 import Foundation
 
-internal typealias V = Version
+public typealias V = Version
 public struct Version: Codable {
     public let number: String?
     public let build: String
