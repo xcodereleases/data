@@ -8,13 +8,13 @@
 
 import Foundation
 
-typealias V = Version
-struct Version: Codable {
-    let number: String?
-    let build: String
-    let release: Release
+internal typealias V = Version
+public struct Version: Codable {
+    public let number: String?
+    public let build: String
+    public let release: Release
     
-    init(_ build: String, _ number: String? = nil, _ release: Release = .gm) {
+    public init(_ build: String, _ number: String? = nil, _ release: Release = .gm) {
         self.number = number; self.build = build; self.release = release
     }
 }
