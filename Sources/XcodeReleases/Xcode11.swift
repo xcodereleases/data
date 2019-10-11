@@ -11,6 +11,30 @@ import XCModel
 
 let xcodes11: Array<Xcode> = [
 
+    Xcode(version: V("11B44", "11.2", .beta(2)),
+          date: (2019, 10, 11),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19B68e", "10.15.1"), iOS: V("17B5068e", "13.2"), watchOS: V("17S5068e", "6.1"), tvOS: V("17K5068b", "13.2")),
+          compilers: Compilers(clang: V("1100.0.33.11", "11.0.0"), swift: V("1100.0.275.2", "5.1.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.2_beta_2/Xcode_11.2_beta_2.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_2_release_notes"))),
+
+    Xcode(version: V("11A1027", "11.1", .gm),
+          date: (2019, 10, 07),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A547", "10.15"), iOS: V("17A820", "13.1"), watchOS: V("17R566", "6.0"), tvOS: V("17J559", "13.0")),
+          compilers: Compilers(clang: V("1100.0.33.8", "11.0.0"), swift: V("1100.0.270.13", "5.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.1/Xcode_11.1.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/"))),
+
+    Xcode(version: V("11B41", "11.2", .beta(1)),
+          date: (2019, 10, 02),
+          requires: "10.14.4",
+          sdks: SDKs(macOS: V("19A547", "10.15"), iOS: V("17B5059f", "13.2"), watchOS: V("17S5059d", "6.1"), tvOS: V("17K5059e", "13.2")),
+          compilers: Compilers(clang: V("1100.0.33.9", "11.0.0"), swift: V("1100.0.274.1", "5.1.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.2_beta/Xcode_11.2_beta.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_release_notes/"))),
+
     Xcode(version: V("11A1027", "11.1", .gmSeed(1)),
           date: (2019, 09, 24),
           requires: "10.14.4",
