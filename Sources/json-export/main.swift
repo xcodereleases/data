@@ -7,7 +7,7 @@
 
 import Foundation
 import XCModel
-import XcodeReleases
+import XCData
 
 let encoder = JSONEncoder()
 
