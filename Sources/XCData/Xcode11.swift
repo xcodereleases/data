@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes11: Array<Xcode> = [
 
-    Xcode(version: V("11C29", "11.3", .gmSeed(1)),
+    Xcode(version: V("11C29", "11.3", .gm),
           date: (2019, 12, 10),
           requires: "10.14.4",
           sdks: SDKs(macOS: V("19B90", "10.15.1"), iOS: V("17B102", "13.2.2"), watchOS: V("17S80", "6.1"), tvOS: V("17K90", "13.2")),
