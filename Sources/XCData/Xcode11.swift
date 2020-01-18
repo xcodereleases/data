@@ -12,7 +12,7 @@ import XCModel
 let xcodes11: Array<Xcode> = [
 
     Xcode(version: V("11C505", "11.3.1", .gm),
-          date: (2020, 01, 20),
+          date: (2020, 01, 13),
           requires: "10.14.4",
           sdks: SDKs(macOS: V("19B90", "10.15.1"), iOS: V("17B102", "13.2.2"), watchOS: V("17S80", "6.1"), tvOS: V("17K90", "13.2")),
           compilers: Compilers(clang: V("1100.0.33.17", "11.0.0"), swift: V("1100.0.282.1", "5.1.3")),
