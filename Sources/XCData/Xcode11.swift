@@ -11,6 +11,14 @@ import XCModel
 
 let xcodes11: Array<Xcode> = [
 
+    Xcode(version: V("11N111s", "11.4", .beta(1)),
+          date: (2020, 01, 13),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E224g", "10.15.4"), iOS: V("17E5223h", "13.4"), watchOS: V("17T5224g", "6.2"), tvOS: V("17L5225g", "13.4")),
+          compilers: Compilers(clang: V("1103.0.30.11", "11.0.3"), swift: V("1103.0.22", "5.2")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta/Xcode_11.4_beta.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_release_notes"))),
+
     Xcode(version: V("11C505", "11.3.1", .gm),
           date: (2020, 01, 13),
           requires: "10.14.4",
