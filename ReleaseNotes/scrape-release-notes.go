@@ -32,17 +32,18 @@ type Section struct {
 
 // Item is one of the list items underneath a section.
 type Item struct {
-	Title   string    `json:"title"`
-	Details []*Detail `json:"details"`
+	Text string `json:"text"`
+	HTML string `json:"html"`
+	// Details []*Detail `json:"details"`
 }
 
 // Detail makes up the parts of an item. This allows us to separate code from plain text
 // TODO: now that we have the `HTML` property we should look at seeing if we need to separate those parts
-type Detail struct {
-	Style   int    `json:"style"`
-	HTML    string `json:"html"`
-	Content string `json:"content"`
-}
+// type Detail struct {
+// 	Style   int    `json:"style"`
+// 	HTML    string `json:"html"`
+// 	Content string `json:"content"`
+// }
 
 func main() {
 
@@ -106,23 +107,26 @@ func main() {
 				topic.Sections = append(topic.Sections, section)
 			} else if node.Name == "li" {
 				var item *Item = new(Item)
-				item.Title = node.Text
+				item.Text = node.Text
+				h, _ := node.DOM.Html()
+				item.HTML = h
 				section.Items = append(section.Items, item)
 
 				// p begins a body of text
 				// pre looks to be used for wrapping code samples
-				node.ForEach("p, pre", func(i int, detailNode *colly.HTMLElement) {
-					var detail *Detail = new(Detail)
-					detail.Content = detailNode.Text
-					h, _ := detailNode.DOM.Html()
-					detail.HTML = h
-					if detailNode.Name == "p" {
-						detail.Style = 1
-					} else if detailNode.Name == "pre" {
-						detail.Style = 2
-					}
-					item.Details = append(item.Details, detail)
-				})
+
+				// node.ForEach("p, pre", func(i int, detailNode *colly.HTMLElement) {
+				// 	var detail *Detail = new(Detail)
+				// 	detail.Content = detailNode.Text
+				// 	h, _ := detailNode.DOM.Html()
+				// 	detail.HTML = h
+				// 	if detailNode.Name == "p" {
+				// 		detail.Style = 1
+				// 	} else if detailNode.Name == "pre" {
+				// 		detail.Style = 2
+				// 	}
+				// 	item.Details = append(item.Details, detail)
+				// })
 			}
 		})
 
@@ -136,7 +140,7 @@ func main() {
 				fmt.Printf("     Section: %q\n", s.Title)
 
 				for _, i := range s.Items {
-					fmt.Printf("          Item: %q\n", i.Title)
+					fmt.Printf("          Item: %q\n", i.Text)
 				}
 			}
 		}
