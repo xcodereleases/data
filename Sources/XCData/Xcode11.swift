@@ -10,6 +10,55 @@ import Foundation
 import XCModel
 
 let xcodes11: Array<Xcode> = [
+
+    Xcode(version: V("11E608c", "11.5", .gm),
+          date: (2020, 05, 20),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E258", "10.15.4"), iOS: V("17F65", "13.5"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.62", "11.0.3"), swift: V("1103.0.32.9", "5.2.4")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.5/Xcode_11.5.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_release_notes"))),
+
+    Xcode(version: V("11E608c", "11.5", .gmSeed(1)),
+          date: (2020, 05, 18),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E258", "10.15.4"), iOS: V("17F65", "13.5"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.62", "11.0.3"), swift: V("1103.0.32.9", "5.2.4")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.5_GM_Seed/Xcode_11.5_GM_Seed.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_gm_seed_release_notes"))),
+    
+    Xcode(version: V("11N605f", "11.5", .beta(2)),
+          date: (2020, 05, 06),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E258", "10.15.4"), iOS: V("17F5065a", "13.5"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.62", "11.0.3"), swift: V("1103.0.32.9", "5.2.4")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.5_beta_2/Xcode_11.5_beta_2.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_2_release_notes"))),
+
+    Xcode(version: V("11N605c", "11.5", .beta(1)),
+          date: (2020, 04, 29),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E258", "10.15.4"), iOS: V("17F5054f", "13.5"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.62", "11.0.3"), swift: V("1103.0.32.9", "5.2.4")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.5_beta/Xcode_11.5_beta.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_release_notes"))),
+
+    Xcode(version: V("11E503a", "11.4.1", .gm),
+          date: (2020, 04, 16),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E258", "10.15.4"), iOS: V("17E8258", "13.4.1"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.59", "11.0.3"), swift: V("1103.0.32.6", "5.2.2")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.4.1/Xcode_11.4.1.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_1_release_notes"))),
+
+    Xcode(version: V("11E146", "11.4", .gm),
+          date: (2020, 03, 24),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19E258", "10.15.4"), iOS: V("17E255", "13.4"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.29", "11.0.3"), swift: V("1103.0.32.1", "5.2")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.4/Xcode_11.4.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_release_notes"))),
+    
     Xcode(version: V("11N132i", "11.4", .beta(3)),
           date: (2020, 03, 03),
           requires: "10.15.2",
