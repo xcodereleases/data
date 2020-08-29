@@ -11,6 +11,22 @@ import XCModel
 
 let xcodes11: Array<Xcode> = [
 
+    Xcode(version: V("11E801a", "11.7", .beta(1)),
+          date: (2020, 08, 26),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19G68", "10.15.6"), iOS: V("17H22", "13.7"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.62", "11.0.3"), swift: V("1103.0.32.9", "5.2.4")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.7_beta/Xcode_11.7_beta.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-beta-release-notes/"))),
+
+    Xcode(version: V("11E708", "11.6", .gm),
+          date: (2020, 07, 15),
+          requires: "10.15.2",
+          sdks: SDKs(macOS: V("19G68", "10.15.6"), iOS: V("17G64", "13.6"), watchOS: V("17T255", "6.2"), tvOS: V("17L255", "13.4")),
+          compilers: Compilers(clang: V("1103.0.32.62", "11.0.3"), swift: V("1103.0.32.9", "5.2.4")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_11.6/Xcode_11.6.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes"))),
+
     Xcode(version: V("11N700h", "11.6", .beta(1)),
           date: (2020, 06, 09),
           requires: "10.15.2",
