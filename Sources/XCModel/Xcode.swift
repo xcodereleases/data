@@ -16,8 +16,9 @@ public struct Xcode: Codable {
     public let sdks: SDKs?
     public let compilers: Compilers?
     public let links: Links?
+    public let checksums: Checksums?
     
-    public init(name: String = "Xcode", version: Version, date: (Int, Int, Int), requires: String, sdks: SDKs? = nil, compilers: Compilers? = nil, links: Links? = nil) {
+    public init(name: String = "Xcode", version: Version, date: (Int, Int, Int), requires: String, sdks: SDKs? = nil, compilers: Compilers? = nil, links: Links? = nil, checksums: Checksums? = nil) {
         self.name = name
         self.version = version;
         self.date = YMD(date);
@@ -25,5 +26,6 @@ public struct Xcode: Codable {
         self.sdks = sdks;
         self.compilers = compilers
         self.links = links
+        self.checksums = checksums
     }
 }
