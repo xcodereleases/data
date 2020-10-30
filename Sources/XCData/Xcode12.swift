@@ -11,6 +11,42 @@ import XCModel
 
 let xcodes12: Array<Xcode> = [
     
+    Xcode(version: V("12A7605b", "12.1.1", .rc(1)),
+          date: (2020, 10, 30),
+          requires: "10.15.4",
+          sdks: SDKs(macOS: V("19G68", "10.15.6"), iOS: V("18B79", "14.2"), watchOS: V("18R579", "7.1"), tvOS: V("18K54", "14.2")),
+          compilers: Compilers(clang: V("1200.0.32.21", "12.0.0"), swift: V("1200.0.29.2", "5.3")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_12.1/Xcode_12.1.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes/")),
+          checksums: Checksums(sha1: "940320913ac3a7401f5f9ab45c0410dc717c52ee")),
+    
+    Xcode(version: V("12A7403", "12.1", .gm),
+          date: (2020, 10, 20),
+          requires: "10.15.4",
+          sdks: SDKs(macOS: V("19G68", "10.15.6"), iOS: V("18A8394", "14.1"), watchOS: V("18R382", "7.0"), tvOS: V("18J390", "14.0")),
+          compilers: Compilers(clang: V("1200.0.32.21", "12.0.0"), swift: V("1200.0.29.2", "5.3")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_12.1/Xcode_12.1.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes/")),
+          checksums: Checksums(sha1: "722c4f0316e7c469294c277eaf59975c1a40e061")),
+    
+    Xcode(version: V("12A7403", "12.1", .gmSeed(1)),
+          date: (2020, 10, 13),
+          requires: "10.15.4",
+          sdks: SDKs(macOS: V("19G68", "10.15.6"), iOS: V("18A8394", "14.1"), watchOS: V("18R382", "7.0"), tvOS: V("18J390", "14.0")),
+          compilers: Compilers(clang: V("1200.0.32.21", "12.0.0"), swift: V("1200.0.29.2", "5.3")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_12.1_GM_seed/Xcode_12.1_GM_seed.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes")),
+          checksums: Checksums(sha1: "722c4f0316e7c469294c277eaf59975c1a40e061")),
+    
+    Xcode(version: V("12B5035g", "12.2", .beta(3)),
+          date: (2020, 10, 13),
+          requires: "10.15.4",
+          sdks: SDKs(macOS: V("20A5395d", "11.0"), iOS: V("18B5072e", "14.2"), watchOS: V("18R5572e", "7.1"), tvOS: V("18K5047e", "14.2")),
+          compilers: Compilers(clang: V("1200.0.32.27", "12.0.0"), swift: V("1200.0.41", "5.3.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_12.2_beta_3/Xcode_12.2_beta_3.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-beta-release-notes/")),
+          checksums: Checksums(sha1: "39c3d671338bc383a9a4ebb6622146ed932c8493")),
+    
     Xcode(version: V("12B5025f", "12.2", .beta(2)),
           date: (2020, 09, 29),
           requires: "10.15.4",
