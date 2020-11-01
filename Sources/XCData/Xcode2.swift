@@ -64,6 +64,6 @@ let xcodes2: Array<Xcode> = [
           version: V("8A428", "2.0"),
           date: (2005, 04, 29),
           requires: "10.4",
-          sdks: SDKs(macOS: [V("10.2"), V("10.3"), V("10.4")]),
+          sdks: SDKs(macOS: [V(number: "10.2"), V(number: "10.3"), V(number: "10.4")]),
           checksums: nil)
 ]

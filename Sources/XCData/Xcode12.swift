@@ -16,8 +16,8 @@ let xcodes12: Array<Xcode> = [
           requires: "10.15.4",
           sdks: SDKs(macOS: V("19G68", "10.15.6"), iOS: V("18B79", "14.2"), watchOS: V("18R579", "7.1"), tvOS: V("18K54", "14.2")),
           compilers: Compilers(clang: V("1200.0.32.21", "12.0.0"), swift: V("1200.0.29.2", "5.3")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_12.1/Xcode_12.1.xip"),
-                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes/")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_12.1.1_Release_Candidate/Xcode_12.1.1_Release_Candidate.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1_1-release-notes/")),
           checksums: Checksums(sha1: "940320913ac3a7401f5f9ab45c0410dc717c52ee")),
     
     Xcode(version: V("12A7403", "12.1", .gm),
