@@ -11,7 +11,7 @@ import Foundation
 public enum Release: Codable {
     
     public enum CodingKeys: String, CodingKey {
-        case gm, gmSeed, rc, beta, dp
+        case gm, gmSeed, rc, beta, dp, release
     }
     
     public var isGM: Bool {
@@ -24,6 +24,7 @@ public enum Release: Codable {
     case rc(Int)
     case beta(Int)
     case dp(Int)
+    case release
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -37,6 +38,8 @@ public enum Release: Codable {
             self = .beta(v)
         } else if let v = try container.decodeIfPresent(Int.self, forKey: .dp) {
             self = .dp(v)
+        } else if let _ = try container.decodeIfPresent(Bool.self, forKey: .release) {
+            self = .release
         } else {
             fatalError("Unreachable")
         }
@@ -50,6 +53,7 @@ public enum Release: Codable {
         case .rc(let v): try container.encode(v, forKey: .rc)
         case .beta(let v): try container.encode(v, forKey: .beta)
         case .dp(let v): try container.encode(v, forKey: .dp)
+        case .release: try container.encode(true, forKey: .release)
         }
     }
 }
