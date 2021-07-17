@@ -16,7 +16,7 @@ let xcodes8: Array<Xcode> = [
           requires: "10.12",
           sdks: SDKs(macOS: V("16E185"), iOS: V("14E8301"), watchOS: V("14V243"), tvOS: V("14W260")),
           compilers: Compilers(clang: V("802.0.42", "8.1.0"), swift: V("802.0.53", "3.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.3/Xcode8.3.3.xip"),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.3/Xcode_8.3.3.xip"),
                        notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW870")),
           checksums: Checksums(sha1: "67023787df49c91ff5d6a67e12d165bc610f0022")),
 
@@ -25,7 +25,7 @@ let xcodes8: Array<Xcode> = [
           requires: "10.12",
           sdks: SDKs(macOS: V("16E185"), iOS: V("14E269"), watchOS: V("14V243"), tvOS: V("14W260")),
           compilers: Compilers(clang: V("802.0.42", "8.1.0"), swift: V("802.0.53", "3.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.2/Xcode8.3.2.xip"),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.2/Xcode_8.3.2.xip"),
                        notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW853")),
           checksums: Checksums(sha1: "4e7e97e6e2c5c92432a04e657dfe94226849cb51")),
 
