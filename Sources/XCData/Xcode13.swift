@@ -75,20 +75,6 @@ let xcodes13: Array<Xcode> = [
                            notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")),
               checksums: Checksums(sha1: "0c2c2b0d0a9853390bf7accb00cc95c3723277a3")),
     
-    /*
-     Beta 3 was re-released two days after its initial release.
-     The only thing that changed was the Xcode version number.
-     The release notes imply it was a tools fix to address issues communicating with the Xcode Cloud feature
-     */
-    Xcode(version: V("13A5192j", "13.0", .beta(3)),
-          date: (2021, 07, 16),
-          requires: "11.3",
-          sdks: SDKs(macOS: V("21A5284e", "12.0"), iOS: V("19A5297f", "15.0"), watchOS: V("19R5302g", "8.0"), tvOS: V("19J5304f", "15.0")),
-          compilers: Compilers(clang: V("1300.0.25.3", "13.0.0"), swift: V("1300.0.24.13", "5.5")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_3/Xcode_13_beta3.xip"),
-                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")),
-          checksums: Checksums(sha1: "9e2a6f2e6665fbe551dfd1f526b058cf930a968c")),
-    
     Xcode(version: V("13A5192i", "13.0", .beta(3)),
           date: (2021, 07, 14),
           requires: "11.3",
