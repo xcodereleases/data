@@ -29,15 +29,6 @@ let xcodes8: Array<Xcode> = [
                        notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW853")),
           checksums: Checksums(sha1: "4e7e97e6e2c5c92432a04e657dfe94226849cb51")),
 
-    Xcode(version: V("8E1000a", "8.3.1"),
-          date: (2017, 04, 06),
-          requires: "10.12",
-          sdks: SDKs(macOS: V("16E185"), iOS: V("14E269"), watchOS: V("14V243"), tvOS: V("14W260")),
-          compilers: Compilers(clang: V("802.0.41", "8.1.0"), swift: V("802.0.51", "3.1")),
-          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.1/Xcode_8.3.1.xip"),
-                       notes: Link("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW848")),
-          checksums: Checksums(sha1: "320e0c26daec62ef2fbc67bac26642fc6f2b0a90")),
-
     Xcode(version: V("8E162", "8.3"),
           date: (2017, 03, 27),
           requires: "10.12",
