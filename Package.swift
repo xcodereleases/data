@@ -5,12 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "XcodeReleases",
-    platforms: [.macOS(.v10_12), .iOS(.v10), .watchOS(.v3), .tvOS(.v10)],
+    platforms: [.macOS("11"), .iOS(.v10), .watchOS(.v3), .tvOS(.v10)],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(name: "XCModel", targets: ["XCModel"]),
         .library(name: "XCData", targets: ["XCData"]),
         .executable(name: "json-export", targets: ["json-export"]),
+        .executable(name: "dexip", targets: ["dexip"]),
         .executable(name: "xccheck", targets: ["xccheck"])
     ],
     dependencies: [
@@ -24,5 +25,10 @@ let package = Package(
         .target(name: "XCData", dependencies: ["XCModel"]),
         .target(name: "xccheck", dependencies: ["XCModel"]),
         .target(name: "json-export", dependencies: ["XCData"]),
+        
+        .target(name: "dexip", dependencies: [],
+                swiftSettings: [
+                    .unsafeFlags(["-parse-as-library"], nil)
+                ]),
     ]
 )
