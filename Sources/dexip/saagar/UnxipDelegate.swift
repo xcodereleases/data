@@ -151,15 +151,55 @@ class ExtractionDelegate: UnxipDelegate, @unchecked Sendable {
                 if pathComponents[0] == "Contents" && pathComponents[1] == "Developer" && pathComponents[2] == "Toolchains" && pathComponents[3] == "XcodeDefault.xctoolchain" && pathComponents[4] == "usr" && pathComponents[5] == "bin" {
                     
                     if pathComponents[6] == "clang" {
-                        let strings = readStrings(from: file.contents)
-                        print("Clang: \(strings)")
+                        readClangInfo(from: file.contents, at: pathComponents)
                     } else if pathComponents[6] == "swift" {
-                        let strings = readStrings(from: file.contents)
-                        print("Swift: \(strings)")
+                        readSwiftInfo(from: file.contents, at: pathComponents)
                     }
                     
                 }
             }
+        }
+    }
+    
+    private let clangVersion = Regex(#"clang version ([\d\.]+)"#)
+    private let clangBuild = Regex(#"clang-([\d\.]+)"#)
+    private func readClangInfo(from data: Data, at path: Array<Substring>) {
+        let strings = readStrings(from: data)
+        
+        var version: String?
+        var build: String?
+        
+        for string in strings {
+            if let m = clangVersion.firstMatch(in: string) {
+                version = m[1]
+            } else if let m = clangBuild.firstMatch(in: string) {
+                build = m[1]
+            }
+        }
+        
+        if let v = version, let b = build {
+            xcode?.tools.append(Tool(name: "Clang", path: path.map(String.init), build: b, version: v))
+        }
+    }
+    
+    private let swiftVersion = Regex(#"Swift version ([\d\.]+)"#)
+    private let swiftBuild = Regex(#"swiftlang-([\d\.]+)"#)
+    private func readSwiftInfo(from data: Data, at path: Array<Substring>) {
+        let strings = readStrings(from: data)
+        
+        var version: String?
+        var build: String?
+        
+        for string in strings {
+            if let m = swiftVersion.firstMatch(in: string) {
+                version = m[1]
+            } else if let m = swiftBuild.firstMatch(in: string) {
+                build = m[1]
+            }
+        }
+        
+        if let v = version, let b = build {
+            xcode?.tools.append(Tool(name: "Swift", path: path.map(String.init), build: b, version: v))
         }
     }
     
