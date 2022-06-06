@@ -21,6 +21,33 @@ Xcode(version: V("<#build number#>", "<#version number#>", .<#release type#>),
  */
 
 let xcodes13: Array<Xcode> = [
+    Xcode(version: V("13F100", "13.4.1", .release),
+          date: (2022, 06, 02),
+          requires: "12.0",
+          sdks: SDKs(macOS: V("21E226", "12.3"), iOS: V("19F64", "15.5"), watchOS: V("19T241", "8.5"), tvOS: V("19L439", "15.4")),
+          compilers: Compilers(clang: V("1316.0.21.2.5", "13.1.6"), swift: V("5.6.0.323.66", "5.6.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_13.4.1/Xcode_13.4.1.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes")),
+          checksums: Checksums(sha1: "40e8628555b6231b361471183f3ce17b378036fd")),
+     
+    Xcode(version: V("13F17a", "13.4", .release),
+          date: (2022, 05, 16),
+          requires: "12.0",
+          sdks: SDKs(macOS: V("21E226", "12.3"), iOS: V("19F64", "15.5"), watchOS: V("19T241", "8.5"), tvOS: V("19L439", "15.4")),
+          compilers: Compilers(clang: V("1316.0.21.2.5", "13.1.6"), swift: V("5.6.0.323.66", "5.6.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_13.4/Xcode_13.4.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")),
+          checksums: Checksums(sha1: "d71192968cf948eaefeec25c4e05576c2f4d5217")),
+    
+    Xcode(version: V("13F17a", "13.4", .rc(1)),
+          date: (2022, 05, 12),
+          requires: "12.0",
+          sdks: SDKs(macOS: V("21E226", "12.3"), iOS: V("19F64", "15.5"), watchOS: V("19T241", "8.5"), tvOS: V("19L439", "15.4")),
+          compilers: Compilers(clang: V("1316.0.21.2.5", "13.1.6"), swift: V("5.6.0.323.66", "5.6.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_13.4_Release_Candidate/Xcode_13.4_Release_Candidate.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")),
+          checksums: Checksums(sha1: "d71192968cf948eaefeec25c4e05576c2f4d5217")),
+    
     Xcode(version: V("13E500a", "13.3.1", .release),
           date: (2022, 04, 11),
           requires: "12.0",
