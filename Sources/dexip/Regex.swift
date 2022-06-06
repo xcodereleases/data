@@ -8,6 +8,10 @@ struct Regex {
         self.pattern = try! NSRegularExpression(pattern: pattern.description, options: [])
     }
     
+    func matches(_ string: String) -> Bool {
+        firstMatch(in: string) != nil
+    }
+    
     func firstMatch(in string: String) -> Match? {
         let cocoa = string as NSString
         let range = NSRange(location: 0, length: cocoa.length)

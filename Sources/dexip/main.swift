@@ -7,6 +7,7 @@ struct Main {
     }
     
     static func run(path: String) async throws {
+//        let swift = "/Applications/Xcode13.3.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift"
         let url = URL(fileURLWithPath: path)
         let xip = Xip(url: url)
         

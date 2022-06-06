@@ -94,13 +94,8 @@ class ExtractionDelegate: UnxipDelegate, @unchecked Sendable {
     
     var xcode: Xcode?
     
-    func hardlink(source: String, to destination: String) async throws {
-        
-    }
-    
-    func symlink(source: String, to destination: String) async throws {
-        
-    }
+    func hardlink(source: String, to destination: String) async throws { }
+    func symlink(source: String, to destination: String) async throws { }
     
     private var hasStartedDirectories = false
     func createDirectory(_ path: String, mode: mode_t, sticky: Bool) async throws {
@@ -140,10 +135,10 @@ class ExtractionDelegate: UnxipDelegate, @unchecked Sendable {
             if pathComponents.count == 2 && pathComponents[0] == "Contents" {
                 if pathComponents[1] == "Info.plist" {
                     let dict = try? PropertyListSerialization.propertyList(from: file.contents, format: nil)
-                    print(dict)
+                    processXcodeInfoPlist(dict)
                 } else if pathComponents[1] == "version.plist" {
                     let dict = try? PropertyListSerialization.propertyList(from: file.contents, format: nil)
-                    print(dict)
+                    processXcodeVersionPlist(dict)
                 } else {
                     print(pathComponents)
                 }
@@ -151,9 +146,9 @@ class ExtractionDelegate: UnxipDelegate, @unchecked Sendable {
                 if pathComponents[0] == "Contents" && pathComponents[1] == "Developer" && pathComponents[2] == "Toolchains" && pathComponents[3] == "XcodeDefault.xctoolchain" && pathComponents[4] == "usr" && pathComponents[5] == "bin" {
                     
                     if pathComponents[6] == "clang" {
-                        readClangInfo(from: file.contents, at: pathComponents)
+                        readClangInfo(from: file.contents)
                     } else if pathComponents[6] == "swift" {
-                        readSwiftInfo(from: file.contents, at: pathComponents)
+                        readSwiftInfo(from: file.contents)
                     }
                     
                 }
@@ -161,45 +156,62 @@ class ExtractionDelegate: UnxipDelegate, @unchecked Sendable {
         }
     }
     
-    private let clangVersion = Regex(#"clang version ([\d\.]+)"#)
+    private func processXcodeInfoPlist(_ plist: Any?) {
+        guard let info = plist as? Dictionary<String, Any> else { return }
+        xcode?.version = info["CFBundleShortVersionString"] as? String ?? "UNKNOWN"
+        xcode?.minOS = info["LSMinimumSystemVersion"] as? String ?? "UNKNOWN"
+    }
+    
+    private func processXcodeVersionPlist(_ plist: Any?) {
+        guard let info = plist as? Dictionary<String, Any> else { return }
+        xcode?.build = info["ProductBuildVersion"] as? String ?? "UNKNOWN"
+    }
+    
+    private let clangVersion = Regex(#"(Clang )?version (\d{2}\.\d+\.\d+)"#)
     private let clangBuild = Regex(#"clang-([\d\.]+)"#)
-    private func readClangInfo(from data: Data, at path: Array<Substring>) {
+    private func readClangInfo(from data: Data) {
         let strings = readStrings(from: data)
+        print("Found \(strings.count) clang strings")
         
         var version: String?
         var build: String?
         
         for string in strings {
-            if let m = clangVersion.firstMatch(in: string) {
-                version = m[1]
-            } else if let m = clangBuild.firstMatch(in: string) {
-                build = m[1]
+            if version == nil {
+                if let m = clangVersion.firstMatch(in: string) { version = m[2] }
             }
+            if build == nil {
+                if let m = clangBuild.firstMatch(in: string) { build = m[1] }
+            }
+            if version != nil && build != nil { break }
         }
         
         if let v = version, let b = build {
-            xcode?.tools.append(Tool(name: "Clang", path: path.map(String.init), build: b, version: v))
+            xcode?.tools.append(Tool(name: "Clang", build: b, version: v))
         }
     }
     
-    private let swiftVersion = Regex(#"Swift version ([\d\.]+)"#)
+    private let swiftVersion = Regex(#"(Swift )?version ([\d\.]+)"#)
     private let swiftBuild = Regex(#"swiftlang-([\d\.]+)"#)
-    private func readSwiftInfo(from data: Data, at path: Array<Substring>) {
+    private func readSwiftInfo(from data: Data) {
         let strings = readStrings(from: data)
+        print("Found \(strings.count) swift strings")
         
         var version: String?
         var build: String?
         
         for string in strings {
-            if let m = swiftVersion.firstMatch(in: string) {
-                version = m[1]
-            } else if let m = swiftBuild.firstMatch(in: string) {
-                build = m[1]
+            if version == nil {
+                if let m = swiftVersion.firstMatch(in: string) { version = m[2] }
             }
+            if build == nil {
+                if let m = swiftBuild.firstMatch(in: string) { build = m[1] }
+            }
+            if version != nil && build != nil { break }
         }
         
         if let v = version, let b = build {
-            xcode?.tools.append(Tool(name: "Swift", path: path.map(String.init), build: b, version: v))
+            xcode?.tools.append(Tool(name: "Swift", build: b, version: v))
         }
     }
     
@@ -232,8 +244,7 @@ class ExtractionDelegate: UnxipDelegate, @unchecked Sendable {
     
     struct Tool {
         let name: String
-        let path: Array<String>
-        var build: String?
-        var version: String?
+        let build: String
+        let version: String
     }
 }
