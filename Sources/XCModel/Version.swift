@@ -14,11 +14,11 @@ public struct Version: Codable {
     public let build: String?
     public let release: Release
     
-    public init(_ build: String, _ number: String? = nil, _ release: Release = .gm) {
+    public init(_ build: String, _ number: String? = nil, _ release: Release = .release) {
         self.number = number; self.build = build; self.release = release
     }
     
-    public init(number: String, _ build: String? = nil, _ release: Release = .gm) {
+    public init(number: String, _ build: String? = nil, _ release: Release = .release) {
         self.number = number; self.build = build; self.release = release
     }
 }
