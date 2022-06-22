@@ -22,6 +22,15 @@ Xcode(version: V("<#build number#>", "<#version number#>", .<#release type#>),
 
 let xcodes14: Array<Xcode> = [
     
+    Xcode(version: V("14A5229c", "14.0", .beta(2)),
+          date: (2022, 06, 22),
+          requires: "12.4",
+          sdks: SDKs(macOS: V("22A5286g", "13.0"), iOS: V("20A5303f", "16.0"), watchOS: V("20R5307f", "9.0"), tvOS: V("20J5319f", "16.0")),
+          compilers: Compilers(clang: V("1400.0.17.3.3", "14.0.0"), swift: V("5.7.0.113.202", "5.7")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_14_beta_2/Xcode_14_beta_2.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")),
+          checksums: Checksums(sha1: "caa14e9e8f171aa6ab7ff65bdfb416a0d88a1ab3")),
+     
     Xcode(version: V("14A5228q", "14.0", .beta(1)),
           date: (2022, 06, 06),
           requires: "12.4",
