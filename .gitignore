@@ -69,3 +69,9 @@ xcuserdata
 .DS_Store
 Sources/.DS_Store
 .swiftpm
+
+# ReleaseNotes
+# ignoring the binary and output folder
+
+ReleaseNotes/output 
+ReleaseNotes/scrape-release-notes
