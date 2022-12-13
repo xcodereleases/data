@@ -22,6 +22,34 @@ Xcode(version: V("<#build number#>", "<#version number#>", .<#release type#>),
 
 let xcodes14: Array<Xcode> = [
     
+    Xcode(version: V("14C18", "14.2", .release),
+          date: (2022, 12, 13),
+          requires: "12.5",
+          sdks: SDKs(macOS: V("22C55", "13.1"), iOS: V("20C52", "16.2"), watchOS: V("20S71", "9.1"), tvOS: V("20K67", "16.1")),
+          compilers: Compilers(clang: V("1400.0.29.202", "14.0.0"), swift: V("5.7.2.135.5", "5.7.2")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_14.2/Xcode_14.2.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes")),
+          checksums: Checksums(sha1: "6ca65c91a92e74e7419371d94177159c6477e086")),
+    
+    Xcode(version: V("14C18", "14.2", .rc(1)),
+          date: (2022, 12, 07),
+          requires: "12.5",
+          sdks: SDKs(macOS: V("22C55", "13.1"), iOS: V("20C52", "16.2"), watchOS: V("20S71", "9.1"), tvOS: V("20K67", "16.1")),
+          compilers: Compilers(clang: V("1400.0.29.202", "14.0.0"), swift: V("5.7.2.135.5", "5.7.2")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_14.2_Release_Candidate/Xcode_14.2_Release_Candidate.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes")),
+          checksums: Checksums(sha1: "6ca65c91a92e74e7419371d94177159c6477e086")),
+     
+    
+    Xcode(version: V("14B47b", "14.1", .release),
+          date: (2022, 11, 01),
+          requires: "12.5",
+          sdks: SDKs(macOS: V("22A372", "13.0"), iOS: V("20B71", "16.1"), watchOS: V("20S71", "9.1"), tvOS: V("20K67", "16.1")),
+          compilers: Compilers(clang: V("1400.0.29.202", "14.0.0"), swift: V("5.7.1.135.3", "5.7.1")),
+          links: Links(download: Link("https://download.developer.apple.com/Developer_Tools/Xcode_14.1/Xcode_14.1.xip"),
+                       notes: Link("https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")),
+          checksums: Checksums(sha1: "06cbec1c0adcbc04b910d1a55892a09f0793a2a1")),
+    
     Xcode(version: V("14B47b", "14.1", .rc(2)),
           date: (2022, 10, 24),
           requires: "12.5",
