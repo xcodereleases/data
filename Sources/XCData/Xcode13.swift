@@ -8,17 +8,6 @@
 
 import Foundation
 import XCModel
-/*
-Xcode(version: V("<#build number#>", "<#version number#>", .<#release type#>),
-      date: (<#year#>, <#month#>, <#day#>),
-      requires: "<#required macOS version#>",
-      sdks: SDKs(macOS: V("<#macOS SDK build#>", "<#macOS SDK version#>"), iOS: V("<#iOS SDK build#>", "<#iOS SDK version#>"), watchOS: V("<#watchOS SDK build#>", "<#watchOS SDK version#>"), tvOS: V("<#tvOS SDK build#>", "<#tvOS SDK version#>")),
-      compilers: Compilers(clang: V("<#clang build#>", "<#clang version#>"), swift: V("<#swift build#>", "<#swift version#>")),
-      links: Links(download: Link("<#direct download link#>"),
-                   notes: Link("<#direct release notes link#>")),
-      checksums: Checksums(sha1: "<#shasum checksum#>")),
- 
- */
 
 let xcodes13: Array<Xcode> = [
     Xcode(version: V("13F100", "13.4.1", .release),
