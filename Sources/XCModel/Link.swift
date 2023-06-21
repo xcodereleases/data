@@ -28,6 +28,13 @@ public struct Link: Codable {
         self.role = .releaseNotes
     }
     
+    public init(runtime platform: Platform, url: String, checksum: Checksum? = nil) {
+        self.url = URL(string: url)!
+        self.sizeMB = nil
+        self.checksums = checksum.map { [$0] }
+        self.role = .simulatorRuntime(platform)
+    }
+    
     public init(url: URL, sizeMB: Int?, checksums: [Checksum], role: Role) {
         self.url = url
         self.sizeMB = sizeMB
