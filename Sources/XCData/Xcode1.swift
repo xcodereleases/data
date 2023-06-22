@@ -11,7 +11,7 @@ import XCModel
 let xcodes1: Array<Xcode> = [
     
     Xcode(name: "Xcode Tools",
-          version: V("7K571", "1.5"),
+          version: V("7K571", "1.5", .release),
           date: (2004, 08, 04),
           requires: "10.3",
           links: [
@@ -21,19 +21,17 @@ let xcodes1: Array<Xcode> = [
           ]),
     
     Xcode(name: "Xcode Tools",
-          version: V("7K249", "1.2"),
+          version: V("7K249", "1.2", .release),
           date: (2004, 04, 22),
-          requires: "10.3",
-          links: nil),
+          requires: "10.3"),
     
     Xcode(name: "Xcode Tools",
-          version: V("7K224", "1.1"),
+          version: V("7K224", "1.1", .release),
           date: (2003, 12, 19),
-          requires: "10.3",
-          links: nil),
+          requires: "10.3"),
     
     Xcode(name: "Xcode Tools",
-          version: V("7B85", "1.0"),
+          version: V("7B85", "1.0", .release),
           date: (2003, 09, 28),
           requires: "10.3",
           sdks: [.macOS(V("5S60", "10.1.5")), .macOS(V("6L60", "10.2.6")), .macOS(V("7B85", "10.3"))],

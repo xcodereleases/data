@@ -9,7 +9,8 @@
 import Foundation
 
 public typealias V = Version
-public struct Version: Codable {
+
+public struct Version: Codable, Equatable, Hashable {
     public let number: String?
     public let build: String?
     public let release: Release?

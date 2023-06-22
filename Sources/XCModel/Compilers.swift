@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Compiler: Codable {
+public struct Compiler: Codable, Equatable, Hashable {
     
     public static func gcc(_ version: Version) -> Compiler {
         return Compiler(name: .gcc, version: version)
@@ -30,7 +30,7 @@ public struct Compiler: Codable {
         return Compiler(name: .swift, version: version)
     }
     
-    public struct Name: Codable {
+    public struct Name: Codable, Equatable, Hashable {
         public static let gcc = Name(rawValue: "gcc")
         public static let llvm_gcc = Name(rawValue: "llvm_gcc")
         public static let llvm = Name(rawValue: "llvm")
@@ -60,29 +60,5 @@ public struct Compiler: Codable {
     public init(name: Name, version: Version) {
         self.name = name
         self.version = version
-    }
-}
-
-public struct Compilers: Codable {
-    public let gcc: Array<Version>?
-    public let llvm_gcc: Array<Version>?
-    public let llvm: Array<Version>?
-    public let clang: Array<Version>?
-    public let swift: Array<Version>?
-    
-    public init(gcc: Version? = nil, llvm_gcc: Version? = nil, llvm: Version? = nil, clang: Version? = nil, swift: Version? = nil) {
-        self.gcc = gcc.map { [$0] }
-        self.llvm_gcc = llvm_gcc.map { [$0] }
-        self.llvm = llvm.map { [$0] }
-        self.clang = clang.map { [$0] }
-        self.swift = swift.map { [$0] }
-    }
-    
-    public init(gcc: Array<Version>?, llvm_gcc: Array<Version>?, llvm: Array<Version>?, clang: Array<Version>?, swift: Array<Version>?) {
-        self.gcc = gcc?.isEmpty == true ? nil : gcc
-        self.llvm_gcc = llvm_gcc?.isEmpty == true ? nil : llvm_gcc
-        self.llvm = llvm?.isEmpty == true ? nil : llvm
-        self.clang = clang?.isEmpty == true ? nil : clang
-        self.swift = swift?.isEmpty == true ? nil : swift
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Platform: Codable {
+public struct Platform: Codable, Equatable, Hashable {
     public static let macOS = Platform(rawValue: "macOS")
     public static let iOS = Platform(rawValue: "iOS")
     public static let watchOS = Platform(rawValue: "watchOS")

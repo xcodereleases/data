@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes5: Array<Xcode> = [
 
-    Xcode(version: V("5B1008", "5.1.1"),
+    Xcode(version: V("5B1008", "5.1.1", .release),
           date: (2014, 04, 10),
           requires: "10.8",
           compilers: [.llvm(V(number: "3.4")), .clang(V("503.0.40", "5.1"))],
@@ -21,7 +21,7 @@ let xcodes5: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW504")
           ]),
 
-    Xcode(version: V("5B130a", "5.1"),
+    Xcode(version: V("5B130a", "5.1", .release),
           date: (2014, 03, 10),
           requires: "10.8",
           compilers: [.llvm(V(number: "3.4")), .clang(V("503.0.38", "5.1"))],
@@ -51,7 +51,7 @@ let xcodes5: Array<Xcode> = [
           date: (2013, 11, 18),
           requires: "10.8"),
 
-    Xcode(version: V("5A3005a", "5.0.2"),
+    Xcode(version: V("5A3005a", "5.0.2", .release),
           date: (2013, 11, 11),
           requires: "10.8",
           compilers: [.llvm(V(number: "3.3")), .clang(V("500.2.79", "5.0"))],
@@ -61,7 +61,7 @@ let xcodes5: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW536")
           ]),
 
-    Xcode(version: V("5A2053", "5.0.1"),
+    Xcode(version: V("5A2053", "5.0.1", .release),
           date: (2013, 10, 22),
           requires: "10.8",
           compilers: [.llvm(V(number: "3.3")), .clang(V("500.2.79", "5.0"))],
@@ -75,7 +75,7 @@ let xcodes5: Array<Xcode> = [
           date: (2013, 10, 03),
           requires: "10.8"),
 
-    Xcode(version: V("5A1413", "5.0"),
+    Xcode(version: V("5A1413", "5.0", .release),
           date: (2013, 09, 16),
           requires: "10.8",
           compilers: [.llvm(V(number: "3.3")), .clang(V("500.2.75", "5.0"))],

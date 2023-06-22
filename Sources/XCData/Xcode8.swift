@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes8: Array<Xcode> = [
 
-    Xcode(version: V("8E3004b", "8.3.3"),
+    Xcode(version: V("8E3004b", "8.3.3", .release),
           date: (2017, 06, 05),
           requires: "10.12",
           sdks: [.macOS(V("16E185")), .iOS(V("14E8301")), .watchOS(V("14V243")), .tvOS(V("14W260"))],
@@ -22,7 +22,7 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW870")
           ]),
 
-    Xcode(version: V("8E2002", "8.3.2"),
+    Xcode(version: V("8E2002", "8.3.2", .release),
           date: (2017, 04, 18),
           requires: "10.12",
           sdks: [.macOS(V("16E185")), .iOS(V("14E269")), .watchOS(V("14V243")), .tvOS(V("14W260"))],
@@ -33,7 +33,7 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW853")
           ]),
 
-    Xcode(version: V("8E1000a", "8.3.1"),
+    Xcode(version: V("8E1000a", "8.3.1", .release),
           date: (2017, 04, 06),
           requires: "10.12",
           sdks: [.macOS(V("16E185")), .iOS(V("14E269")), .watchOS(V("14V243")), .tvOS(V("14W260"))],
@@ -44,7 +44,7 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW848")
           ]),
 
-    Xcode(version: V("8E162", "8.3"),
+    Xcode(version: V("8E162", "8.3", .release),
           date: (2017, 03, 27),
           requires: "10.12",
           sdks: [.macOS(V("16E185")), .iOS(V("14E269")), .watchOS(V("14V243")), .tvOS(V("14W260"))],
@@ -80,7 +80,7 @@ let xcodes8: Array<Xcode> = [
           requires: "10.12",
           sdks: [.macOS(V("16E144e")), .iOS(V("14E5230d")), .watchOS(V("14V5205c")), .tvOS(V("14W5222c"))]),
 
-    Xcode(version: V("8C1002", "8.2.1"),
+    Xcode(version: V("8C1002", "8.2.1", .release),
           date: (2016, 12, 19),
           requires: "10.11.5",
           sdks: [.macOS(V("16C58")), .iOS(V("14C89")), .watchOS(V("14S471a")), .tvOS(V("14U591"))],
@@ -91,7 +91,7 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW157")
           ]),
 
-    Xcode(version: V("8C38", "8.2"),
+    Xcode(version: V("8C38", "8.2", .release),
           date: (2016, 12, 12),
           requires: "10.11.5",
           sdks: [.macOS(V("16C58")), .iOS(V("14C89")), .watchOS(V("14S471a")), .tvOS(V("14U591"))],
@@ -112,7 +112,7 @@ let xcodes8: Array<Xcode> = [
           requires: "10.11.5",
           sdks: [.macOS(V("16C32c")), .iOS(V("14C5062c")), .watchOS(V("14S471a")), .tvOS(V("14U5565c"))]),
 
-    Xcode(version: V("8B62", "8.1"),
+    Xcode(version: V("8B62", "8.1", .release),
           date: (2016, 10, 27),
           requires: "10.11.5",
           sdks: [.macOS(V("16B2649")), .iOS(V("14B72")), .watchOS(V("14S471a")), .tvOS(V("14T328"))],
@@ -143,7 +143,7 @@ let xcodes8: Array<Xcode> = [
           requires: "10.11.5",
           sdks: [.macOS(V("16A300")), .iOS(V("14B54")), .watchOS(V("14S452")), .tvOS(V("14T328"))]),
 
-    Xcode(version: V("8A218a", "8.0"),
+    Xcode(version: V("8A218a", "8.0", .release),
           date: (2016, 09, 13),
           requires: "10.11.5",
           sdks: [.macOS(V("16A300")), .iOS(V("14A345")), .watchOS(V("14S326")), .tvOS(V("14T328"))],

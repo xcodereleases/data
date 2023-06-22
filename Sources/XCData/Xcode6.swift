@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes6: Array<Xcode> = [
     
-    Xcode(version: V("6E35b", "6.4"),
+    Xcode(version: V("6E35b", "6.4", .release),
           date: (2015, 06, 30),
           requires: "10.10",
           sdks: [.macOS(V("13F34")), .macOS(V("14D125")), .iOS(V("12H141"))],
@@ -27,7 +27,7 @@ let xcodes6: Array<Xcode> = [
           requires: "10.10",
           sdks: [.macOS(V("13F34")), .macOS(V("14D125")), .iOS(V("12H4125a"))]),
 
-    Xcode(version: V("6D2105", "6.3.2"),
+    Xcode(version: V("6D2105", "6.3.2", .release),
           date: (2015, 05, 18),
           requires: "10.10",
           sdks: [.macOS(V("13F34")), .macOS(V("14D125")), .iOS(V("12F69"))],
@@ -46,7 +46,7 @@ let xcodes6: Array<Xcode> = [
           date: (2015, 04, 27),
           requires: "10.10"),
 
-    Xcode(version: V("6D1002", "6.3.1"),
+    Xcode(version: V("6D1002", "6.3.1", .release),
           date: (2015, 04, 21),
           requires: "10.10",
           sdks: [.macOS(V("13F34")), .macOS(V("14D125")), .iOS(V("12F69"))],
@@ -61,7 +61,7 @@ let xcodes6: Array<Xcode> = [
           date: (2015, 04, 13),
           requires: "10.10"),
 
-    Xcode(version: V("6D570", "6.3"),
+    Xcode(version: V("6D570", "6.3", .release),
           date: (2015, 04, 08),
           requires: "10.10",
           sdks: [.macOS(V("13F34")), .macOS(V("14D125")), .iOS(V("12F69"))],
@@ -80,7 +80,7 @@ let xcodes6: Array<Xcode> = [
           date: (2015, 03, 12),
           requires: "10.10"),
 
-    Xcode(version: V("6C131e", "6.2"),
+    Xcode(version: V("6C131e", "6.2", .release),
           date: (2015, 03, 09),
           requires: "10.9.4",
           sdks: [.macOS(V("13F26")), .macOS(V("14A383")), .iOS(V("12D508"))],
@@ -115,7 +115,7 @@ let xcodes6: Array<Xcode> = [
           date: (2014, 12, 10),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A2008a", "6.1.1"),
+    Xcode(version: V("6A2008a", "6.1.1", .release),
           date: (2014, 12, 02),
           requires: "10.9.4",
           sdks: [.macOS(V("13F26")), .macOS(V("14A382")), .iOS(V("12A365"))],
@@ -134,7 +134,7 @@ let xcodes6: Array<Xcode> = [
           date: (2014, 11, 14),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A1052d", "6.1"),
+    Xcode(version: V("6A1052d", "6.1", .release),
           date: (2014, 10, 20),
           requires: "10.9.4",
           compilers: [.llvm(V(number: "3.5")), .clang(V("600.0.54", "6.0")), .swift(V("600.0.54.20", "1.1"))],
@@ -152,7 +152,7 @@ let xcodes6: Array<Xcode> = [
           date: (2014, 10, 06),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A317", "6.0.1"),
+    Xcode(version: V("6A317", "6.0.1", .release),
           date: (2014, 09, 17),
           requires: "10.9.4",
           sdks: [.macOS(V("13F26")), .iOS(V("12A365"))],
@@ -167,7 +167,7 @@ let xcodes6: Array<Xcode> = [
           date: (2014, 09, 09),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A313", "6.0"),
+    Xcode(version: V("6A313", "6.0", .release),
           date: (2014, 09, 09),
           requires: "10.9.4",
           links: [

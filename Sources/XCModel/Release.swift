@@ -8,15 +8,25 @@
 
 import Foundation
 
-public enum Release: Codable {
+public enum Release: Equatable, Hashable {
     
-    public enum CodingKeys: String, CodingKey {
-        case gm, gmSeed, rc, beta, dp, release
-    }
-    
+    @available(*, deprecated, message: "Use isReleased instead")
     public var isGM: Bool {
         guard case .gm = self else { return false }
         return true
+    }
+    
+    public var isReleased: Bool {
+        if case .release = self { return true }
+        if case .gm = self { return true }
+        return false
+    }
+    
+    public var isBeta: Bool { isReleased == false }
+    
+    public var isReleaseCandidate: Bool {
+        if case .rc = self { return true }
+        return false
     }
     
     case gm
@@ -25,6 +35,14 @@ public enum Release: Codable {
     case beta(Int)
     case dp(Int)
     case release
+    
+}
+
+extension Release: Codable {
+    
+    private enum CodingKeys: String, CodingKey {
+        case gm, gmSeed, rc, beta, dp, release
+    }
     
     public init(from decoder: Decoder) throws {
         let key: CodingKeys

@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes2: Array<Xcode> = [
     
-    Xcode(version: V("8M2558", "2.5"),
+    Xcode(version: V("8M2558", "2.5", .release),
           date: (2007, 10, 29),
           requires: "10.4",
           compilers: [.gcc(V("5370", "4.0"))],
@@ -21,7 +21,7 @@ let xcodes2: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_2.5_developer_tools/relnotesxcode25.pdf")
           ]),
     
-    Xcode(version: V("8M1910", "2.4.1"),
+    Xcode(version: V("8M1910", "2.4.1", .release),
           date: (2006, 10, 30),
           requires: "10.4",
           links: [
@@ -30,7 +30,7 @@ let xcodes2: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_2.4.1/xcode_2.4.1.readme.pdf")
           ]),
     
-    Xcode(version: V("8K1079", "2.4"),
+    Xcode(version: V("8K1079", "2.4", .release),
           date: (2006, 08, 17),
           requires: "10.4",
           links: [
@@ -39,7 +39,7 @@ let xcodes2: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_2.4/xcode_2.4_readme.pdf")
           ]),
     
-    Xcode(version: V("8M1780", "2.3"),
+    Xcode(version: V("8M1780", "2.3", .release),
           date: (2006, 05, 23),
           requires: "10.4",
           links: [
@@ -49,7 +49,7 @@ let xcodes2: Array<Xcode> = [
           ]),
     
     Xcode(name: "Xcode Tools",
-          version: V("8G1165", "2.2.1"),
+          version: V("8G1165", "2.2.1", .release),
           date: (2006, 01, 13),
           requires: "10.4",
           links: [
@@ -59,17 +59,17 @@ let xcodes2: Array<Xcode> = [
           ]),
     
     Xcode(name: "Xcode Tools",
-          version: V("8M654", "2.2"),
+          version: V("8M654", "2.2", .release),
           date: (2005, 11, 10),
           requires: "10.4"),
     
     Xcode(name: "Xcode Tools",
-          version: V("8B1024", "2.1"),
+          version: V("8B1024", "2.1", .release),
           date: (2005, 06, 06),
           requires: "10.4"),
     
     Xcode(name: "Xcode Tools",
-          version: V("8A428", "2.0"),
+          version: V("8A428", "2.0", .release),
           date: (2005, 04, 29),
           requires: "10.4",
           sdks: [.macOS(V(number: "10.2")), .macOS(V(number: "10.3")), .macOS(V(number: "10.4"))])

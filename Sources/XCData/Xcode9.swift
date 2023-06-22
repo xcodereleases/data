@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes9: Array<Xcode> = [
     
-    Xcode(version: V("9F2000", "9.4.1"),
+    Xcode(version: V("9F2000", "9.4.1", .release),
           date: (2018, 06, 19),
           requires: "10.13.2",
           sdks: [.macOS(V("17E189", "10.13.4")), .iOS(V("15F79", "11.4")), .watchOS(V("15T212", "4.3")), .tvOS(V("15L576", "11.4"))],
@@ -22,7 +22,7 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/archive/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
-    Xcode(version: V("9F1027a", "9.4"),
+    Xcode(version: V("9F1027a", "9.4", .release),
           date: (2018, 05, 29),
           requires: "10.13.2",
           sdks: [.macOS(V("17E189", "10.13.4")), .iOS(V("15F79", "11.4")), .watchOS(V("15T212", "4.3")), .tvOS(V("15L576", "11.4"))],
@@ -56,7 +56,7 @@ let xcodes9: Array<Xcode> = [
           ]),
     
     
-    Xcode(version: V("9E501", "9.3.1"),
+    Xcode(version: V("9E501", "9.3.1", .release),
           date: (2018, 05, 10),
           requires: "10.13.2",
           sdks: [.macOS(V("17E189", "10.13.4")), .iOS(V("15E217", "11.3")), .watchOS(V("15T212", "4.3")), .tvOS(V("15L211", "11.3"))],
@@ -68,7 +68,7 @@ let xcodes9: Array<Xcode> = [
           ]),
     
 
-    Xcode(version: V("9E145", "9.3"),
+    Xcode(version: V("9E145", "9.3", .release),
           date: (2018, 03, 29),
           requires: "10.13.2",
           sdks: [.macOS(V("17E189", "10.13.4")), .iOS(V("15E217", "11.3")), .watchOS(V("15T212", "4.3")), .tvOS(V("15L211", "11.3"))],
@@ -121,7 +121,7 @@ let xcodes9: Array<Xcode> = [
                  checksum: .sha1("3d1f4918810b173ff205b64a2006bb163d9cf5b1"))
           ]),
 
-    Xcode(version: V("9C40b", "9.2"),
+    Xcode(version: V("9C40b", "9.2", .release),
           date: (2017, 12, 04),
           requires: "10.12.6",
           sdks: [.macOS(V("17C76")), .iOS(V("15C107")), .watchOS(V("15S100")), .tvOS(V("15K104"))],
@@ -152,7 +152,7 @@ let xcodes9: Array<Xcode> = [
                  checksum: .sha1("22b1a95b67ea688781a8c128bb047cc3f8d954b1"))
           ]),
 
-    Xcode(version: V("9B55", "9.1"),
+    Xcode(version: V("9B55", "9.1", .release),
           date: (2017, 10, 31),
           requires: "10.12.6",
           sdks: [.macOS(V("17B41")), .iOS(V("15B87")), .watchOS(V("15R844")), .tvOS(V("15J580"))],
@@ -163,7 +163,7 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW881")
           ]),
 
-    Xcode(version: V("9A1004", "9.0.1"),
+    Xcode(version: V("9A1004", "9.0.1", .release),
           date: (2017, 10, 15),
           requires: "10.12.6",
           sdks: [.macOS(V("17A360")), .iOS(V("15A372")), .watchOS(V("15R372")), .tvOS(V("15J380"))],
@@ -194,7 +194,7 @@ let xcodes9: Array<Xcode> = [
                  checksum: .sha1("2d282eac5bbef51683fc857311ef900e8ca1fcf4"))
           ]),
 
-    Xcode(version: V("9A235", "9.0"),
+    Xcode(version: V("9A235", "9.0", .release),
           date: (2017, 09, 12),
           requires: "10.12.6",
           sdks: [.macOS(V("17A360")), .iOS(V("15A372")), .watchOS(V("15R372")), .tvOS(V("15J380"))],

@@ -11,7 +11,7 @@ import XCModel
 
 let xcodes7: Array<Xcode> = [
 
-    Xcode(version: V("7D1014", "7.3.1"),
+    Xcode(version: V("7D1014", "7.3.1", .release),
           date: (2016, 05, 03),
           requires: "10.11",
           sdks: [.macOS(V("15E60")), .iOS(V("13E230")), .watchOS(V("13V143")), .tvOS(V("13Y227"))],
@@ -27,7 +27,7 @@ let xcodes7: Array<Xcode> = [
           requires: "10.11",
           sdks: [.macOS(V("15E60")), .iOS(V("13E230")), .watchOS(V("13V143")), .tvOS(V("13Y227"))]),
 
-    Xcode(version: V("7D175", "7.3"),
+    Xcode(version: V("7D175", "7.3", .release),
           date: (2016, 03, 21),
           requires: "10.11",
           sdks: [.macOS(V("15E60")), .iOS(V("13E230")), .watchOS(V("13V143")), .tvOS(V("13Y227"))],
@@ -53,7 +53,7 @@ let xcodes7: Array<Xcode> = [
           requires: "10.11",
           sdks: [.macOS(V("15E39c")), .iOS(V("13E5200d")), .watchOS(V("13V5117c")), .tvOS(V("13Y5198c"))]),
 
-    Xcode(version: V("7C1002", "7.2.1"),
+    Xcode(version: V("7C1002", "7.2.1", .release),
           date: (2016, 02, 02),
           requires: "10.10.5",
           sdks: [.macOS(V("15C43")), .iOS(V("13C75")), .watchOS(V("13S660")), .tvOS(V("13U79"))],
@@ -74,7 +74,7 @@ let xcodes7: Array<Xcode> = [
           requires: "10.11",
           sdks: [.macOS(V("15E27c")), .iOS(V("13E5181d")), .watchOS(V("13V5098e")), .tvOS(V("13Y5179e"))]),
 
-    Xcode(version: V("7C68", "7.2"),
+    Xcode(version: V("7C68", "7.2", .release),
           date: (2015, 12, 08),
           requires: "10.10.5",
           sdks: [.macOS(V("15C43")), .iOS(V("13C75")), .watchOS(V("13S660")), .tvOS(V("13U78"))],
@@ -85,7 +85,7 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW270")
           ]),
 
-    Xcode(version: V("7B1005", "7.1.1"),
+    Xcode(version: V("7B1005", "7.1.1", .release),
           date: (2015, 11, 05),
           requires: "10.10.5",
           sdks: [.macOS(V("15A278")), .iOS(V("13B137")), .watchOS(V("13S343")), .tvOS(V("13T393"))],
@@ -115,7 +115,7 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.5",
           sdks: [.macOS(V("15C27b")), .iOS(V("13C5055d")), .watchOS(V("13S343")), .tvOS(V("13T393"))]),
 
-    Xcode(version: V("7B91b", "7.1"),
+    Xcode(version: V("7B91b", "7.1", .release),
           date: (2015, 10, 21),
           requires: "10.10.5",
           sdks: [.macOS(V("15A278")), .iOS(V("13B137")), .watchOS(V("13S343")), .tvOS(V("13T393"))],
@@ -131,7 +131,7 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.5",
           sdks: [.macOS(V("15A278")), .iOS(V("13B134")), .watchOS(V("13S343")), .tvOS(V("13T5379f"))]),
 
-    Xcode(version: V("7A1001", "7.0.1"),
+    Xcode(version: V("7A1001", "7.0.1", .release),
           date: (2015, 09, 28),
           requires: "10.10.3",
           sdks: [.macOS(V("15A278")), .iOS(V("13A340")), .watchOS(V("13S343"))],
@@ -147,7 +147,7 @@ let xcodes7: Array<Xcode> = [
           requires: "10.10.5",
           sdks: [.macOS(V("15A278")), .iOS(V("13B5119e")), .watchOS(V("13S343")), .tvOS(V("13T5365h"))]),
 
-    Xcode(version: V("7A220", "7.0"),
+    Xcode(version: V("7A220", "7.0", .release),
           date: (2015, 09, 16),
           requires: "10.10.3",
           sdks: [.macOS(V("15A278")), .iOS(V("13A340")), .watchOS(V("13S343"))],
