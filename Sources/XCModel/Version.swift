@@ -12,13 +12,13 @@ public typealias V = Version
 public struct Version: Codable {
     public let number: String?
     public let build: String?
-    public let release: Release
+    public let release: Release?
     
-    public init(_ build: String, _ number: String? = nil, _ release: Release = .release) {
+    public init(_ build: String, _ number: String? = nil, _ release: Release? = nil) {
         self.number = number; self.build = build; self.release = release
     }
     
-    public init(number: String, _ build: String? = nil, _ release: Release = .release) {
+    public init(number: String, _ build: String? = nil, _ release: Release? = nil) {
         self.number = number; self.build = build; self.release = release
     }
 }
