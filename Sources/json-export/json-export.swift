@@ -65,7 +65,39 @@ struct JSONExport: ParsableCommand {
     }
     
     func generateRSS(_ name: String, xcodes: XcodeReleases) throws {
+        let pubDate = DateFormatter()
+        pubDate.locale = Locale(identifier: "en_US_POSIX")
+        pubDate.timeZone = TimeZone(secondsFromGMT: 0)
+        pubDate.dateFormat = "EEE, d MMM y HH:mm:ss Z"
         
+        var rss = """
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+ <atom:link href="https://xcodereleases.com/api/\(name).rss" rel="self" type="application/rss+xml" />
+ <title>Xcode Releases - \(name.capitalized(with: nil)) Xcode Versions</title>
+ <description>An updating RSS feed of the most recent releases of Xcode</description>
+ <link>https://xcodereleases.com</link>
+ <pubDate>\(pubDate.string(from: Date()))</pubDate>
+ <ttl>60</ttl>
+
+"""
+        for xcode in xcodes.xcodes {
+            rss += xcode.rssItem
+        }
+        
+        rss += """
+</channel>
+</rss>
+"""
+        
+        let data = Data(rss.utf8)
+        
+        let file = URL(fileURLWithPath: "api/\(name).rss", relativeTo: siteURL)
+        
+        print("Writing:", file.absoluteURL.path)
+        
+        try data.write(to: file)
     }
     
 }
