@@ -40,7 +40,8 @@ extension Xcode {
                   supportedOSRange: VersionRange(minimum: Version(number: requires, build: nil), maximum: nil),
                   sdks: sdks,
                   compilers: compilers,
-                  links: links)
+                  links: links,
+                  isCurrent: false)
         
     }
     

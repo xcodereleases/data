@@ -24,10 +24,11 @@ struct JSONExport: ParsableCommand {
     }
     
     func run() throws {
-        try generateOldStyleData()
         
         let all = XcodeReleases(xcodes: Xcode.allVersions)
-        let released = XcodeReleases(xcodes: Xcode.allVersions.filter { $0.releaseKind.isReleased == true })
+        let released = XcodeReleases(xcodes: all.xcodes.filter { $0.releaseKind.isReleased == true })
+        
+        try generateOldStyleData(from: all.xcodes)
         
         try generateJSON("all", xcodes: all)
         try generateRSS("all", xcodes: all)
@@ -36,9 +37,8 @@ struct JSONExport: ParsableCommand {
         try generateRSS("released", xcodes: released)
     }
     
-    func generateOldStyleData() throws {
-        let all = Xcode.allVersions
-        let oldStyleJSON = all.map(\.oldStyleDictionary)
+    func generateOldStyleData(from xcodes: Array<Xcode>) throws {
+        let oldStyleJSON = xcodes.map(\.oldStyleDictionary)
         var options: JSONSerialization.WritingOptions = [.sortedKeys, .withoutEscapingSlashes]
         if pretty { options.insert(.prettyPrinted) }
         let oldStyleData = try JSONSerialization.data(withJSONObject: oldStyleJSON, options: options)

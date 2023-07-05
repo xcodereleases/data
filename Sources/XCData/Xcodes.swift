@@ -11,6 +11,20 @@ import XcodeReleases
 
 extension Xcode {
     
+    public var displayName: String {
+        let suffix: String
+        switch releaseKind.name {
+            case .beta: suffix = " Beta \(releaseKind.number!)"
+            case .developerPreview: suffix = " DP \(releaseKind.number!)"
+            case .gmSeed: suffix = " GM Seed \(releaseKind.number!)"
+            case .releaseCandidate: suffix = " RC \(releaseKind.number!)"
+            case .release: suffix = ""
+            case .gm: suffix = ""
+            default: suffix = ""
+        }
+        return "\(name) \(version.number!)\(suffix)"
+    }
+    
     private var osVersion: OperatingSystemVersion {
         guard let pieces = self.version.number?.split(separator: ".") else {
             return OperatingSystemVersion(majorVersion: 0, minorVersion: 0, patchVersion: 0)
@@ -46,7 +60,10 @@ extension Xcode {
         var everything = xcodes15 + xcodes14 + xcodes13 + xcodes12 + xcodes11 + xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
         
         var groups = Dictionary<Int, Array<Xcode>>()
-        for xcode in everything {
+        for index in everything.indices {
+            everything[index].isCurrent = false
+            
+            let xcode = everything[index]
             let version = xcode.osVersion
             let group = (version.majorVersion * 100) + version.minorVersion
             groups[group, default: []].append(xcode)
@@ -74,17 +91,19 @@ extension Xcode {
             }
         }
         
-//        if let currentRelease, let idx = everything.firstIndex(of: currentRelease) {
-//            everything[idx].isCurrent = true
-//        }
-//
-//        if let currentBeta, let idx = everything.firstIndex(of: currentBeta) {
-//            everything[idx].isCurrent = true
-//        }
-//
-//        if everything.allSatisfy({ $0.isCurrent != true }) {
-//            fatalError("Could not identify current release")
-//        }
+        if let currentRelease, let idx = everything.firstIndex(of: currentRelease) {
+            print("\(currentRelease.displayName) is current")
+            everything[idx].isCurrent = true
+        }
+
+        if let currentBeta, let idx = everything.firstIndex(of: currentBeta) {
+            print("\(currentBeta.displayName) is current")
+            everything[idx].isCurrent = true
+        }
+
+        if everything.allSatisfy({ $0.isCurrent != true }) {
+            fatalError("Could not identify current release")
+        }
         
         return everything
     }
