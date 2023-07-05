@@ -6,43 +6,45 @@
 //
 
 import Foundation
-import XCModel
+import XcodeReleases
 
 extension Xcode {
     
     private var nameDescription: String {
         let suffix: String
-        switch version.release! {
-            case .beta(let i): suffix = " Beta \(i)"
-            case .dp(let i): suffix = " DP \(i)"
-            case .gmSeed(let i): suffix = " GM Seed \(i)"
-            case .rc(let i): suffix = " RC \(i)"
+        switch releaseKind.name {
+            case .beta: suffix = " Beta \(releaseKind.number!)"
+            case .developerPreview: suffix = " DP \(releaseKind.number!)"
+            case .gmSeed: suffix = " GM Seed \(releaseKind.number!)"
+            case .releaseCandidate: suffix = " RC \(releaseKind.number!)"
             case .release: suffix = ""
             case .gm: suffix = ""
+            default: suffix = ""
         }
         return "\(name) \(version.number!)\(suffix)"
     }
     
     private var guid: String {
         let id: String
-        switch version.release! {
-            case .beta(let i): id = "beta-\(i)"
-            case .dp(let i): id = "dp-\(i)"
-            case .gmSeed(let i): id = "gm-seed-\(i)"
-            case .rc(let i): id = "rc-\(i)"
+        switch releaseKind.name {
+            case .beta: id = "beta-\(releaseKind.number!)"
+            case .developerPreview: id = "dp-\(releaseKind.number!)"
+            case .gmSeed: id = "gm-seed-\(releaseKind.number!)"
+            case .releaseCandidate: id = "rc-\(releaseKind.number!)"
             case .release: id = "release"
             case .gm: id = "gm"
+            default: id = releaseKind.name.rawValue
         }
-        return "xcode-\(id)-\(version.build!)-\(date.year)-\(date.month)-\(date.day)"
+        return "xcode-\(id)-\(version.build!)-\(releaseDate.year)-\(releaseDate.month)-\(releaseDate.day)"
     }
     
     private var rssPubDate: String {
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = TimeZone(identifier: "America/Los_Angeles")!
         
-        let components = DateComponents(year: date.year,
-                                        month: date.month,
-                                        day: date.day,
+        let components = DateComponents(year: releaseDate.year,
+                                        month: releaseDate.month,
+                                        day: releaseDate.day,
                                         hour: 10, minute: 0, second: 0)
         
         let date = calendar.date(from: components)!
@@ -60,9 +62,9 @@ extension Xcode {
         var calendar = Calendar(identifier: .gregorian)
         calendar.timeZone = TimeZone(identifier: "America/Los_Angeles")!
         
-        let components = DateComponents(year: date.year,
-                                        month: date.month,
-                                        day: date.day)
+        let components = DateComponents(year: releaseDate.year,
+                                        month: releaseDate.month,
+                                        day: releaseDate.day)
         
         let date = calendar.date(from: components)!
         
@@ -76,14 +78,14 @@ extension Xcode {
     }
     
     private var rssDescription: String {
-        var info = "<p>\(self.nameDescription) was released on \(rssReleaseDate) and requires macOS \(self.requires)+.</p>"
+        var info = "<p>\(self.nameDescription) was released on \(rssReleaseDate) and requires macOS \(self.supportedOSRange.minimum)+.</p>"
         
-        if let download = self.links?.first(where: { $0.type == .xcode }) {
+        if let download = self.links?.first(where: { $0.kind.name == .xcode }) {
             let url = download.url.absoluteString
             info += #"<p>It can be downloaded from <a href="\#(url)">\#(url)</a>.</p>"#
         }
         
-        if let notes = self.links?.first(where: { $0.type == .releaseNotes }) {
+        if let notes = self.links?.first(where: { $0.kind.name == .releaseNotes }) {
             let url = notes.url.absoluteString
             info += #"<p>Release notes are located at <a href="\#(url)">\#(url)</a>.</p>"#
         }

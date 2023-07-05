@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import XCModel
+import XcodeReleases
 
 extension Xcode {
     
@@ -14,24 +14,28 @@ extension Xcode {
         var old: [String: Any] = [:]
         
         old["name"] = self.name
-        old["requires"] = self.requires
+        old["requires"] = self.supportedOSRange.minimum.number
         old["date"] = [
-            "year": self.date.year,
-            "month": self.date.month,
-            "day": self.date.day
+            "year": self.releaseDate.year,
+            "month": self.releaseDate.month,
+            "day": self.releaseDate.day
         ]
-        old["version"] = self.version.oldStyleDictionary
+        old["version"] = self.version.oldStyleDictionary(self.releaseKind)
         
         if let compilers = self.compilers?.grouped(by: \.name.rawValue) {
-            old["compilers"] = compilers.mapValues { $0.map(\.version.oldStyleDictionary) }
+            old["compilers"] = compilers.mapValues { c in
+                c.map { $0.version.oldStyleDictionary(nil) }
+            }
         }
         
         if let sdks = self.sdks?.grouped(by: \.platform.rawValue) {
-            old["sdks"] = sdks.mapValues { $0.map(\.version.oldStyleDictionary) }
+            old["sdks"] = sdks.mapValues { s in
+                s.map { $0.version.oldStyleDictionary(nil) }
+            }
         }
         
-        let xcodeLinks = self.links?.filter { $0.type == .xcode }
-        let releaseNotes = self.links?.filter { $0.type == .releaseNotes }
+        let xcodeLinks = self.links?.filter { $0.kind.name == .xcode }
+        let releaseNotes = self.links?.filter { $0.kind.name == .releaseNotes }
         
         if xcodeLinks?.isEmpty == false || releaseNotes?.isEmpty == false {
             var links: [String: Any] = [:]
@@ -39,8 +43,8 @@ extension Xcode {
             if let download = xcodeLinks?.first {
                 links["download"] = ["url": download.url.absoluteString]
                 
-                if let sha1 = download.checksum?[.sha1] {
-                    old["checksums"] = [ChecksumType.sha1.rawValue: sha1]
+                if let sha1 = download.checksums?[.sha1] {
+                    old["checksums"] = [Checksum.sha1.rawValue: sha1]
                 }
             }
             if let notes = releaseNotes?.first {
@@ -57,20 +61,21 @@ extension Xcode {
 
 extension Version {
     
-    fileprivate var oldStyleDictionary: [String: Any] {
+    fileprivate func oldStyleDictionary(_ release: ReleaseKind?) -> [String: Any] {
         var v: [String: Any] = [:]
         v["number"] = self.number
         v["build"] = self.build
         
         let vers: [String: Any]
-        if let release = self.release {
-            switch release {
-                case .beta(let i): vers = ["beta": i]
+        if let release {
+            switch release.name {
+                case .beta: vers = ["beta": release.number!]
                 case .gm: vers = ["gm": true]
-                case .gmSeed(let i): vers = ["gmSeed": i]
-                case .rc(let i): vers = ["rc": i]
-                case .dp(let i): vers = ["dp": i]
+                case .gmSeed: vers = ["gmSeed": release.number!]
+                case .releaseCandidate: vers = ["rc": release.number!]
+                case .developerPreview: vers = ["dp": release.number!]
                 case .release: vers = ["release": true]
+                default: fatalError("Unknown release name: \(release.name)")
             }
         } else {
             vers = ["release": true]

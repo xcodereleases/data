@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import XCModel
+import XcodeReleases
 import XCData
 import ArgumentParser
 
@@ -27,7 +27,7 @@ struct JSONExport: ParsableCommand {
         try generateOldStyleData()
         
         let all = XcodeReleases(xcodes: Xcode.allVersions)
-        let released = XcodeReleases(xcodes: Xcode.allVersions.filter { $0.version.release?.isReleased == true })
+        let released = XcodeReleases(xcodes: Xcode.allVersions.filter { $0.releaseKind.isReleased == true })
         
         try generateJSON("all", xcodes: all)
         try generateRSS("all", xcodes: all)
