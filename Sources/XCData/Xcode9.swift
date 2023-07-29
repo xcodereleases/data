@@ -17,14 +17,14 @@ let xcodes9: Array<Xcode> = [
           date: (2018, 06, 19),
           requires: "10.13.2",
           sdks: [
-            .macOS(build: "17E189", number: "10.13.4"),
-            .iOS(build: "15F79", number: "11.4"),
-            .watchOS(build: "15T212", number: "4.3"),
-            .tvOS(build: "15L576", number: "11.4")
+            .macOS(number: "10.13.4", build: "17E189"),
+            .iOS(number: "11.4", build: "15F79"),
+            .watchOS(number: "4.3", build: "15T212"),
+            .tvOS(number: "11.4", build: "15L576")
           ],
           compilers: [
-            .clang(build: "902.0.39.2", number: "9.1.0"),
-            .swift(build: "902.0.54", number: "4.1.2")
+            .clang(number: "9.1.0", build: "902.0.39.2"),
+            .swift(number: "4.1.2", build: "902.0.54")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4.1/Xcode_9.4.1.xip",
@@ -38,14 +38,14 @@ let xcodes9: Array<Xcode> = [
           date: (2018, 05, 29),
           requires: "10.13.2",
           sdks: [
-            .macOS(build: "17E189", number: "10.13.4"),
-            .iOS(build: "15F79", number: "11.4"),
-            .watchOS(build: "15T212", number: "4.3"),
-            .tvOS(build: "15L576", number: "11.4")
+            .macOS(number: "10.13.4", build: "17E189"),
+            .iOS(number: "11.4", build: "15F79"),
+            .watchOS(number: "4.3", build: "15T212"),
+            .tvOS(number: "11.4", build: "15L576")
           ],
           compilers: [
-            .clang(build: "902.0.39.2", number: "9.1.0"),
-            .swift(build: "902.0.54", number: "4.1.2")
+            .clang(number: "9.1.0", build: "902.0.39.2"),
+            .swift(number: "4.1.2", build: "902.0.54")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4/Xcode_9.4.xip",
@@ -59,14 +59,14 @@ let xcodes9: Array<Xcode> = [
           date: (2018, 05, 01),
           requires: "10.13.2",
           sdks: [
-            .macOS(build: "17E189", number: "10.13.4"),
-            .iOS(build: "15F5061c", number: "11.4"),
-            .watchOS(build: "15T212", number: "4.3"),
-            .tvOS(build: "15L5560b", number: "11.4")
+            .macOS(number: "10.13.4", build: "17E189"),
+            .iOS(number: "11.4", build: "15F5061c"),
+            .watchOS(number: "4.3", build: "15T212"),
+            .tvOS(number: "11.4", build: "15L5560b")
           ],
           compilers: [
-            .clang(build: "902.0.39.2", number: "9.1.0"),
-            .swift(build: "902.0.53", number: "4.1.1")
+            .clang(number: "9.1.0", build: "902.0.39.2"),
+            .swift(number: "4.1.1", build: "902.0.53")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta_2/Xcode_9.4_beta_2.xip",
@@ -80,14 +80,14 @@ let xcodes9: Array<Xcode> = [
           date: (2018, 04, 02),
           requires: "10.13.2",
           sdks: [
-            .macOS(build: "17E189", number: "10.13.4"),
-            .iOS(build: "15F5037c", number: "11.4"),
-            .watchOS(build: "15T212", number: "4.3"),
-            .tvOS(build: "15L5536b", number: "11.4")
+            .macOS(number: "10.13.4", build: "17E189"),
+            .iOS(number: "11.4", build: "15F5037c"),
+            .watchOS(number: "4.3", build: "15T212"),
+            .tvOS(number: "11.4", build: "15L5536b")
           ],
           compilers: [
-            .clang(build: "902.0.39.1", number: "9.1.0"),
-            .swift(build: "902.0.50", number: "4.1.1")
+            .clang(number: "9.1.0", build: "902.0.39.1"),
+            .swift(number: "4.1.1", build: "902.0.50")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta.xip",
@@ -102,14 +102,14 @@ let xcodes9: Array<Xcode> = [
           date: (2018, 05, 10),
           requires: "10.13.2",
           sdks: [
-            .macOS(build: "17E189", number: "10.13.4"),
-            .iOS(build: "15E217", number: "11.3"),
-            .watchOS(build: "15T212", number: "4.3"),
-            .tvOS(build: "15L211", number: "11.3")
+            .macOS(number: "10.13.4", build: "17E189"),
+            .iOS(number: "11.3", build: "15E217"),
+            .watchOS(number: "4.3", build: "15T212"),
+            .tvOS(number: "11.3", build: "15L211")
           ],
           compilers: [
-            .clang(build: "902.0.39.1", number: "9.1.0"),
-            .swift(build: "902.0.48902.0.48", number: "4.1")
+            .clang(number: "9.1.0", build: "902.0.39.1"),
+            .swift(number: "4.1", build: "902.0.48902.0.48")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3.1/Xcode_9.3.1.xip",
@@ -124,14 +124,14 @@ let xcodes9: Array<Xcode> = [
           date: (2018, 03, 29),
           requires: "10.13.2",
           sdks: [
-            .macOS(build: "17E189", number: "10.13.4"),
-            .iOS(build: "15E217", number: "11.3"),
-            .watchOS(build: "15T212", number: "4.3"),
-            .tvOS(build: "15L211", number: "11.3")
+            .macOS(number: "10.13.4", build: "17E189"),
+            .iOS(number: "11.3", build: "15E217"),
+            .watchOS(number: "4.3", build: "15T212"),
+            .tvOS(number: "11.3", build: "15L211")
           ],
           compilers: [
-            .clang(build: "902.0.39.1", number: "9.1.0"),
-            .swift(build: "902.0.48", number: "4.1")
+            .clang(number: "9.1.0", build: "902.0.39.1"),
+            .swift(number: "4.1", build: "902.0.48")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3/Xcode_9.3.xip",
@@ -152,8 +152,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15L5198d")
           ],
           compilers: [
-            .clang(build: "902.0.37.1", number: "9.1.0"),
-            .swift(build: "902.0.43", number: "4.1")
+            .clang(number: "9.1.0", build: "902.0.37.1"),
+            .swift(number: "4.1", build: "902.0.43")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_4/Xcode_9.3_beta_4.xip",
@@ -173,8 +173,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15L5186d")
           ],
           compilers: [
-            .clang(build: "902.0.34", number: "9.1.0"),
-            .swift(build: "902.0.41", number: "4.1")
+            .clang(number: "9.1.0", build: "902.0.34"),
+            .swift(number: "4.1", build: "902.0.41")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_3/Xcode_9.3_beta_3.xip",
@@ -193,8 +193,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15L5175d")
           ],
           compilers: [
-            .clang(build: "902.0.31", number: "9.1.0"),
-            .swift(build: "902.0.38", number: "4.1")
+            .clang(number: "9.1.0", build: "902.0.31"),
+            .swift(number: "4.1", build: "902.0.38")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_2/Xcode_9.3_beta_2.xip",
@@ -213,8 +213,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15L5164c")
           ],
           compilers: [
-            .clang(build: "902.0.30", number: "9.1.0"),
-            .swift(build: "902.0.34", number: "4.1")
+            .clang(number: "9.1.0", build: "902.0.30"),
+            .swift(number: "4.1", build: "902.0.34")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta/Xcode_9.3_beta.xip",
@@ -233,8 +233,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15K104")
           ],
           compilers: [
-            .clang(build: "900.0.39.2", number: "9.0.0"),
-            .swift(build: "900.0.74.1", number: "4.0.3")
+            .clang(number: "9.0.0", build: "900.0.39.2"),
+            .swift(number: "4.0.3", build: "900.0.74.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.2/Xcode_9.2.xip",
@@ -254,8 +254,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15K5090c")
           ],
           compilers: [
-            .clang(build: "900.0.39", number: "9.0.0"),
-            .swift(build: "900.0.72", number: "4.0.3")
+            .clang(number: "9.0.0", build: "900.0.39"),
+            .swift(number: "4.0.3", build: "900.0.72")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.2_Beta_2/Xcode_9.2_Beta_2.xip",
@@ -274,8 +274,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15K5085b")
           ],
           compilers: [
-            .clang(build: "900.0.39", number: "9.0.0"),
-            .swift(build: "900.0.71", number: "4.0.3")
+            .clang(number: "9.0.0", build: "900.0.39"),
+            .swift(number: "4.0.3", build: "900.0.71")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.2_Beta/Xcode_9.2_Beta.xip",
@@ -294,8 +294,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J580")
           ],
           compilers: [
-            .clang(build: "900.0.38", number: "9.0.0"),
-            .swift(build: "900.0.69.2", number: "4.0.2")
+            .clang(number: "9.0.0", build: "900.0.38"),
+            .swift(number: "4.0.2", build: "900.0.69.2")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.1/Xcode_9.1.xip",
@@ -315,8 +315,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J380")
           ],
           compilers: [
-            .clang(build: "900.0.38", number: "9.0.0"),
-            .swift(build: "900.0.65.2", number: "4.0")
+            .clang(number: "9.0.0", build: "900.0.38"),
+            .swift(number: "4.0", build: "900.0.65.2")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.0.1/Xcode_9.0.1.xip",
@@ -336,8 +336,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5571b")
           ],
           compilers: [
-            .clang(build: "900.0.38", number: "9.0.0"),
-            .swift(build: "900.0.68", number: "4.0.1")
+            .clang(number: "9.0.0", build: "900.0.38"),
+            .swift(number: "4.0.1", build: "900.0.68")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.1_beta_2/Xcode_9.1_beta2.xip",
@@ -356,8 +356,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5559d")
           ],
           compilers: [
-            .clang(build: "900.0.38", number: "9.0.0"),
-            .swift(build: "900.0.66", number: "4.0.1")
+            .clang(number: "9.0.0", build: "900.0.38"),
+            .swift(number: "4.0.1", build: "900.0.66")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.1_beta/Xcode_9.1_beta.xip",
@@ -376,8 +376,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J380")
           ],
           compilers: [
-            .clang(build: "900.0.37", number: "9.0.0"),
-            .swift(build: "900.0.65", number: "4.0")
+            .clang(number: "9.0.0", build: "900.0.37"),
+            .swift(number: "4.0", build: "900.0.65")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9/Xcode_9.xip",

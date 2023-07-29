@@ -20,11 +20,11 @@ let xcodes3: Array<Xcode> = [
             .iOS(number: "4.3")
           ],
           compilers: [
-            .gcc(build: "5494", number: "4.0"),
-            .gcc(build: "5666", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.0", build: "5494"),
+            .gcc(number: "4.2", build: "5666"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2335.6"),
-            .clang(build: "77", number: "1.7")
+            .clang(number: "1.7", build: "77")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_3.2.6_and_ios_sdk_4.3__final/xcode_3.2.6_and_ios_sdk_4.3.dmg",
@@ -41,11 +41,11 @@ let xcodes3: Array<Xcode> = [
             .iOS(number: "4.2")
           ],
           compilers: [
-            .gcc(build: "5494", number: "4.0"),
-            .gcc(build: "5664", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.0", build: "5494"),
+            .gcc(number: "4.2", build: "5664"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2333.4"),
-            .clang(build: "70", number: "1.6")
+            .clang(number: "1.6", build: "70")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/ios/ios_sdk_4.2__final/xcode_3.2.5_and_ios_sdk_4.2_final.dmg",
@@ -63,11 +63,11 @@ let xcodes3: Array<Xcode> = [
             .iOS(number: "4.1")
           ],
           compilers: [
-            .gcc(build: "5494", number: "4.0"),
-            .gcc(build: "5664", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.0", build: "5494"),
+            .gcc(number: "4.2", build: "5664"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2326.10"),
-            .clang(build: "60", number: "1.5")
+            .clang(number: "1.5", build: "60")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/ios/ios_sdk_4.1__final/xcode_3.2.4_and_ios_sdk_4.1.dmg",
@@ -85,11 +85,11 @@ let xcodes3: Array<Xcode> = [
             .iOS(number: "4.0.2")
          ],
           compilers: [
-            .gcc(build: "5494", number: "4.0"),
-            .gcc(build: "5664", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.0", build: "5494"),
+            .gcc(number: "4.2", build: "5664"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2326.10"),
-            .clang(build: "60", number: "1.5")
+            .clang(number: "1.5", build: "60")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/ios/ios_sdk_4.0.2__final/xcode_3.2.3_and_ios_sdk_4.0.2.dmg", checksums: .sha1("643c30f02575ee256a7ee1d15b5207602bb6d80d"))
@@ -105,9 +105,9 @@ let xcodes3: Array<Xcode> = [
             .iOS(number: "4.0.1")
           ],
           compilers: [
-            .gcc(build: "5493", number: "4.0"),
-            .gcc(build: "5659", number: "4.2"),
-            .llvm_gcc(build: "5646", number: "4.2"),
+            .gcc(number: "4.0", build: "5493"),
+            .gcc(number: "4.2", build: "5659"),
+            .llvm_gcc(number: "4.2", build: "5646"),
             .llvm(build: "2207.5"),
             .clang(number: "1.0.2")
           ],
@@ -137,9 +137,9 @@ let xcodes3: Array<Xcode> = [
           date: (2009, 10, 07),
           requires: "10.6",
           compilers: [
-            .gcc(build: "5493", number: "4.0"),
-            .gcc(build: "5646", number: "4.2"),
-            .llvm_gcc(build: "5646", number: "4.2"),
+            .gcc(number: "4.0", build: "5493"),
+            .gcc(number: "4.2", build: "5646"),
+            .llvm_gcc(number: "4.2", build: "5646"),
             .llvm(build: "2206")
           ],
           links: [
@@ -159,9 +159,9 @@ let xcodes3: Array<Xcode> = [
             .macOS(number: "10.6")
           ],
           compilers: [
-            .gcc(build: "5493", number: "4.0"),
-            .gcc(build: "5646", number: "4.2"),
-            .llvm_gcc(build: "5646", number: "4.2"),
+            .gcc(number: "4.0", build: "5493"),
+            .gcc(number: "4.2", build: "5646"),
+            .llvm_gcc(number: "4.2", build: "5646"),
             .llvm(build: "2118")
           ],
           links: [
@@ -176,9 +176,9 @@ let xcodes3: Array<Xcode> = [
           date: (2009, 07, 09),
           requires: "10.5.7",
           compilers: [
-            .gcc(build: "5493", number: "4.0"),
-            .gcc(build: "5577", number: "4.2"),
-            .llvm_gcc(build: "5555", number: "4.2"),
+            .gcc(number: "4.0", build: "5493"),
+            .gcc(number: "4.2", build: "5577"),
+            .llvm_gcc(number: "4.2", build: "5555"),
             .llvm(build: "2064.3")
           ],
           links: [

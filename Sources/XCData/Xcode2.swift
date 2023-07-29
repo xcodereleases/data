@@ -17,7 +17,7 @@ let xcodes2: Array<Xcode> = [
           date: (2007, 10, 29),
           requires: "10.4",
           compilers: [
-            .gcc(build: "5370", number: "4.0")
+            .gcc(number: "4.0", build: "5370")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_2.5_developer_tools/xcode25_8m2558_developerdvd.dmg",

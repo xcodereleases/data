@@ -22,9 +22,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B141")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "425.0.28", number: "4.1")
+            .clang(number: "4.1", build: "425.0.28")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6.3/xcode4630916281a.dmg",
@@ -43,9 +43,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B141")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "425.0.28", number: "4.1")
+            .clang(number: "4.1", build: "425.0.28")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6.2/xcode4620419895a.dmg",
@@ -64,9 +64,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B141")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "425.0.27", number: "4.1")
+            .clang(number: "4.1", build: "425.0.27")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6.1/xcode4610419628a.dmg",
@@ -85,9 +85,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B141")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "425.0.24", number: "4.1")
+            .clang(number: "4.1", build: "425.0.24")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6/xcode460417218a.dmg",
@@ -150,9 +150,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A403")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "421.11.66", number: "4.1")
+            .clang(number: "4.1", build: "421.11.66")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/xcode4520418508a.dmg",
@@ -171,9 +171,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A403")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "421.11.66", number: "4.1")
+            .clang(number: "4.1", build: "421.11.66")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.1/xcode4510417539a.dmg",
@@ -192,9 +192,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A403")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "421.11.65", number: "4.1")
+            .clang(number: "4.1", build: "421.11.65")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.5/xcode_4.5.dmg",
@@ -213,9 +213,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B176")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "421.0.60", number: "4.0")
+            .clang(number: "4.0", build: "421.0.60")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.4.1/xcode_4.4.1_6938145.dmg",
@@ -273,9 +273,9 @@ let xcodes4: Array<Xcode> = [
           date: (2012, 06, 07),
           requires: "10.7",
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.9.00"),
-            .clang(build: "318.0.61", number: "3.1")
+            .clang(number: "3.1", build: "318.0.61")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3.3_for_lion/xcode_4.3.3_for_lion.dmg",
@@ -291,9 +291,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B176")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.9.00"),
-            .clang(build: "318.0.58", number: "3.1")
+            .clang(number: "3.1", build: "318.0.58")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3.2/xcode_432_lion.dmg",
@@ -309,9 +309,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B174")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.11.00"),
-            .clang(build: "421.0.57", number: "4.0")
+            .clang(number: "4.0", build: "421.0.57")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/xcode446938108a.dmg",
@@ -328,9 +328,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B176")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.9.00"),
-            .clang(build: "318.0.54", number: "3.1")
+            .clang(number: "3.1", build: "318.0.54")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3.1_for_lion_21267/xcode_431_lion.dmg",
@@ -355,9 +355,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9A334")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.9.00"),
-            .clang(build: "318.0.45", number: "3.1")
+            .clang(number: "3.1", build: "318.0.45")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3_for_lion_21266/xcode_43_lion.dmg",
@@ -405,9 +405,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9A334")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.1.00"),
-            .clang(build: "211.10.1", number: "3.0")
+            .clang(number: "3.0", build: "211.10.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_lion_21264/installxcode_42_lion.dmg",
@@ -424,9 +424,9 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9A334")
           ],
           compilers: [
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2336.1.00"),
-            .clang(build: "211.10.1", number: "3.0")
+            .clang(number: "3.0", build: "211.10.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_snow_leopard/xcode_4.2_for_snow_leopard.dmg",
@@ -440,10 +440,10 @@ let xcodes4: Array<Xcode> = [
           date: (2011, 08, 29),
           requires: "10.6.8",
           compilers: [
-            .gcc(build: "5666", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.2", build: "5666"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2335.15.00"),
-            .clang(build: "163.7.1", number: "2.1")
+            .clang(number: "2.1", build: "163.7.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_snow_leopard_21110/xcode_4.1_for_snow_leopard.dmg",
@@ -457,10 +457,10 @@ let xcodes4: Array<Xcode> = [
           date: (2011, 07, 20),
           requires: "10.7",
           compilers: [
-            .gcc(build: "5666", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.2", build: "5666"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2335.15.00"),
-            .clang(build: "163.7.1", number: "2.1")
+            .clang(number: "2.1", build: "163.7.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_lion_21263/installxcode_41_lion.dmg",
@@ -473,11 +473,11 @@ let xcodes4: Array<Xcode> = [
           date: (2011, 04, 12),
           requires: "10.6.8",
           compilers: [
-            .gcc(build: "5494", number: "4.0"),
-            .gcc(build: "5666", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.0", build: "5494"),
+            .gcc(number: "4.2", build: "5666"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2335.9"),
-            .clang(build: "137", number: "2.0")
+            .clang(number: "2.0", build: "137")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.2_and_ios_sdk_4.3/xcode_4.0.2_and_ios_sdk_4.3.dmg",
@@ -502,11 +502,11 @@ let xcodes4: Array<Xcode> = [
           date: (2011, 03, 09),
           requires: "10.6.8",
           compilers: [
-            .gcc(build: "5494", number: "4.0"),
-            .gcc(build: "5666", number: "4.2"),
-            .llvm_gcc(build: "5658", number: "4.2"),
+            .gcc(number: "4.0", build: "5494"),
+            .gcc(number: "4.2", build: "5666"),
+            .llvm_gcc(number: "4.2", build: "5658"),
             .llvm(build: "2335.9"),
-            .clang(build: "137", number: "2.0")
+            .clang(number: "2.0", build: "137")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4_and_ios_sdk_4.3__final/xcode_4_and_ios_sdk_4.3__final.dmg",

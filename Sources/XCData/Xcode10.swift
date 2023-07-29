@@ -17,14 +17,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 07, 22),
           requires: "10.14.3",
           sdks: [
-            .macOS(build: "18G74", number: "10.14.6"),
-            .iOS(build: "16G73", number: "12.4"),
-            .watchOS(build: "16U567", number: "5.3"),
-            .tvOS(build: "16M567", number: "12.4")
+            .macOS(number: "10.14.6", build: "18G74"),
+            .iOS(number: "12.4", build: "16G73"),
+            .watchOS(number: "5.3", build: "16U567"),
+            .tvOS(number: "12.4", build: "16M567")
           ],
           compilers: [
-            .clang(build: "1001.0.46.4", number: "10.0.1"),
-            .swift(build: "1001.0.82.4", number: "5.0.1")
+            .clang(number: "10.0.1", build: "1001.0.46.4"),
+            .swift(number: "5.0.1", build: "1001.0.82.4")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.3/Xcode_10.3.xip",
@@ -38,14 +38,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 04, 17),
           requires: "10.14.3",
           sdks: [
-            .macOS(build: "18E219", number: "10.14.4"),
-            .iOS(build: "16E226", number: "12.2"),
-            .watchOS(build: "16T224", number: "5.2"),
-            .tvOS(build: "16L225", number: "12.2")
+            .macOS(number: "10.14.4", build: "18E219"),
+            .iOS(number: "12.2", build: "16E226"),
+            .watchOS(number: "5.2", build: "16T224"),
+            .tvOS(number: "12.2", build: "16L225")
           ],
           compilers: [
-            .clang(build: "1001.0.46.4", number: "10.0.1"),
-            .swift(build: "1001.0.82.4", number: "5.0.1")
+            .clang(number: "10.0.1", build: "1001.0.46.4"),
+            .swift(number: "5.0.1", build: "1001.0.82.4")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.2.1/Xcode_10.2.1.xip",
@@ -59,14 +59,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 03, 25),
           requires: "10.14.3",
           sdks: [
-            .macOS(build: "18E219", number: "10.14.4"),
-            .iOS(build: "16E226", number: "12.2"),
-            .watchOS(build: "16T224", number: "5.2"),
-            .tvOS(build: "16L225", number: "12.2")
+            .macOS(number: "10.14.4", build: "18E219"),
+            .iOS(number: "12.2", build: "16E226"),
+            .watchOS(number: "5.2", build: "16T224"),
+            .tvOS(number: "12.2", build: "16L225")
           ],
           compilers: [
-            .clang(build: "1001.0.46.3", number: "10.0.1"),
-            .swift(build: "1001.0.69.5", number: "5.0")
+            .clang(number: "10.0.1", build: "1001.0.46.3"),
+            .swift(number: "5.0", build: "1001.0.69.5")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.2/Xcode_10.2.xip",
@@ -80,14 +80,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 03, 04),
           requires: "10.14.3",
           sdks: [
-            .macOS(build: "18E205d", number: "10.14.4"),
-            .iOS(build: "16E5212e", number: "12.2"),
-            .watchOS(build: "16T5212d", number: "5.2"),
-            .tvOS(build: "16L5212d", number: "12.2")
+            .macOS(number: "10.14.4", build: "18E205d"),
+            .iOS(number: "12.2", build: "16E5212e"),
+            .watchOS(number: "5.2", build: "16T5212d"),
+            .tvOS(number: "12.2", build: "16L5212d")
           ],
           compilers: [
-            .clang(build: "1001.0.46.2", number: "10.0.1"),
-            .swift(build: "1001.0.69", number: "5.0")
+            .clang(number: "10.0.1", build: "1001.0.46.2"),
+            .swift(number: "5.0", build: "1001.0.69")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.2_beta_4/Xcode_10.2_beta_4.xip",
@@ -101,14 +101,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 02, 19),
           requires: "10.14",
           sdks: [
-            .macOS(build: "18E194d", number: "10.14.4"),
-            .iOS(build: "16E5201d", number: "12.2"),
-            .watchOS(build: "16T5201c", number: "5.2"),
-            .tvOS(build: "16L5201d", number: "12.2")
+            .macOS(number: "10.14.4", build: "18E194d"),
+            .iOS(number: "12.2", build: "16E5201d"),
+            .watchOS(number: "5.2", build: "16T5201c"),
+            .tvOS(number: "12.2", build: "16L5201d")
           ],
           compilers: [
-            .clang(build: "1001.0.43.3", number: "10.0.1"),
-            .swift(build: "1001.0.63.8", number: "5.0")
+            .clang(number: "10.0.1", build: "1001.0.43.3"),
+            .swift(number: "5.0", build: "1001.0.63.8")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.2_Beta_3/Xcode_10.2_Beta_3.xip",
@@ -122,14 +122,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 02, 04),
           requires: "10.14",
           sdks: [
-            .macOS(build: "18E184e", number: "10.14.4"),
-            .iOS(build: "16E5191d", number: "12.2"),
-            .watchOS(build: "16T5191d", number: "5.2"),
-            .tvOS(build: "16L5191d", number: "12.2")
+            .macOS(number: "10.14.4", build: "18E184e"),
+            .iOS(number: "12.2", build: "16E5191d"),
+            .watchOS(number: "5.2", build: "16T5191d"),
+            .tvOS(number: "12.2", build: "16L5191d")
           ],
           compilers: [
-            .clang(build: "1001.0.37.9", number: "10.0.1"),
-            .swift(build: "1001.0.60.3", number: "5.0")
+            .clang(number: "10.0.1", build: "1001.0.37.9"),
+            .swift(number: "5.0", build: "1001.0.60.3")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.2_Beta_2/Xcode_10.2_Beta_2.xip",
@@ -143,14 +143,14 @@ let xcodes10: Array<Xcode> = [
           date: (2019, 01, 24),
           requires: "10.14",
           sdks: [
-            .macOS(build: "18E174e", number: "10.14.4"),
-            .iOS(build: "16E5181e", number: "12.2"),
-            .watchOS(build: "16T5181e", number: "5.2"),
-            .tvOS(build: "16L5181e", number: "12.2")
+            .macOS(number: "10.14.4", build: "18E174e"),
+            .iOS(number: "12.2", build: "16E5181e"),
+            .watchOS(number: "5.2", build: "16T5181e"),
+            .tvOS(number: "12.2", build: "16L5181e")
           ],
           compilers: [
-            .clang(build: "1001.0.37.7", number: "10.0.1"),
-            .swift(build: "1001.0.45.7", number: "5.0")
+            .clang(number: "10.0.1", build: "1001.0.37.7"),
+            .swift(number: "5.0", build: "1001.0.45.7")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.2_beta/Xcode_10.2_beta.xip",
@@ -164,14 +164,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 10, 30),
           requires: "10.13.6",
           sdks: [
-            .macOS(build: "18B71", number: "10.14.1"),
-            .iOS(build: "16B91", number: "12.1"),
-            .watchOS(build: "16R591", number: "5.1"),
-            .tvOS(build: "16J602", number: "12.1")
+            .macOS(number: "10.14.1", build: "18B71"),
+            .iOS(number: "12.1", build: "16B91"),
+            .watchOS(number: "5.1", build: "16R591"),
+            .tvOS(number: "12.1", build: "16J602")
           ],
           compilers: [
-            .clang(build: "1000.11.45.5", number: "10.0.0"),
-            .swift(build: "1000.11.42", number: "4.2.1")
+            .clang(number: "10.0.0", build: "1000.11.45.5"),
+            .swift(number: "4.2.1", build: "1000.11.42")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.1/Xcode_10.1.xip",
@@ -185,14 +185,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 10, 15),
           requires: "10.13.6",
           sdks: [
-            .macOS(build: "18B64a", number: "10.14.1"),
-            .iOS(build: "16B5084a", number: "12.1"),
-            .watchOS(build: "16R5584a", number: "5.1"),
-            .tvOS(build: "16J5600a", number: "12.1")
+            .macOS(number: "10.14.1", build: "18B64a"),
+            .iOS(number: "12.1", build: "16B5084a"),
+            .watchOS(number: "5.1", build: "16R5584a"),
+            .tvOS(number: "12.1", build: "16J5600a")
           ],
           compilers: [
-            .clang(build: "1000.11.45.5", number: "10.0.0"),
-            .swift(build: "1000.11.42", number: "4.2.1")
+            .clang(number: "10.0.0", build: "1000.11.45.5"),
+            .swift(number: "4.2.1", build: "1000.11.42")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.1_Beta_3/Xcode_10.1_Beta_3.xip",
@@ -206,14 +206,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 10, 02),
           requires: "10.13.6",
           sdks: [
-            .macOS(build: "18B50b", number: "10.14.1"),
-            .iOS(build: "16B5068g", number: "12.1"),
-            .watchOS(build: "16R5568d", number: "5.1"),
-            .tvOS(build: "16J5584c", number: "12.1")
+            .macOS(number: "10.14.1", build: "18B50b"),
+            .iOS(number: "12.1", build: "16B5068g"),
+            .watchOS(number: "5.1", build: "16R5568d"),
+            .tvOS(number: "12.1", build: "16J5584c")
           ],
           compilers: [
-            .clang(build: "1000.11.45.5", number: "10.0.0"),
-            .swift(build: "1000.11.42", number: "4.2.1")
+            .clang(number: "10.0.0", build: "1000.11.45.5"),
+            .swift(number: "4.2.1", build: "1000.11.42")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.1_Beta_2/Xcode_10.1_Beta_2.xip",
@@ -227,14 +227,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 09, 18),
           requires: "10.13.6",
           sdks: [
-            .macOS(build: "18A384", number: "10.14"),
-            .iOS(build: "16B5059d", number: "12.1"),
-            .watchOS(build: "16R5559d", number: "5.1"),
-            .tvOS(build: "16J5575c", number: "12.1")
+            .macOS(number: "10.14", build: "18A384"),
+            .iOS(number: "12.1", build: "16B5059d"),
+            .watchOS(number: "5.1", build: "16R5559d"),
+            .tvOS(number: "12.1", build: "16J5575c")
           ],
           compilers: [
-            .clang(build: "1000.11.45.5", number: "10.0.0"),
-            .swift(build: "1000.11.40", number: "4.2.1")
+            .clang(number: "10.0.0", build: "1000.11.45.5"),
+            .swift(number: "4.2.1", build: "1000.11.40")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10.1_Beta/Xcode_10.1_Beta.xip",
@@ -248,14 +248,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 09, 17),
           requires: "10.13.6",
           sdks: [
-            .macOS(build: "18A384", number: "10.14"),
-            .iOS(build: "16A366", number: "12.0"),
-            .watchOS(build: "16R363", number: "5.0"),
-            .tvOS(build: "16J364", number: "12.0")
+            .macOS(number: "10.14", build: "18A384"),
+            .iOS(number: "12.0", build: "16A366"),
+            .watchOS(number: "5.0", build: "16R363"),
+            .tvOS(number: "12.0", build: "16J364")
           ],
           compilers: [
-            .clang(build: "1000.10.43.1", number: "10.0.0"),
-            .swift(build: "1000.11.37.1", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.43.1"),
+            .swift(number: "4.2", build: "1000.11.37.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10/Xcode_10.xip",
@@ -269,14 +269,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 09, 12),
           requires: "10.13.6",
           sdks: [
-            .macOS(build: "18A384", number: "10.14"),
-            .iOS(build: "16A366", number: "12.0"),
-            .watchOS(build: "16R363", number: "5.0"),
-            .tvOS(build: "16J364", number: "12.0")
+            .macOS(number: "10.14", build: "18A384"),
+            .iOS(number: "12.0", build: "16A366"),
+            .watchOS(number: "5.0", build: "16R363"),
+            .tvOS(number: "12.0", build: "16J364")
           ],
           compilers: [
-            .clang(build: "1000.11.45.2", number: "10.0.0"),
-            .swift(build: "1000.11.37.1", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.11.45.2"),
+            .swift(number: "4.2", build: "1000.11.37.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_GM_seed/Xcode_10_GM_seed.xip",
@@ -289,14 +289,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 08, 13),
           requires: "10.13.4",
           sdks: [
-            .macOS(build: "18A361a", number: "10.14"),
-            .iOS(build: "16A5354b", number: "12.0"),
-            .watchOS(build: "16R5349a", number: "5.0"),
-            .tvOS(build: "16J5349a", number: "12.0")
+            .macOS(number: "10.14", build: "18A361a"),
+            .iOS(number: "12.0", build: "16A5354b"),
+            .watchOS(number: "5.0", build: "16R5349a"),
+            .tvOS(number: "12.0", build: "16J5349a")
           ],
           compilers: [
-            .clang(build: "1000.10.43.1", number: "10.0.0"),
-            .swift(build: "1000.0.36", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.43.1"),
+            .swift(number: "4.2", build: "1000.0.36")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_Beta_6/Xcode_10_Beta_6.xip",
@@ -310,14 +310,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 07, 30),
           requires: "10.13.4",
           sdks: [
-            .macOS(build: "18A347e", number: "10.14"),
-            .iOS(build: "16A5339e", number: "12.0"),
-            .watchOS(build: "16R5334e", number: "5.0"),
-            .tvOS(build: "16J5334d", number: "12.0")
+            .macOS(number: "10.14", build: "18A347e"),
+            .iOS(number: "12.0", build: "16A5339e"),
+            .watchOS(number: "5.0", build: "16R5334e"),
+            .tvOS(number: "12.0", build: "16J5334d")
           ],
           compilers: [
-            .clang(build: "1000.10.40.1", number: "10.0.0"),
-            .swift(build: "1000.0.32.1", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.40.1"),
+            .swift(number: "4.2", build: "1000.0.32.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_beta_5/Xcode_10_beta_5.xip",
@@ -331,14 +331,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 07, 17),
           requires: "10.13.4",
           sdks: [
-            .macOS(build: "18A336d", number: "10.14"),
-            .iOS(build: "16A5327d", number: "12.0"),
-            .watchOS(build: "16R5322d", number: "5.0"),
-            .tvOS(build: "16J5322d", number: "12.0")
+            .macOS(number: "10.14", build: "18A336d"),
+            .iOS(number: "12.0", build: "16A5327d"),
+            .watchOS(number: "5.0", build: "16R5322d"),
+            .tvOS(number: "12.0", build: "16J5322d")
           ],
           compilers: [
-            .clang(build: "1000.10.40.1", number: "10.0.0"),
-            .swift(build: "1000.0.29.2", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.40.1"),
+            .swift(number: "4.2", build: "1000.0.29.2")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_beta_4/Xcode_10_beta_4.xip",
@@ -352,14 +352,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 07, 03),
           requires: "10.13.4",
           sdks: [
-            .macOS(build: "18A326e", number: "10.14"),
-            .iOS(build: "16A5318d", number: "12.0"),
-            .watchOS(build: "16R5313d", number: "5.0"),
-            .tvOS(build: "16J5313d", number: "12.0")
+            .macOS(number: "10.14", build: "18A326e"),
+            .iOS(number: "12.0", build: "16A5318d"),
+            .watchOS(number: "5.0", build: "16R5313d"),
+            .tvOS(number: "12.0", build: "16J5313d")
           ],
           compilers: [
-            .clang(build: "1000.10.38", number: "10.0.0"),
-            .swift(build: "1000.0.25.1", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.38"),
+            .swift(number: "4.2", build: "1000.0.25.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_beta_3/Xcode_10_beta_3.dmg",
@@ -373,14 +373,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 06, 19),
           requires: "10.13.4",
           sdks: [
-            .macOS(build: "18A314f", number: "10.14"),
-            .iOS(build: "16A5308d", number: "12.0"),
-            .watchOS(build: "16R5303d", number: "5.0"),
-            .tvOS(build: "16J5303d", number: "12.0")
+            .macOS(number: "10.14", build: "18A314f"),
+            .iOS(number: "12.0", build: "16A5308d"),
+            .watchOS(number: "5.0", build: "16R5303d"),
+            .tvOS(number: "12.0", build: "16J5303d")
           ],
           compilers: [
-            .clang(build: "1000.10.25.5", number: "10.0.0"),
-            .swift(build: "1000.0.16.9", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.25.5"),
+            .swift(number: "4.2", build: "1000.0.16.9")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_Beta_2/Xcode_10_Beta_2.xip",
@@ -394,14 +394,14 @@ let xcodes10: Array<Xcode> = [
           date: (2018, 06, 04),
           requires: "10.13.4",
           sdks: [
-            .macOS(build: "18A293s", number: "10.14"),
-            .iOS(build: "16A5288q", number: "12.0"),
-            .watchOS(build: "16R5283q", number: "5.0"),
-            .tvOS(build: "16J5283n", number: "12.0")
+            .macOS(number: "10.14", build: "18A293s"),
+            .iOS(number: "12.0", build: "16A5288q"),
+            .watchOS(number: "5.0", build: "16R5283q"),
+            .tvOS(number: "12.0", build: "16J5283n")
           ],
           compilers: [
-            .clang(build: "1000.10.25.5", number: "10.0.0"),
-            .swift(build: "1000.0.16.7", number: "4.2")
+            .clang(number: "10.0.0", build: "1000.10.25.5"),
+            .swift(number: "4.2", build: "1000.0.16.7")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_10_Beta/Xcode_10_Beta.xip",

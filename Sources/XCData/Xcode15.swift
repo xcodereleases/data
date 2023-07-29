@@ -15,15 +15,15 @@ let xcodes15: Array<Xcode> = [
           date: (2023, 07, 25),
           requires: "13.4",
           sdks: [
-            .macOS(build: "23A5301f", number: "14.0"),
-            .iOS(build: "21A5291f", number: "17.0"),
-            .watchOS(build: "21R5320f", number: "10.0"),
-            .tvOS(build: "21J5318e", number: "17.0"),
-            .visionOS(build: "21N5207e", number: "1.0")
+            .macOS(number: "14.0", build: "23A5301f"),
+            .iOS(number: "17.0", build: "21A5291f"),
+            .watchOS(number: "10.0", build: "21R5320f"),
+            .tvOS(number: "17.0", build: "21J5318e"),
+            .visionOS(number: "1.0", build: "21N5207e")
           ],
           compilers: [
-            .clang(build: "1500.0.38.1", number: "15.0.0"),
-            .swift(build: "5.9.0.124.4", number: "5.9")
+            .clang(number: "15.0.0", build: "1500.0.38.1"),
+            .swift(number: "5.9", build: "5.9.0.124.4")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_5/Xcode_15_beta_5.xip",
@@ -41,15 +41,15 @@ let xcodes15: Array<Xcode> = [
           date: (2023, 07, 11),
           requires: "13.4",
           sdks: [
-            .macOS(build: "23A5286f", number: "14.0"),
-            .iOS(build: "21A5277g", number: "17.0"),
-            .watchOS(build: "21R5305e", number: "10.0"),
-            .tvOS(build: "21J5303f", number: "17.0"),
-            .visionOS(build: "21N5165f", number: "1.0")
+            .macOS(number: "14.0", build: "23A5286f"),
+            .iOS(number: "17.0", build: "21A5277g"),
+            .watchOS(number: "10.0", build: "21R5305e"),
+            .tvOS(number: "17.0", build: "21J5303f"),
+            .visionOS(number: "1.0", build: "21N5165f")
           ],
           compilers: [
-            .clang(build: "1500.0.34.3", number: "15.0.0"),
-            .swift(build: "5.9.0.120.7", number: "5.9")
+            .clang(number: "15.0.0", build: "1500.0.34.3"),
+            .swift(number: "5.9", build: "5.9.0.120.7")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_4/Xcode_15_beta_4.xip",
@@ -72,15 +72,15 @@ let xcodes15: Array<Xcode> = [
           date: (2023, 07, 05),
           requires: "13.4",
           sdks: [
-            .macOS(build: "23A5286f", number: "14.0"),
-            .iOS(build: "21A5277g", number: "17.0"),
-            .watchOS(build: "21R5305e", number: "10.0"),
-            .tvOS(build: "21J5303f", number: "17.0"),
-            .visionOS(build: "21N5165f", number: "1.0")
+            .macOS(number: "14.0", build: "23A5286f"),
+            .iOS(number: "17.0", build: "21A5277g"),
+            .watchOS(number: "10.0", build: "21R5305e"),
+            .tvOS(number: "17.0", build: "21J5303f"),
+            .visionOS(number: "1.0", build: "21N5165f")
           ],
           compilers: [
-            .clang(build: "1500.0.34.3", number: "15.0.0"),
-            .swift(build: "5.9.0.120.7", number: "5.9")
+            .clang(number: "15.0.0", build: "1500.0.34.3"),
+            .swift(number: "5.9", build: "5.9.0.120.7")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_3/Xcode_15_beta_3.xip",
@@ -103,15 +103,15 @@ let xcodes15: Array<Xcode> = [
           date: (2023, 06, 21),
           requires: "13.4",
           sdks: [
-            .macOS(build: "23A5276e", number: "14.0"),
-            .iOS(build: "21A5268f", number: "17.0"),
-            .watchOS(build: "21R5295e", number: "10.0"),
-            .tvOS(build: "21J5293e", number: "17.0"),
-            .visionOS(build: "21N5165f", number: "1.0")
+            .macOS(number: "14.0", build: "23A5276e"),
+            .iOS(number: "17.0", build: "21A5268f"),
+            .watchOS(number: "10.0", build: "21R5295e"),
+            .tvOS(number: "17.0", build: "21J5293e"),
+            .visionOS(number: "1.0", build: "21N5165f")
           ],
           compilers: [
-            .clang(build: "1500.0.29.1", number: "15.0.0"),
-            .swift(build: "5.9.0.114.10", number: "5.9")
+            .clang(number: "15.0.0", build: "1500.0.29.1"),
+            .swift(number: "5.9", build: "5.9.0.114.10")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_2/Xcode_15_beta_2.xip",
@@ -134,14 +134,14 @@ let xcodes15: Array<Xcode> = [
           date: (2023, 06, 05),
           requires: "13.3",
           sdks: [
-            .macOS(build: "23A5257p", number: "14.0"),
-            .iOS(build: "21A5248u", number: "17.0"),
-            .watchOS(build: "21R5275s", number: "10.0"),
-            .tvOS(build: "21J5273p", number: "17.0")
+            .macOS(number: "14.0", build: "23A5257p"),
+            .iOS(number: "17.0", build: "21A5248u"),
+            .watchOS(number: "10.0", build: "21R5275s"),
+            .tvOS(number: "17.0", build: "21J5273p")
           ],
           compilers: [
-            .clang(build: "1500.0.28.1.1", number: "15.0.0"),
-            .swift(build: "5.9.0.114.6", number: "5.9")
+            .clang(number: "15.0.0", build: "1500.0.28.1.1"),
+            .swift(number: "5.9", build: "5.9.0.114.6")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta/Xcode_15_beta.xip",

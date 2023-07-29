@@ -23,8 +23,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.6.0"),
-            .clang(build: "602.0.53", number: "6.1.0"),
-            .swift(build: "602.0.53.1", number: "1.2")
+            .clang(number: "6.1.0", build: "602.0.53"),
+            .swift(number: "1.2", build: "602.0.53.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.4/Xcode_6.4.dmg",
@@ -55,8 +55,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.6.0"),
-            .clang(build: "602.0.53", number: "6.1.0"),
-            .swift(build: "602.0.53.1", number: "1.2")
+            .clang(number: "6.1.0", build: "602.0.53"),
+            .swift(number: "1.2", build: "602.0.53.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.3.2/Xcode_6.3.2.dmg",
@@ -88,8 +88,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.6.0"),
-            .clang(build: "602.0.49", number: "6.1.0"),
-            .swift(build: "602.0.49.6", number: "1.2")
+            .clang(number: "6.1.0", build: "602.0.49"),
+            .swift(number: "1.2", build: "602.0.49.6")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.3.1/Xcode_6.3.1.dmg",
@@ -115,8 +115,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.6.0"),
-            .clang(build: "602.0.49", number: "6.1.0"),
-            .swift(build: "602.0.49.3", number: "1.2")
+            .clang(number: "6.1.0", build: "602.0.49"),
+            .swift(number: "1.2", build: "602.0.49.3")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.3/Xcode_6.3.dmg",
@@ -148,8 +148,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.5"),
-            .clang(build: "600.0.57", number: "6.0"),
-            .swift(build: "600.0.57.4", number: "1.1")
+            .clang(number: "6.0", build: "600.0.57"),
+            .swift(number: "1.1", build: "600.0.57.4")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.2/Xcode_6.2.dmg",
@@ -205,8 +205,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.5"),
-            .clang(build: "600.0.56", number: "6.0"),
-            .swift(build: "600.0.56.1", number: "1.1")
+            .clang(number: "6.0", build: "600.0.56"),
+            .swift(number: "1.1", build: "600.0.56.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg",
@@ -233,8 +233,8 @@ let xcodes6: Array<Xcode> = [
           requires: "10.9.4",
           compilers: [
             .llvm(number: "3.5"),
-            .clang(build: "600.0.54", number: "6.0"),
-            .swift(build: "600.0.54.20", number: "1.1")
+            .clang(number: "6.0", build: "600.0.54"),
+            .swift(number: "1.1", build: "600.0.54.20")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_6.1/56841_xcode_6.1.dmg",
@@ -265,8 +265,8 @@ let xcodes6: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.5"),
-            .clang(build: "600.0.51", number: "6.0"),
-            .swift(build: "600.0.51.4", number: "1.0")
+            .clang(number: "6.0", build: "600.0.51"),
+            .swift(number: "1.0", build: "600.0.51.4")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_6.0.1/xcode_6.0.1.dmg",

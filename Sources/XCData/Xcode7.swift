@@ -24,8 +24,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.8.0"),
-            .clang(build: "703.0.31", number: "7.3.0"),
-            .swift(build: "703.0.18.8", number: "2.2")
+            .clang(number: "7.3.0", build: "703.0.31"),
+            .swift(number: "2.2", build: "703.0.18.8")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg",
@@ -58,8 +58,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.8.0"),
-            .clang(build: "703.0.29", number: "7.3.0"),
-            .swift(build: "703.0.18.1", number: "2.2")
+            .clang(number: "7.3.0", build: "703.0.29"),
+            .swift(number: "2.2", build: "703.0.18.1")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.3/Xcode_7.3.dmg",
@@ -116,8 +116,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.7.0"),
-            .clang(build: "700.1.81", number: "7.0.2"),
-            .swift(build: "700.1.101.15", number: "2.1.1")
+            .clang(number: "7.0.2", build: "700.1.81"),
+            .swift(number: "2.1.1", build: "700.1.101.15")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.2.1/Xcode_7.2.1.dmg",
@@ -162,8 +162,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.7.0"),
-            .clang(build: "700.1.81", number: "7.0.2"),
-            .swift(build: "700.1.101.15", number: "2.1.1")
+            .clang(number: "7.0.2", build: "700.1.81"),
+            .swift(number: "2.1.1", build: "700.1.101.15")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.2/Xcode_7.2.dmg",
@@ -249,8 +249,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.7.0"),
-            .clang(build: "700.1.76", number: "7.0.0"),
-            .swift(build: "700.1.101.6", number: "2.1")
+            .clang(number: "7.0.0", build: "700.1.76"),
+            .swift(number: "2.1", build: "700.1.101.6")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.1/Xcode_7.1.dmg",
@@ -282,8 +282,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.7.0"),
-            .clang(build: "700.0.72", number: "7.0.0"),
-            .swift(build: "700.0.59", number: "2.0")
+            .clang(number: "7.0.0", build: "700.0.72"),
+            .swift(number: "2.0", build: "700.0.59")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.0.1/Xcode_7.0.1.dmg",
@@ -315,8 +315,8 @@ let xcodes7: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.7.0"),
-            .clang(build: "700.0.72", number: "7.0.0"),
-            .swift(build: "700.0.59", number: "2.0")
+            .clang(number: "7.0.0", build: "700.0.72"),
+            .swift(number: "2.0", build: "700.0.59")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7/Xcode_7.dmg",

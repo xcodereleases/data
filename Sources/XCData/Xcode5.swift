@@ -18,7 +18,7 @@ let xcodes5: Array<Xcode> = [
           requires: "10.8",
           compilers: [
             .llvm(number: "3.4"),
-            .clang(build: "503.0.40", number: "5.1")
+            .clang(number: "5.1", build: "503.0.40")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_5.1.1/xcode_5.1.1.dmg",
@@ -33,7 +33,7 @@ let xcodes5: Array<Xcode> = [
           requires: "10.8",
           compilers: [
             .llvm(number: "3.4"),
-            .clang(build: "503.0.38", number: "5.1")
+            .clang(number: "5.1", build: "503.0.38")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_5.1/xcode_5.1.dmg",
@@ -78,7 +78,7 @@ let xcodes5: Array<Xcode> = [
           requires: "10.8",
           compilers: [
             .llvm(number: "3.3"),
-            .clang(build: "500.2.79", number: "5.0")
+            .clang(number: "5.0", build: "500.2.79")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_5.0.2/xcode_5.0.2.dmg",
@@ -93,7 +93,7 @@ let xcodes5: Array<Xcode> = [
           requires: "10.8",
           compilers: [
             .llvm(number: "3.3"),
-            .clang(build: "500.2.79", number: "5.0")
+            .clang(number: "5.0", build: "500.2.79")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_5.0.1/xcode_5.0.1.dmg",
@@ -114,7 +114,7 @@ let xcodes5: Array<Xcode> = [
           requires: "10.8",
           compilers: [
             .llvm(number: "3.3"),
-            .clang(build: "500.2.75", number: "5.0")
+            .clang(number: "5.0", build: "500.2.75")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_5/xcode_5.dmg",

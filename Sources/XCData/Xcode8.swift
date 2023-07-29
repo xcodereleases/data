@@ -23,8 +23,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W260")
           ],
           compilers: [
-            .clang(build: "802.0.42", number: "8.1.0"),
-            .swift(build: "802.0.53", number: "3.1")
+            .clang(number: "8.1.0", build: "802.0.42"),
+            .swift(number: "3.1", build: "802.0.53")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3.3/Xcode_8.3.3.xip",
@@ -44,8 +44,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W260")
           ],
           compilers: [
-            .clang(build: "802.0.42", number: "8.1.0"),
-            .swift(build: "802.0.53", number: "3.1")
+            .clang(number: "8.1.0", build: "802.0.42"),
+            .swift(number: "3.1", build: "802.0.53")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3.2/Xcode_8.3.2.xip",
@@ -65,8 +65,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W260")
           ],
           compilers: [
-            .clang(build: "802.0.41", number: "8.1.0"),
-            .swift(build: "802.0.51", number: "3.1")
+            .clang(number: "8.1.0", build: "802.0.41"),
+            .swift(number: "3.1", build: "802.0.51")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3.1/Xcode_8.3.1.xip",
@@ -86,8 +86,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W260")
           ],
           compilers: [
-            .clang(build: "802.0.38", number: "8.1.0"),
-            .swift(build: "802.0.48", number: "3.1")
+            .clang(number: "8.1.0", build: "802.0.38"),
+            .swift(number: "3.1", build: "802.0.48")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3/Xcode_8.3.xip",
@@ -168,8 +168,8 @@ let xcodes8: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.9.0"),
-            .clang(build: "800.0.42.1", number: "8.0.0"),
-            .swift(build: "800.0.63", number: "3.0.2")
+            .clang(number: "8.0.0", build: "800.0.42.1"),
+            .swift(number: "3.0.2", build: "800.0.63")
          ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.2.1/Xcode_8.2.1.xip",
@@ -190,8 +190,8 @@ let xcodes8: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.9.0"),
-            .clang(build: "800.0.42.1", number: "8.0.0"),
-            .swift(build: "800.0.63", number: "3.0.2")
+            .clang(number: "8.0.0", build: "800.0.42.1"),
+            .swift(number: "3.0.2", build: "800.0.63")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.2/Xcode_8.2.xip",
@@ -236,8 +236,8 @@ let xcodes8: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.9.0"),
-            .clang(build: "800.0.42.1", number: "8.0.0"),
-            .swift(build: "800.0.58.6", number: "3.0.1")
+            .clang(number: "8.0.0", build: "800.0.42.1"),
+            .swift(number: "3.0.1", build: "800.0.58.6")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.1/Xcode_8.1.xip",
@@ -306,8 +306,8 @@ let xcodes8: Array<Xcode> = [
           ],
           compilers: [
             .llvm(number: "3.9.0"),
-            .clang(build: "800.0.38", number: "8.0.0"),
-            .swift(build: "800.0.46.2", number: "3.0")
+            .clang(number: "8.0.0", build: "800.0.38"),
+            .swift(number: "3.0", build: "800.0.46.2")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8/Xcode_8.xip",

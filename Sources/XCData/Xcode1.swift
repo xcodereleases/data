@@ -43,12 +43,12 @@ let xcodes1: Array<Xcode> = [
           date: (2003, 09, 28),
           requires: "10.3",
           sdks: [
-            .macOS(build: "5S60", number: "10.1.5"),
-            .macOS(build: "6L60", number: "10.2.6"),
-            .macOS(build: "7B85", number: "10.3")
+            .macOS(number: "10.1.5", build: "5S60"),
+            .macOS(number: "10.2.6", build: "6L60"),
+            .macOS(number: "10.3", build: "7B85")
           ],
           compilers: [
-            .gcc(build: "1495", number: "3.3")
+            .gcc(number: "3.3", build: "1495")
           ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Mac_OS_X/Mac_OS_X_10.3_Build_7B85/7B85_Xcode_CD.dmg",

@@ -70,23 +70,23 @@ extension Link {
 
 extension SDK {
     
-    static func macOS(build: String, number: String) -> SDK {
+    static func macOS(number: String, build: String) -> SDK {
         return SDK(platform: .macOS, version: Version(number: number, build: build))
     }
     
-    static func iOS(build: String, number: String) -> SDK {
+    static func iOS(number: String, build: String) -> SDK {
         return SDK(platform: .iOS, version: Version(number: number, build: build))
     }
     
-    static func watchOS(build: String, number: String) -> SDK {
+    static func watchOS(number: String, build: String) -> SDK {
         return SDK(platform: .watchOS, version: Version(number: number, build: build))
     }
     
-    static func tvOS(build: String, number: String) -> SDK {
+    static func tvOS(number: String, build: String) -> SDK {
         return SDK(platform: .tvOS, version: Version(number: number, build: build))
     }
     
-    static func visionOS(build: String, number: String) -> SDK {
+    static func visionOS(number: String, build: String) -> SDK {
         return SDK(platform: .visionOS, version: Version(number: number, build: build))
     }
     
@@ -134,23 +134,23 @@ extension SDK {
 
 extension Compiler {
     
-    static func gcc(build: String, number: String) -> Compiler {
+    static func gcc(number: String, build: String) -> Compiler {
         return Compiler(name: .gcc, version: Version(number: number, build: build))
     }
     
-    static func llvm_gcc(build: String, number: String) -> Compiler {
+    static func llvm_gcc(number: String, build: String) -> Compiler {
         return Compiler(name: .llvm_gcc, version: Version(number: number, build: build))
     }
     
-    static func llvm(build: String, number: String) -> Compiler {
+    static func llvm(number: String, build: String) -> Compiler {
         return Compiler(name: .llvm, version: Version(number: number, build: build))
     }
     
-    static func clang(build: String, number: String) -> Compiler {
+    static func clang(number: String, build: String) -> Compiler {
         return Compiler(name: .clang, version: Version(number: number, build: build))
     }
     
-    static func swift(build: String, number: String) -> Compiler {
+    static func swift(number: String, build: String) -> Compiler {
         return Compiler(name: .swift, version: Version(number: number, build: build))
     }
     
