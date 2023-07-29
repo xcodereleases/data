@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes10: Array<Xcode> = [
     
-    Xcode(version: V("10G8", "10.3"),
+    Xcode(number: "10.3",
+          build: "10G8",
           releaseKind: .gm,
           date: (2019, 07, 22),
           requires: "10.14.3",
@@ -31,7 +32,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_3_release_notes/")
           ]),
     
-    Xcode(version: V("10E1001", "10.2.1"),
+    Xcode(number: "10.2.1",
+          build: "10E1001",
           releaseKind: .gm,
           date: (2019, 04, 17),
           requires: "10.14.3",
@@ -51,7 +53,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_1_release_notes/")
           ]),
     
-    Xcode(version: V("10E125", "10.2"),
+    Xcode(number: "10.2",
+          build: "10E125",
           releaseKind: .gm,
           date: (2019, 03, 25),
           requires: "10.14.3",
@@ -71,7 +74,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_release_notes")
           ]),
     
-    Xcode(version: V("10P107d", "10.2"),
+    Xcode(number: "10.2",
+          build: "10P107d",
           releaseKind: .beta(4),
           date: (2019, 03, 04),
           requires: "10.14.3",
@@ -91,7 +95,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_beta_4_release_notes")
           ]),
     
-    Xcode(version: V("10P99q", "10.2"),
+    Xcode(number: "10.2",
+          build: "10P99q",
           releaseKind: .beta(3),
           date: (2019, 02, 19),
           requires: "10.14",
@@ -111,7 +116,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_beta_3_release_notes")
           ]),
     
-    Xcode(version: V("10P91b", "10.2"),
+    Xcode(number: "10.2",
+          build: "10P91b",
           releaseKind: .beta(2),
           date: (2019, 02, 04),
           requires: "10.14",
@@ -131,7 +137,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_beta_2_release_notes")
           ]),
     
-    Xcode(version: V("10P82s", "10.2"),
+    Xcode(number: "10.2",
+          build: "10P82s",
           releaseKind: .beta(1),
           date: (2019, 01, 24),
           requires: "10.14",
@@ -151,7 +158,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_2_beta_release_notes")
           ]),
     
-    Xcode(version: V("10B61", "10.1"),
+    Xcode(number: "10.1",
+          build: "10B61",
           releaseKind: .gm,
           date: (2018, 10, 30),
           requires: "10.13.6",
@@ -171,7 +179,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_release_notes")
           ]),
     
-    Xcode(version: V("10O45e", "10.1"),
+    Xcode(number: "10.1",
+          build: "10O45e",
           releaseKind: .beta(3),
           date: (2018, 10, 15),
           requires: "10.13.6",
@@ -191,7 +200,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_beta_3_release_notes")
           ]),
     
-    Xcode(version: V("10O35n", "10.1"),
+    Xcode(number: "10.1",
+          build: "10O35n",
           releaseKind: .beta(2),
           date: (2018, 10, 02),
           requires: "10.13.6",
@@ -211,7 +221,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_beta_2_release_notes")
           ]),
     
-    Xcode(version: V("10O23u", "10.1"),
+    Xcode(number: "10.1",
+          build: "10O23u",
           releaseKind: .beta(1),
           date: (2018, 09, 18),
           requires: "10.13.6",
@@ -231,7 +242,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_1_beta_release_notes")
           ]),
     
-    Xcode(version: V("10A255", "10.0"),
+    Xcode(number: "10.0",
+          build: "10A255",
           releaseKind: .gm,
           date: (2018, 09, 17),
           requires: "10.13.6",
@@ -251,7 +263,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes")
           ]),
     
-    Xcode(version: V("10A254a", "10.0"),
+    Xcode(number: "10.0",
+          build: "10A254a",
           releaseKind: .gmSeed(1),
           date: (2018, 09, 12),
           requires: "10.13.6",
@@ -270,7 +283,8 @@ let xcodes10: Array<Xcode> = [
                  checksums: .sha1("18e7222da6be18112df86cfe34a5e2f7a8ca2e5b"))
           ]),
     
-    Xcode(version: V("10L232m", "10.0"),
+    Xcode(number: "10.0",
+          build: "10L232m",
           releaseKind: .beta(6),
           date: (2018, 08, 13),
           requires: "10.13.4",
@@ -290,7 +304,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_10_Beta_6/Xcode_10_Beta_6_Release_Notes.pdf")
           ]),
     
-    Xcode(version: V("10L221o", "10.0"),
+    Xcode(number: "10.0",
+          build: "10L221o",
           releaseKind: .beta(5),
           date: (2018, 07, 30),
           requires: "10.13.4",
@@ -310,7 +325,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_10_beta_5/Release_Notes_for_Xcode_10_beta_5.pdf")
           ]),
     
-    Xcode(version: V("10L213o", "10.0"),
+    Xcode(number: "10.0",
+          build: "10L213o",
           releaseKind: .beta(4),
           date: (2018, 07, 17),
           requires: "10.13.4",
@@ -330,7 +346,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_10_beta_4/Release_Notes_for_Xcode_10_beta_4.pdf")
           ]),
     
-    Xcode(version: V("10L201y", "10.0"),
+    Xcode(number: "10.0",
+          build: "10L201y",
           releaseKind: .beta(3),
           date: (2018, 07, 03),
           requires: "10.13.4",
@@ -350,7 +367,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_10_Beta_3/Xcode_10_Beta_3_Release_Notes.pdf")
           ]),
     
-    Xcode(version: V("10L177m", "10.0"),
+    Xcode(number: "10.0",
+          build: "10L177m",
           releaseKind: .beta(2),
           date: (2018, 06, 19),
           requires: "10.13.4",
@@ -370,7 +388,8 @@ let xcodes10: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_10_Beta_2/Xcode_10_Beta_2_Release_Notes.pdf")
           ]),
     
-    Xcode(version: V("10L176w", "10.0"),
+    Xcode(number: "10.0",
+          build: "10L176w",
           releaseKind: .beta(1),
           date: (2018, 06, 04),
           requires: "10.13.4",

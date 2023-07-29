@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes6: Array<Xcode> = [
     
-    Xcode(version: V("6E35b", "6.4"),
+    Xcode(number: "6.4",
+          build: "6E35b",
           releaseKind: .release,
           date: (2015, 06, 30),
           requires: "10.10",
@@ -31,7 +32,8 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW364")
           ]),
 
-    Xcode(version: V("6E31c", "6.4"),
+    Xcode(number: "6.4",
+          build: "6E31c",
           releaseKind: .beta(4),
           date: (2015, 06, 09),
           requires: "10.10",
@@ -41,7 +43,8 @@ let xcodes6: Array<Xcode> = [
             .iOS(build: "12H4125a")
           ]),
 
-    Xcode(version: V("6D2105", "6.3.2"),
+    Xcode(number: "6.3.2",
+          build: "6D2105",
           releaseKind: .release,
           date: (2015, 05, 18),
           requires: "10.10",
@@ -61,17 +64,20 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW368")
           ]),
 
-    Xcode(version: V("6E23", "6.4"),
+    Xcode(number: "6.4",
+          build: "6E23",
           releaseKind: .beta(3),
           date: (2015, 05, 11),
           requires: "10.10"),
 
-    Xcode(version: V("6E14", "6.4"),
+    Xcode(number: "6.4",
+          build: "6E14",
           releaseKind: .beta(2),
           date: (2015, 04, 27),
           requires: "10.10"),
 
-    Xcode(version: V("6D1002", "6.3.1"),
+    Xcode(number: "6.3.1",
+          build: "6D1002",
           releaseKind: .release,
           date: (2015, 04, 21),
           requires: "10.10",
@@ -91,12 +97,14 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW370")
           ]),
 
-    Xcode(version: V("6E7", "6.4"),
+    Xcode(number: "6.4",
+          build: "6E7",
           releaseKind: .beta(1),
           date: (2015, 04, 13),
           requires: "10.10"),
 
-    Xcode(version: V("6D570", "6.3"),
+    Xcode(number: "6.3",
+          build: "6D570",
           releaseKind: .release,
           date: (2015, 04, 08),
           requires: "10.10",
@@ -116,17 +124,20 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW378")
           ]),
 
-    Xcode(version: V("6D554n", "6.3"),
+    Xcode(number: "6.3",
+          build: "6D554n",
           releaseKind: .beta(4),
           date: (2015, 03, 24),
           requires: "10.10"),
 
-    Xcode(version: V("6D543q", "6.3"),
+    Xcode(number: "6.3",
+          build: "6D543q",
           releaseKind: .beta(3),
           date: (2015, 03, 12),
           requires: "10.10"),
 
-    Xcode(version: V("6C131e", "6.2"),
+    Xcode(number: "6.2",
+          build: "6C131e",
           releaseKind: .release,
           date: (2015, 03, 09),
           requires: "10.9.4",
@@ -146,37 +157,44 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW412")
           ]),
 
-    Xcode(version: V("6D532l", "6.3"),
+    Xcode(number: "6.3",
+          build: "6D532l",
           releaseKind: .beta(2),
           date: (2015, 02, 23),
           requires: "10.10"),
 
-    Xcode(version: V("6D520o", "6.3"),
+    Xcode(number: "6.3",
+          build: "6D520o",
           releaseKind: .beta(1),
           date: (2015, 02, 09),
           requires: "10.10"),
 
-    Xcode(version: V("6C121", "6.2"),
+    Xcode(number: "6.2",
+          build: "6C121",
           releaseKind: .beta(5),
           date: (2015, 02, 02),
           requires: "10.9.4"),
 
-    Xcode(version: V("6C107a", "6.2"),
+    Xcode(number: "6.2",
+          build: "6C107a",
           releaseKind: .beta(4),
           date: (2015, 01, 12),
           requires: "10.9.4"),
 
-    Xcode(version: V("6C101", "6.2"),
+    Xcode(number: "6.2",
+          build: "6C101",
           releaseKind: .beta(3),
           date: (2014, 12, 18),
           requires: "10.9.4"),
 
-    Xcode(version: V("6C95a", "6.2"),
+    Xcode(number: "6.2",
+          build: "6C95a",
           releaseKind: .beta(2),
           date: (2014, 12, 10),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A2008a", "6.1.1"),
+    Xcode(number: "6.1.1",
+          build: "6A2008a",
           releaseKind: .release,
           date: (2014, 12, 02),
           requires: "10.9.4",
@@ -196,17 +214,20 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW423")
           ]),
 
-    Xcode(version: V("6C86e", "6.2"),
+    Xcode(number: "6.2",
+          build: "6C86e",
           releaseKind: .beta(1),
           date: (2014, 11, 18),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A2006", "6.1.1"),
+    Xcode(number: "6.1.1",
+          build: "6A2006",
           releaseKind: .gmSeed(1),
           date: (2014, 11, 14),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A1052d", "6.1"),
+    Xcode(number: "6.1",
+          build: "6A1052d",
           releaseKind: .release,
           date: (2014, 10, 20),
           requires: "10.9.4",
@@ -221,17 +242,20 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW432")
           ]),
 
-    Xcode(version: V("6A1046a", "6.1"),
+    Xcode(number: "6.1",
+          build: "6A1046a",
           releaseKind: .beta(3),
           date: (2014, 10, 13),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A1042b", "6.1"),
+    Xcode(number: "6.1",
+          build: "6A1042b",
           releaseKind: .beta(2),
           date: (2014, 10, 06),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A317", "6.0.1"),
+    Xcode(number: "6.0.1",
+          build: "6A317",
           releaseKind: .release,
           date: (2014, 09, 17),
           requires: "10.9.4",
@@ -250,12 +274,14 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW450")
           ]),
 
-    Xcode(version: V("6A1027", "6.1"),
+    Xcode(number: "6.1",
+          build: "6A1027",
           releaseKind: .beta(1),
           date: (2014, 09, 09),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A313", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A313",
           releaseKind: .release,
           date: (2014, 09, 09),
           requires: "10.9.4",
@@ -263,37 +289,44 @@ let xcodes6: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW453")
           ]),
 
-    Xcode(version: V("6A280n", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A280n",
           releaseKind: .beta(7),
           date: (2014, 09, 02),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A280e", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A280e",
           releaseKind: .beta(6),
           date: (2014, 08, 18),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A279r", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A279r",
           releaseKind: .beta(5),
           date: (2014, 08, 04),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A267n", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A267n",
           releaseKind: .beta(4),
           date: (2014, 07, 21),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A254o", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A254o",
           releaseKind: .beta(3),
           date: (2014, 07, 07),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A216f", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A216f",
           releaseKind: .beta(2),
           date: (2014, 06, 16),
           requires: "10.9.4"),
 
-    Xcode(version: V("6A215l", "6.0"),
+    Xcode(number: "6.0",
+          build: "6A215l",
           releaseKind: .beta(1),
           date: (2014, 06, 02),
           requires: "10.9.4")

@@ -10,7 +10,8 @@ import Foundation
 import XcodeReleases
 
 let xcodes14: Array<Xcode> = [
-    Xcode(version: V("14E300c", "14.3.1"),
+    Xcode(number: "14.3.1",
+          build: "14E300c",
           releaseKind: .release,
           date: (2023, 06, 01),
           requires: "13.0",
@@ -30,7 +31,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3_1-release-notes")
           ]),
      
-    Xcode(version: V("14E300b", "14.3.1"),
+    Xcode(number: "14.3.1",
+          build: "14E300b",
           releaseKind: .releaseCandidate(1),
           date: (2023, 05, 17),
           requires: "13.0",
@@ -50,7 +52,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3_1-release-notes")
           ]),
     
-    Xcode(version: V("14E222b", "14.3"),
+    Xcode(number: "14.3",
+          build: "14E222b",
           releaseKind: .release,
           date: (2023, 03, 30),
           requires: "13.0",
@@ -70,7 +73,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes")
           ]),
     
-    Xcode(version: V("14E222b", "14.3"),
+    Xcode(number: "14.3",
+          build: "14E222b",
           releaseKind: .releaseCandidate(2),
           date: (2023, 03, 27),
           requires: "13.0",
@@ -90,7 +94,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes")
           ]),
     
-    Xcode(version: V("14E222a", "14.3"),
+    Xcode(number: "14.3",
+          build: "14E222a",
           releaseKind: .releaseCandidate(1),
           date: (2023, 03, 21),
           requires: "13.0",
@@ -110,7 +115,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes")
           ]),
      
-    Xcode(version: V("14E5215g", "14.3"),
+    Xcode(number: "14.3",
+          build: "14E5215g",
           releaseKind: .beta(3),
           date: (2023, 03, 15),
           requires: "13.0",
@@ -130,7 +136,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes")
           ]),
      
-    Xcode(version: V("14E5207e", "14.3"),
+    Xcode(number: "14.3",
+          build: "14E5207e",
           releaseKind: .beta(2),
           date: (2023, 02, 28),
           requires: "13.0",
@@ -150,7 +157,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_3-release-notes")
           ]),
      
-    Xcode(version: V("14E5197f", "14.3"),
+    Xcode(number: "14.3",
+          build: "14E5197f",
           releaseKind: .beta(1),
           date: (2023, 02, 16),
           requires: "13.0",
@@ -171,7 +179,8 @@ let xcodes14: Array<Xcode> = [
           ]),
      
     
-    Xcode(version: V("14C18", "14.2"),
+    Xcode(number: "14.2",
+          build: "14C18",
           releaseKind: .release,
           date: (2022, 12, 13),
           requires: "12.5",
@@ -191,7 +200,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_2-release-notes")
           ]),
     
-    Xcode(version: V("14C18", "14.2"),
+    Xcode(number: "14.2",
+          build: "14C18",
           releaseKind: .releaseCandidate(1),
           date: (2022, 12, 07),
           requires: "12.5",
@@ -212,7 +222,8 @@ let xcodes14: Array<Xcode> = [
           ]),
      
     
-    Xcode(version: V("14B47b", "14.1"),
+    Xcode(number: "14.1",
+          build: "14B47b",
           releaseKind: .release,
           date: (2022, 11, 01),
           requires: "12.5",
@@ -232,7 +243,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")
           ]),
     
-    Xcode(version: V("14B47b", "14.1"),
+    Xcode(number: "14.1",
+          build: "14B47b",
           releaseKind: .releaseCandidate(2),
           date: (2022, 10, 24),
           requires: "12.5",
@@ -252,7 +264,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")
           ]),
     
-    Xcode(version: V("14B47", "14.1"),
+    Xcode(number: "14.1",
+          build: "14B47",
           releaseKind: .releaseCandidate(1),
           date: (2022, 10, 18),
           requires: "12.5",
@@ -272,7 +285,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")
           ]),
 
-    Xcode(version: V("14B5033e", "14.1"),
+    Xcode(number: "14.1",
+          build: "14B5033e",
           releaseKind: .beta(3),
           date: (2022, 09, 27),
           requires: "12.5",
@@ -292,7 +306,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")
           ]),
 
-    Xcode(version: V("14A400", "14.0.1"),
+    Xcode(number: "14.0.1",
+          build: "14A400",
           releaseKind: .release,
           date: (2022, 09, 26),
           requires: "12.5",
@@ -312,7 +327,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_0_1-release-notes")
           ]),
     
-    Xcode(version: V("14B5024i", "14.1"),
+    Xcode(number: "14.1",
+          build: "14B5024i",
           releaseKind: .beta(2),
           date: (2022, 09, 20),
           requires: "12.5",
@@ -332,7 +348,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")
           ]),
     
-    Xcode(version: V("14A400", "14.0.1"),
+    Xcode(number: "14.0.1",
+          build: "14A400",
           releaseKind: .releaseCandidate(1),
           date: (2022, 09, 16),
           requires: "12.5",
@@ -352,7 +369,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_0_1-release-notes")
           ]),
     
-    Xcode(version: V("14B5024h", "14.1"),
+    Xcode(number: "14.1",
+          build: "14B5024h",
           releaseKind: .beta(1),
           date: (2022, 09, 14),
           requires: "12.5",
@@ -372,7 +390,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14_1-release-notes")
           ]),
     
-    Xcode(version: V("14A309", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A309",
           releaseKind: .release,
           date: (2022, 09, 12),
           requires: "12.5",
@@ -392,7 +411,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")
           ]),
     
-    Xcode(version: V("14A309", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A309",
           releaseKind: .releaseCandidate(1),
           date: (2022, 09, 07),
           requires: "12.5",
@@ -412,7 +432,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")
           ]),
      
-    Xcode(version: V("14A5294g", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A5294g",
           releaseKind: .beta(6),
           date: (2022, 08, 23),
           requires: "12.4",
@@ -432,7 +453,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")
           ]),
      
-    Xcode(version: V("14A5294e", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A5294e",
           releaseKind: .beta(5),
           date: (2022, 08, 08),
           requires: "12.4",
@@ -452,7 +474,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")
           ]),
 
-    Xcode(version: V("14A5284g", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A5284g",
           releaseKind: .beta(4),
           date: (2022, 07, 27),
           requires: "12.4",
@@ -472,7 +495,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")
           ]),
      
-    Xcode(version: V("14A5270f", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A5270f",
           releaseKind: .beta(3),
           date: (2022, 07, 06),
           requires: "12.4",
@@ -493,7 +517,8 @@ let xcodes14: Array<Xcode> = [
           ]),
      
     
-    Xcode(version: V("14A5229c", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A5229c",
           releaseKind: .beta(2),
           date: (2022, 06, 22),
           requires: "12.4",
@@ -513,7 +538,8 @@ let xcodes14: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes")
           ]),
      
-    Xcode(version: V("14A5228q", "14.0"),
+    Xcode(number: "14.0",
+          build: "14A5228q",
           releaseKind: .beta(1),
           date: (2022, 06, 06),
           requires: "12.4",

@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes8: Array<Xcode> = [
 
-    Xcode(version: V("8E3004b", "8.3.3"),
+    Xcode(number: "8.3.3",
+          build: "8E3004b",
           releaseKind: .release,
           date: (2017, 06, 05),
           requires: "10.12",
@@ -31,7 +32,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW870")
           ]),
 
-    Xcode(version: V("8E2002", "8.3.2"),
+    Xcode(number: "8.3.2",
+          build: "8E2002",
           releaseKind: .release,
           date: (2017, 04, 18),
           requires: "10.12",
@@ -51,7 +53,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW853")
           ]),
 
-    Xcode(version: V("8E1000a", "8.3.1"),
+    Xcode(number: "8.3.1",
+          build: "8E1000a",
           releaseKind: .release,
           date: (2017, 04, 06),
           requires: "10.12",
@@ -71,7 +74,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW848")
           ]),
 
-    Xcode(version: V("8E162", "8.3"),
+    Xcode(number: "8.3",
+          build: "8E162",
           releaseKind: .release,
           date: (2017, 03, 27),
           requires: "10.12",
@@ -91,7 +95,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW160")
           ]),
 
-    Xcode(version: V("8E160", "8.3"),
+    Xcode(number: "8.3",
+          build: "8E160",
           releaseKind: .beta(5),
           date: (2017, 03, 21),
           requires: "10.12",
@@ -102,7 +107,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W260")
           ]),
 
-    Xcode(version: V("8W143q", "8.3"),
+    Xcode(number: "8.3",
+          build: "8W143q",
           releaseKind: .beta(4),
           date: (2017, 03, 08),
           requires: "10.12",
@@ -113,7 +119,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W5257a")
           ]),
 
-    Xcode(version: V("8W132p", "8.3"),
+    Xcode(number: "8.3",
+          build: "8W132p",
           releaseKind: .beta(3),
           date: (2017, 02, 20),
           requires: "10.12",
@@ -124,7 +131,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W5241c")
           ]),
 
-    Xcode(version: V("8W120l", "8.3"),
+    Xcode(number: "8.3",
+          build: "8W120l",
           releaseKind: .beta(2),
           date: (2017, 02, 06),
           requires: "10.12",
@@ -135,7 +143,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W5231c")
           ]),
 
-    Xcode(version: V("8W109m", "8.3"),
+    Xcode(number: "8.3",
+          build: "8W109m",
           releaseKind: .beta(1),
           date: (2017, 01, 24),
           requires: "10.12",
@@ -146,7 +155,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14W5222c")
           ]),
 
-    Xcode(version: V("8C1002", "8.2.1"),
+    Xcode(number: "8.2.1",
+          build: "8C1002",
           releaseKind: .release,
           date: (2016, 12, 19),
           requires: "10.11.5",
@@ -167,7 +177,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW157")
           ]),
 
-    Xcode(version: V("8C38", "8.2"),
+    Xcode(number: "8.2",
+          build: "8C38",
           releaseKind: .release,
           date: (2016, 12, 12),
           requires: "10.11.5",
@@ -188,7 +199,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW9")
           ]),
 
-    Xcode(version: V("8C30a", "8.2"),
+    Xcode(number: "8.2",
+          build: "8C30a",
           releaseKind: .beta(2),
           date: (2016, 11, 14),
           requires: "10.11.5",
@@ -199,7 +211,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14U5582a")
           ]),
 
-    Xcode(version: V("8C23", "8.2"),
+    Xcode(number: "8.2",
+          build: "8C23",
           releaseKind: .beta(1),
           date: (2016, 10, 31),
           requires: "10.11.5",
@@ -210,7 +223,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14U5565c")
           ]),
 
-    Xcode(version: V("8B62", "8.1"),
+    Xcode(number: "8.1",
+          build: "8B62",
           releaseKind: .release,
           date: (2016, 10, 27),
           requires: "10.11.5",
@@ -231,7 +245,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW24")
           ]),
 
-    Xcode(version: V("8T61a", "8.1"),
+    Xcode(number: "8.1",
+          build: "8T61a",
           releaseKind: .gmSeed(1),
           date: (2016, 10, 24),
           requires: "10.11.5",
@@ -242,7 +257,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T328")
           ]),
 
-    Xcode(version: V("8T47", "8.1"),
+    Xcode(number: "8.1",
+          build: "8T47",
           releaseKind: .beta(3),
           date: (2016, 10, 10),
           requires: "10.11.5",
@@ -253,7 +269,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T328")
           ]),
 
-    Xcode(version: V("8T46g", "8.1"),
+    Xcode(number: "8.1",
+          build: "8T46g",
           releaseKind: .beta(2),
           date: (2016, 10, 04),
           requires: "10.11.5",
@@ -264,7 +281,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T328")
           ]),
 
-    Xcode(version: V("8T29o", "8.1"),
+    Xcode(number: "8.1",
+          build: "8T29o",
           releaseKind: .beta(1),
           date: (2016, 09, 21),
           requires: "10.11.5",
@@ -275,7 +293,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T328")
           ]),
 
-    Xcode(version: V("8A218a", "8.0"),
+    Xcode(number: "8.0",
+          build: "8A218a",
           releaseKind: .release,
           date: (2016, 09, 13),
           requires: "10.11.5",
@@ -296,7 +315,8 @@ let xcodes8: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW78")
           ]),
 
-    Xcode(version: V("8A218a", "8.0"),
+    Xcode(number: "8.0",
+          build: "8A218a",
           releaseKind: .gmSeed(1),
           date: (2016, 09, 07),
           requires: "10.11.5",
@@ -307,7 +327,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T328")
           ]),
 
-    Xcode(version: V("8S201h", "8.0"),
+    Xcode(number: "8.0",
+          build: "8S201h",
           releaseKind: .beta(6),
           date: (2016, 08, 15),
           requires: "10.11.5",
@@ -318,7 +339,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T5326a")
           ]),
 
-    Xcode(version: V("8S193k", "8.0"),
+    Xcode(number: "8.0",
+          build: "8S193k",
           releaseKind: .beta(5),
           date: (2016, 08, 09),
           requires: "10.11.5",
@@ -329,7 +351,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T5321a")
           ]),
 
-    Xcode(version: V("8S188o", "8.0"),
+    Xcode(number: "8.0",
+          build: "8S188o",
           releaseKind: .beta(4),
           date: (2016, 08, 01),
           requires: "10.11.5",
@@ -340,7 +363,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T5308d")
           ]),
 
-    Xcode(version: V("8S174q", "8.0"),
+    Xcode(number: "8.0",
+          build: "8S174q",
           releaseKind: .beta(3),
           date: (2016, 07, 18),
           requires: "10.11.5",
@@ -351,7 +375,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T5296d")
           ]),
 
-    Xcode(version: V("8S162m", "8.0"),
+    Xcode(number: "8.0",
+          build: "8S162m",
           releaseKind: .beta(2),
           date: (2016, 07, 05),
           requires: "10.11.5",
@@ -362,7 +387,8 @@ let xcodes8: Array<Xcode> = [
             .tvOS(build: "14T5284c")
           ]),
 
-    Xcode(version: V("8S128d", "8.0"),
+    Xcode(number: "8.0",
+          build: "8S128d",
           releaseKind: .beta(1),
           date: (2016, 06, 13),
           requires: "10.11.5",

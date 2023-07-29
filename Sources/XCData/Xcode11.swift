@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes11: Array<Xcode> = [
 
-    Xcode(version: V("11E801a", "11.7"),
+    Xcode(number: "11.7",
+          build: "11E801a",
           releaseKind: .gm,
           date: (2020, 09, 01),
           requires: "10.15.2",
@@ -31,7 +32,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-release-notes")
           ]),
     
-    Xcode(version: V("11E801a", "11.7"),
+    Xcode(number: "11.7",
+          build: "11E801a",
           releaseKind: .beta(1),
           date: (2020, 08, 26),
           requires: "10.15.2",
@@ -51,7 +53,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-beta-release-notes/")
           ]),
 
-    Xcode(version: V("11E708", "11.6"),
+    Xcode(number: "11.6",
+          build: "11E708",
           releaseKind: .gm,
           date: (2020, 07, 15),
           requires: "10.15.2",
@@ -71,7 +74,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes")
           ]),
 
-    Xcode(version: V("11N700h", "11.6"),
+    Xcode(number: "11.6",
+          build: "11N700h",
           releaseKind: .beta(1),
           date: (2020, 06, 09),
           requires: "10.15.2",
@@ -91,7 +95,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_6_beta_release_notes")
           ]),
 
-    Xcode(version: V("11E608c", "11.5"),
+    Xcode(number: "11.5",
+          build: "11E608c",
           releaseKind: .gm,
           date: (2020, 05, 20),
           requires: "10.15.2",
@@ -111,7 +116,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_release_notes")
           ]),
 
-    Xcode(version: V("11E608c", "11.5"),
+    Xcode(number: "11.5",
+          build: "11E608c",
           releaseKind: .gmSeed(1),
           date: (2020, 05, 18),
           requires: "10.15.2",
@@ -131,7 +137,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_gm_seed_release_notes")
           ]),
     
-    Xcode(version: V("11N605f", "11.5"),
+    Xcode(number: "11.5",
+          build: "11N605f",
           releaseKind: .beta(2),
           date: (2020, 05, 06),
           requires: "10.15.2",
@@ -151,7 +158,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_2_release_notes")
           ]),
 
-    Xcode(version: V("11N605c", "11.5"),
+    Xcode(number: "11.5",
+          build: "11N605c",
           releaseKind: .beta(1),
           date: (2020, 04, 29),
           requires: "10.15.2",
@@ -171,7 +179,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_release_notes")
           ]),
 
-    Xcode(version: V("11E503a", "11.4.1"),
+    Xcode(number: "11.4.1",
+          build: "11E503a",
           releaseKind: .gm,
           date: (2020, 04, 16),
           requires: "10.15.2",
@@ -191,7 +200,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_1_release_notes")
           ]),
 
-    Xcode(version: V("11E146", "11.4"),
+    Xcode(number: "11.4",
+          build: "11E146",
           releaseKind: .gm,
           date: (2020, 03, 24),
           requires: "10.15.2",
@@ -211,7 +221,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_release_notes")
           ]),
     
-    Xcode(version: V("11N132i", "11.4"),
+    Xcode(number: "11.4",
+          build: "11N132i",
           releaseKind: .beta(3),
           date: (2020, 03, 03),
           requires: "10.15.2",
@@ -231,7 +242,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_3_release_notes")
           ]),
 
-    Xcode(version: V("11N123k", "11.4"),
+    Xcode(number: "11.4",
+          build: "11N123k",
           releaseKind: .beta(2),
           date: (2020, 02, 19),
           requires: "10.15.2",
@@ -251,7 +263,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_2_release_notes")
           ]),
 
-    Xcode(version: V("11N111s", "11.4"),
+    Xcode(number: "11.4",
+          build: "11N111s",
           releaseKind: .beta(1),
           date: (2020, 02, 05),
           requires: "10.15.2",
@@ -271,7 +284,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_release_notes")
           ]),
 
-    Xcode(version: V("11C505", "11.3.1"),
+    Xcode(number: "11.3.1",
+          build: "11C505",
           releaseKind: .gm,
           date: (2020, 01, 13),
           requires: "10.14.4",
@@ -291,7 +305,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_1_release_notes")
           ]),
 
-    Xcode(version: V("11C29", "11.3"),
+    Xcode(number: "11.3",
+          build: "11C29",
           releaseKind: .gm,
           date: (2019, 12, 10),
           requires: "10.14.4",
@@ -311,7 +326,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_release_notes")
           ]),
 
-    Xcode(version: V("11C24b", "11.3"),
+    Xcode(number: "11.3",
+          build: "11C24b",
           releaseKind: .beta(1),
           date: (2019, 11, 13),
           requires: "10.14.4",
@@ -331,7 +347,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_beta_release_notes/")
           ]),
 
-    Xcode(version: V("11B500", "11.2.1"),
+    Xcode(number: "11.2.1",
+          build: "11B500",
           releaseKind: .gm,
           date: (2019, 11, 12),
           requires: "10.14.4",
@@ -351,7 +368,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_release_notes")
           ]),
 
-    Xcode(version: V("11B53", "11.2.1"),
+    Xcode(number: "11.2.1",
+          build: "11B53",
           releaseKind: .gmSeed(1),
           date: (2019, 11, 05),
           requires: "10.14.4",
@@ -371,7 +389,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_gm_seed_release_notes/")
           ]),
 
-    Xcode(version: V("11B52", "11.2"),
+    Xcode(number: "11.2",
+          build: "11B52",
           releaseKind: .gm,
           date: (2019, 10, 31),
           requires: "10.14.4",
@@ -391,7 +410,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_release_notes")
           ]),
 
-    Xcode(version: V("11B44", "11.2"),
+    Xcode(number: "11.2",
+          build: "11B44",
           releaseKind: .beta(2),
           date: (2019, 10, 11),
           requires: "10.14.4",
@@ -411,7 +431,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_2_release_notes")
           ]),
 
-    Xcode(version: V("11A1027", "11.1"),
+    Xcode(number: "11.1",
+          build: "11A1027",
           releaseKind: .gm,
           date: (2019, 10, 07),
           requires: "10.14.4",
@@ -431,7 +452,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/")
           ]),
 
-    Xcode(version: V("11B41", "11.2"),
+    Xcode(number: "11.2",
+          build: "11B41",
           releaseKind: .beta(1),
           date: (2019, 10, 02),
           requires: "10.14.4",
@@ -451,7 +473,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_release_notes/")
           ]),
 
-    Xcode(version: V("11A1027", "11.1"),
+    Xcode(number: "11.1",
+          build: "11A1027",
           releaseKind: .gmSeed(1),
           date: (2019, 09, 24),
           requires: "10.14.4",
@@ -471,7 +494,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/")
           ]),
 
-    Xcode(version: V("11A420a", "11.0"),
+    Xcode(number: "11.0",
+          build: "11A420a",
           releaseKind: .gm,
           date: (2019, 09, 20),
           requires: "10.14.4",
@@ -491,7 +515,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
           ]),
 
-    Xcode(version: V("11A420a", "11.0"),
+    Xcode(number: "11.0",
+          build: "11A420a",
           releaseKind: .gmSeed(2),
           date: (2019, 09, 16),
           requires: "10.14.4",
@@ -511,7 +536,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
           ]),
     
-    Xcode(version: V("11A419c", "11.0"),
+    Xcode(number: "11.0",
+          build: "11A419c",
           releaseKind: .gmSeed(1),
           date: (2019, 09, 10),
           requires: "10.14.4",
@@ -531,7 +557,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
           ]),
     
-    Xcode(version: V("11M392r", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M392r",
           releaseKind: .beta(7),
           date: (2019, 08, 27),
           requires: "10.14.4",
@@ -551,7 +578,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_7_release_notes")
           ]),
     
-    Xcode(version: V("11M392q", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M392q",
           releaseKind: .beta(6),
           date: (2019, 08, 19),
           requires: "10.14.4",
@@ -571,7 +599,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_6_release_notes")
           ]),
     
-    Xcode(version: V("11M382q", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M382q",
           releaseKind: .beta(5),
           date: (2019, 07, 29),
           requires: "10.14.4",
@@ -591,7 +620,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_5_release_notes")
           ]),
     
-    Xcode(version: V("11M374r", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M374r",
           releaseKind: .beta(4),
           date: (2019, 07, 17),
           requires: "10.14.4",
@@ -611,7 +641,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_4_release_notes")
           ]),
     
-    Xcode(version: V("11M362v", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M362v",
           releaseKind: .beta(3),
           date: (2019, 07, 02),
           requires: "10.14.4",
@@ -631,7 +662,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_3_release_notes")
           ]),
     
-    Xcode(version: V("11M337n", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M337n",
           releaseKind: .beta(2),
           date: (2019, 06, 17),
           requires: "10.14.4",
@@ -651,7 +683,8 @@ let xcodes11: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_2_release_notes")
           ]),
     
-    Xcode(version: V("11M336w", "11.0"),
+    Xcode(number: "11.0",
+          build: "11M336w",
           releaseKind: .beta(1),
           date: (2019, 06, 03),
           requires: "10.14.4",

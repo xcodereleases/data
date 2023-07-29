@@ -9,7 +9,8 @@ import Foundation
 import XcodeReleases
 
 let xcodes15: Array<Xcode> = [
-    Xcode(version: V("15A5209g", "15.0"),
+    Xcode(number: "15.0",
+          build: "15A5209g",
           releaseKind: .beta(5),
           date: (2023, 07, 25),
           requires: "13.4",
@@ -34,7 +35,8 @@ let xcodes15: Array<Xcode> = [
             Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_2_Simulator_Runtime/visionOS_1_beta_2_Simulator_Runtime.dmg", checksums: .sha1("5fa0348eca9c0f5fa69d169e328bb18318cba074"))
           ]),
     
-    Xcode(version: V("15A5195m", "15.0"),
+    Xcode(number: "15.0",
+          build: "15A5195m",
           releaseKind: .beta(4),
           date: (2023, 07, 11),
           requires: "13.4",
@@ -64,7 +66,8 @@ let xcodes15: Array<Xcode> = [
                  checksums: .sha1("b6cb08ec1a9a9319393062d24308ede86e4f183a"))
           ]),
     
-    Xcode(version: V("15A5195k", "15.0"),
+    Xcode(number: "15.0",
+          build: "15A5195k",
           releaseKind: .beta(3),
           date: (2023, 07, 05),
           requires: "13.4",
@@ -94,7 +97,8 @@ let xcodes15: Array<Xcode> = [
                  checksums: .sha1("b6cb08ec1a9a9319393062d24308ede86e4f183a"))
           ]),
     
-    Xcode(version: V("15A5161b", "15.0"),
+    Xcode(number: "15.0",
+          build: "15A5161b",
           releaseKind: .beta(2),
           date: (2023, 06, 21),
           requires: "13.4",
@@ -124,7 +128,8 @@ let xcodes15: Array<Xcode> = [
                  checksums: .sha1("b6cb08ec1a9a9319393062d24308ede86e4f183a")),
           ]),
     
-    Xcode(version: V("15A5160n", "15.0"),
+    Xcode(number: "15.0",
+          build: "15A5160n",
           releaseKind: .beta(1),
           date: (2023, 06, 05),
           requires: "13.3",

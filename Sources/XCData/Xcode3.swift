@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes3: Array<Xcode> = [
 
-    Xcode(version: V("10M25xx", "3.2.6"),
+    Xcode(number: "3.2.6",
+          build: "10M25xx",
           releaseKind: .release,
           date: (2011, 03, 06),
           requires: "10.6.4",
@@ -31,7 +32,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.2.6_and_ios_sdk_4.3__final/xcode_3_and_ios_sdk_4.3_readme.pdf")
           ]),
 
-    Xcode(version: V("10M2423", "3.2.5"),
+    Xcode(number: "3.2.5",
+          build: "10M2423",
           releaseKind: .release,
           date: (2010, 11, 18),
           requires: "10.6.4",
@@ -51,7 +53,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/ios/ios_sdk_4.2__final/readme_xcode_3.2.5_and_ios_4.2.pdf")
           ]),
 
-    Xcode(version: V("10M2309", "3.2.4"),
+    Xcode(number: "3.2.4",
+          build: "10M2309",
           releaseKind: .release,
           date: (2010, 09, 06),
           requires: "10.6.2",
@@ -72,7 +75,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/ios/ios_sdk_4.1__final/finalv2_about_xcode_3.2.4_and_ios_sdk_4.1.pdf")
           ]),
     
-    Xcode(version: V("10M2262", "3.2.3"),
+    Xcode(number: "3.2.3",
+          build: "10M2262",
           releaseKind: .release,
           date: (2010, 08, 10),
           requires: "10.6.2",
@@ -91,7 +95,8 @@ let xcodes3: Array<Xcode> = [
             Link(xcode: "https://download.developer.apple.com/ios/ios_sdk_4.0.2__final/xcode_3.2.3_and_ios_sdk_4.0.2.dmg", checksums: .sha1("643c30f02575ee256a7ee1d15b5207602bb6d80d"))
           ]),
 
-    Xcode(version: V("10M2262", "3.2.3"),
+    Xcode(number: "3.2.3",
+          build: "10M2262",
           releaseKind: .release,
           date: (2010, 07, 06),
           requires: "10.6.2",
@@ -112,7 +117,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/ios/ios_sdk_4.0.1__final/final_about_xcode_3.2.3_and_ios_sdk_4.0.1.pdf")
           ]),
 
-    Xcode(version: V("10M2154", "3.2.2"),
+    Xcode(number: "3.2.2",
+          build: "10M2154",
           releaseKind: .release,
           date: (2010, 03, 29),
           requires: "10.6.2",
@@ -125,7 +131,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.2.2_developer_tools_beta_20728/about_xcode_3.2.2.pdf")
           ]),
 
-    Xcode(version: V("10M2020", "3.2.1"),
+    Xcode(number: "3.2.1",
+          build: "10M2020",
           releaseKind: .release,
           date: (2009, 10, 07),
           requires: "10.6",
@@ -141,7 +148,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.2.1_developer_tools/about_xcode_3.2.1.pdf")
           ]),
 
-    Xcode(version: V("10A432", "3.2"),
+    Xcode(number: "3.2",
+          build: "10A432",
           releaseKind: .release,
           date: (2009, 08, 26),
           requires: "10.6",
@@ -162,7 +170,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.2/about_xcode_3.2.pdf")
           ]),
 
-    Xcode(version: V("9M2809", "3.1.4"),
+    Xcode(number: "3.1.4",
+          build: "9M2809",
           releaseKind: .release,
           date: (2009, 07, 09),
           requires: "10.5.7",
@@ -178,7 +187,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.1.4_developer_tools/about_xcode_tools_3.1.4.pdf")
           ]),
 
-    Xcode(version: V("9M2736", "3.1.3"),
+    Xcode(number: "3.1.3",
+          build: "9M2736",
           releaseKind: .release,
           date: (2009, 06, 16),
           requires: "10.5.7",
@@ -191,7 +201,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.1.3_developer_tools/about_xcode_tools_3.1.3.pdf")
           ]),
 
-    Xcode(version: V("9M2621", "3.1.2"),
+    Xcode(number: "3.1.2",
+          build: "9M2621",
           releaseKind: .release,
           date: (2008, 11, 23),
           requires: "10.5",
@@ -201,7 +212,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.1.2_developer_tools/about_xcode_tools_3.1.2.pdf")
           ]),
 
-    Xcode(version: V("9M2517", "3.1.1"),
+    Xcode(number: "3.1.1",
+          build: "9M2517",
           releaseKind: .release,
           date: (2008, 07, 23),
           requires: "10.5",
@@ -211,7 +223,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.1.1_developer_tools_preview_1/about_xcode_3.1.1_tools.pdf")
           ]),
 
-    Xcode(version: V("9M2199", "3.1"),
+    Xcode(number: "3.1",
+          build: "9M2199",
           releaseKind: .release,
           date: (2008, 07, 10),
           requires: "10.5",
@@ -221,7 +234,8 @@ let xcodes3: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_3.1_developer_tools/about_xcode_tools_3.1.pdf")
           ]),
 
-    Xcode(version: V("9A581", "3.0"),
+    Xcode(number: "3.0",
+          build: "9A581",
           releaseKind: .release,
           date: (2007, 10, 25),
           requires: "10.5",

@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes4: Array<Xcode> = [
 
-    Xcode(version: V("4H1503", "4.6.3"),
+    Xcode(number: "4.6.3",
+          build: "4H1503",
           releaseKind: .release,
           date: (2013, 06, 12),
           requires: "10.7",
@@ -31,7 +32,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW600")
           ]),
 
-    Xcode(version: V("4H1003", "4.6.2"),
+    Xcode(number: "4.6.2",
+          build: "4H1003",
           releaseKind: .release,
           date: (2013, 04, 15),
           requires: "10.7",
@@ -51,7 +53,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW603")
           ]),
 
-    Xcode(version: V("4H512", "4.6.1"),
+    Xcode(number: "4.6.1",
+          build: "4H512",
           releaseKind: .release,
           date: (2013, 03, 14),
           requires: "10.7",
@@ -71,7 +74,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW612")
           ]),
 
-    Xcode(version: V("4H127", "4.6"),
+    Xcode(number: "4.6",
+          build: "4H127",
           releaseKind: .release,
           date: (2013, 01, 28),
           requires: "10.7",
@@ -91,7 +95,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.6/release_notes_xcode46gm.pdf")
           ]),
 
-    Xcode(version: V("4H112f", "4.6"),
+    Xcode(number: "4.6",
+          build: "4H112f",
           releaseKind: .developerPreview(4),
           date: (2012, 12, 17),
           requires: "10.7",
@@ -101,7 +106,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B5126b")
           ]),
 
-    Xcode(version: V("4H104c", "4.6"),
+    Xcode(number: "4.6",
+          build: "4H104c",
           releaseKind: .developerPreview(3),
           date: (2012, 12, 03),
           requires: "10.7",
@@ -111,7 +117,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B5117b")
           ]),
 
-    Xcode(version: V("4H95e", "4.6"),
+    Xcode(number: "4.6",
+          build: "4H95e",
           releaseKind: .developerPreview(2),
           date: (2012, 11, 12),
           requires: "10.7",
@@ -121,7 +128,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B5105c")
           ]),
 
-    Xcode(version: V("4H90b", "4.6"),
+    Xcode(number: "4.6",
+          build: "4H90b",
           releaseKind: .developerPreview(1),
           date: (2012, 11, 01),
           requires: "10.7",
@@ -131,7 +139,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10B5095e")
           ]),
 
-    Xcode(version: V("4G2008a", "4.5.2"),
+    Xcode(number: "4.5.2",
+          build: "4G2008a",
           releaseKind: .release,
           date: (2012, 11, 01),
           requires: "10.7",
@@ -151,7 +160,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/release_notes_xcode_4.5.2.pdf")
           ]),
 
-    Xcode(version: V("4G1004", "4.5.1"),
+    Xcode(number: "4.5.1",
+          build: "4G1004",
           releaseKind: .release,
           date: (2012, 10, 03),
           requires: "10.7",
@@ -171,7 +181,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.1/release_notes_xcode_4.5.1.pdf")
           ]),
 
-    Xcode(version: V("4G182", "4.5"),
+    Xcode(number: "4.5",
+          build: "4G182",
           releaseKind: .release,
           date: (2012, 09, 19),
           requires: "10.7",
@@ -191,7 +202,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW643")
           ]),
 
-    Xcode(version: V("4F1003", "4.4.1"),
+    Xcode(number: "4.4.1",
+          build: "4F1003",
           releaseKind: .release,
           date: (2012, 08, 07),
           requires: "10.7",
@@ -211,7 +223,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW670")
           ]),
 
-    Xcode(version: V("4G144l", "4.5"),
+    Xcode(number: "4.5",
+          build: "4G144l",
           releaseKind: .gmSeed(4),
           date: (2012, 08, 06),
           requires: "10.7",
@@ -221,7 +234,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A5376e")
           ]),
 
-    Xcode(version: V("4G125j", "4.5"),
+    Xcode(number: "4.5",
+          build: "4G125j",
           releaseKind: .gmSeed(3),
           date: (2012, 07, 16),
           requires: "10.7",
@@ -231,7 +245,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A5355e")
           ]),
 
-    Xcode(version: V("4G108j", "4.5"),
+    Xcode(number: "4.5",
+          build: "4G108j",
           releaseKind: .gmSeed(2),
           date: (2012, 06, 25),
           requires: "10.7",
@@ -241,7 +256,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A5338d")
           ]),
 
-    Xcode(version: V("4G78z", "4.5"),
+    Xcode(number: "4.5",
+          build: "4G78z",
           releaseKind: .gmSeed(1),
           date: (2012, 06, 11),
           requires: "10.7",
@@ -251,7 +267,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "10A5316k")
           ]),
 
-    Xcode(version: V("4E3002", "4.3.3"),
+    Xcode(number: "4.3.3",
+          build: "4E3002",
           releaseKind: .release,
           date: (2012, 06, 07),
           requires: "10.7",
@@ -265,7 +282,8 @@ let xcodes4: Array<Xcode> = [
                  checksums: .sha1("d806ca8937b43a22d2f4e7c9ad8cc06e2a7298d8"))
           ]),
 
-    Xcode(version: V("4E2002", "4.3.2"),
+    Xcode(number: "4.3.2",
+          build: "4E2002",
           releaseKind: .release,
           date: (2012, 03, 21),
           requires: "10.7",
@@ -282,7 +300,8 @@ let xcodes4: Array<Xcode> = [
                  checksums: .sha1("8e2723f24f2a58af78317c115e1dc8e4f3c96b43"))
           ]),
 
-    Xcode(version: V("4F134", "4.4"),
+    Xcode(number: "4.4",
+          build: "4F134",
           releaseKind: .release,
           date: (2012, 03, 15),
           requires: "10.7",
@@ -300,7 +319,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/release_notes_xcode44gm.pdf")
           ]),
 
-    Xcode(version: V("4E1019", "4.3.1"),
+    Xcode(number: "4.3.1",
+          build: "4E1019",
           releaseKind: .release,
           date: (2012, 03, 05),
           requires: "10.7",
@@ -317,7 +337,8 @@ let xcodes4: Array<Xcode> = [
                  checksums: .sha1("82d89d4029665cca28d806361e4607d9875ac9a4"))
           ]),
 
-    Xcode(version: V("4F90", "4.4"),
+    Xcode(number: "4.4",
+          build: "4F90",
           releaseKind: .gmSeed(1),
           date: (2012, 02, 16),
           requires: "10.7",
@@ -325,7 +346,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B174")
           ]),
 
-    Xcode(version: V("4E109", "4.3"),
+    Xcode(number: "4.3",
+          build: "4E109",
           releaseKind: .release,
           date: (2012, 02, 12),
           requires: "10.7",
@@ -343,7 +365,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW699")
           ]),
 
-    Xcode(version: V("4E71d", "4.3"),
+    Xcode(number: "4.3",
+          build: "4E71d",
           releaseKind: .gmSeed(2),
           date: (2012, 01, 06),
           requires: "10.7",
@@ -351,7 +374,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B5141a")
           ]),
 
-    Xcode(version: V("4E57a", "4.3"),
+    Xcode(number: "4.3",
+          build: "4E57a",
           releaseKind: .gmSeed(1),
           date: (2011, 12, 12),
           requires: "10.7",
@@ -359,7 +383,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9B5127c")
           ]),
 
-    Xcode(version: V("4D502", "4.2.1"),
+    Xcode(number: "4.2.1",
+          build: "4D502",
           releaseKind: .release,
           date: (2011, 11, 17),
           requires: "10.7",
@@ -371,7 +396,8 @@ let xcodes4: Array<Xcode> = [
                  checksums: .sha1("2f800aadc6b51092e0375d34ac45702bcef59f5c"))
           ]),
 
-    Xcode(version: V("4D199", "4.2"),
+    Xcode(number: "4.2",
+          build: "4D199",
           releaseKind: .release,
           date: (2011, 10, 12),
           requires: "10.7",
@@ -389,7 +415,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW713")
           ]),
 
-    Xcode(version: V("4C199", "4.2"),
+    Xcode(number: "4.2",
+          build: "4C199",
           releaseKind: .release,
           date: (2011, 10, 12),
           requires: "10.6.8",
@@ -407,7 +434,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_snow_leopard/xcode_4.2_for_snow_leopard_readme.pdf")
           ]),
 
-    Xcode(version: V("4B110f", "4.1"),
+    Xcode(number: "4.1",
+          build: "4B110f",
           releaseKind: .release,
           date: (2011, 08, 29),
           requires: "10.6.8",
@@ -423,7 +451,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_snow_leopard_21110/xcode_4.1_for_snow_leopard_readme.pdf")
           ]),
 
-    Xcode(version: V("4B110i", "4.1"),
+    Xcode(number: "4.1",
+          build: "4B110i",
           releaseKind: .release,
           date: (2011, 07, 20),
           requires: "10.7",
@@ -438,7 +467,8 @@ let xcodes4: Array<Xcode> = [
                  checksums: .sha1("7ccb636d51d54e88c2d27be55cbff107d5be96a0"))
           ]),
 
-    Xcode(version: V("4A2002a", "4.0.2"),
+    Xcode(number: "4.0.2",
+          build: "4A2002a",
           releaseKind: .release,
           date: (2011, 04, 12),
           requires: "10.6.8",
@@ -455,7 +485,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.2_and_ios_sdk_4.3/final_xcode_4.0.2_readme.pdf")
           ]),
 
-    Xcode(version: V("4A1006", "4.0.1"),
+    Xcode(number: "4.0.1",
+          build: "4A1006",
           releaseKind: .release,
           date: (2011, 03, 23),
           requires: "10.6.8",
@@ -465,7 +496,8 @@ let xcodes4: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.1_and_ios_sdk_4.3/xcode_4.0.1_readme.pdf")
           ]),
 
-    Xcode(version: V("4A304a", "4.0"),
+    Xcode(number: "4.0",
+          build: "4A304a",
           releaseKind: .release,
           date: (2011, 03, 09),
           requires: "10.6.8",

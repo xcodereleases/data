@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes7: Array<Xcode> = [
 
-    Xcode(version: V("7D1014", "7.3.1"),
+    Xcode(number: "7.3.1",
+          build: "7D1014",
           releaseKind: .release,
           date: (2016, 05, 03),
           requires: "10.11",
@@ -32,7 +33,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW217")
           ]),
 
-    Xcode(version: V("7D1012", "7.3.1"),
+    Xcode(number: "7.3.1",
+          build: "7D1012",
           releaseKind: .gmSeed(1),
           date: (2016, 04, 19),
           requires: "10.11",
@@ -43,7 +45,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13Y227")
           ]),
 
-    Xcode(version: V("7D175", "7.3"),
+    Xcode(number: "7.3",
+          build: "7D175",
           releaseKind: .release,
           date: (2016, 03, 21),
           requires: "10.11",
@@ -64,7 +67,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW233")
           ]),
 
-    Xcode(version: V("7D162j", "7.3"),
+    Xcode(number: "7.3",
+          build: "7D162j",
           releaseKind: .beta(5),
           date: (2016, 03, 01),
           requires: "10.11",
@@ -75,7 +79,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13Y5220b")
           ]),
 
-    Xcode(version: V("7D152p", "7.3"),
+    Xcode(number: "7.3",
+          build: "7D152p",
           releaseKind: .beta(4),
           date: (2016, 02, 22),
           requires: "10.11",
@@ -86,7 +91,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13Y5210c")
           ]),
 
-    Xcode(version: V("7D141l", "7.3"),
+    Xcode(number: "7.3",
+          build: "7D141l",
           releaseKind: .beta(3),
           date: (2016, 02, 08),
           requires: "10.11",
@@ -97,7 +103,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13Y5198c")
           ]),
 
-    Xcode(version: V("7C1002", "7.2.1"),
+    Xcode(number: "7.2.1",
+          build: "7C1002",
           releaseKind: .release,
           date: (2016, 02, 02),
           requires: "10.10.5",
@@ -118,7 +125,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW264")
           ]),
 
-    Xcode(version: V("7D129n", "7.3"),
+    Xcode(number: "7.3",
+          build: "7D129n",
           releaseKind: .beta(2),
           date: (2016, 01, 25),
           requires: "10.11",
@@ -129,7 +137,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13Y5189c")
           ]),
 
-    Xcode(version: V("7D111g", "7.3"),
+    Xcode(number: "7.3",
+          build: "7D111g",
           releaseKind: .beta(1),
           date: (2016, 01, 11),
           requires: "10.11",
@@ -140,7 +149,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13Y5179e")
           ]),
 
-    Xcode(version: V("7C68", "7.2"),
+    Xcode(number: "7.2",
+          build: "7C68",
           releaseKind: .release,
           date: (2015, 12, 08),
           requires: "10.10.5",
@@ -161,7 +171,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW270")
           ]),
 
-    Xcode(version: V("7B1005", "7.1.1"),
+    Xcode(number: "7.1.1",
+          build: "7B1005",
           releaseKind: .release,
           date: (2015, 11, 05),
           requires: "10.10.5",
@@ -177,7 +188,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW291")
           ]),
 
-    Xcode(version: V("7C62b", "7.2"),
+    Xcode(number: "7.2",
+          build: "7C62b",
           releaseKind: .beta(4),
           date: (2015, 11, 03),
           requires: "10.10.5",
@@ -188,7 +200,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13U5077a")
           ]),
 
-    Xcode(version: V("7C62", "7.2"),
+    Xcode(number: "7.2",
+          build: "7C62",
           releaseKind: .beta(3),
           date: (2015, 11, 03),
           requires: "10.10.5",
@@ -199,7 +212,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13U5069b")
           ]),
 
-    Xcode(version: V("7C46t", "7.2"),
+    Xcode(number: "7.2",
+          build: "7C46t",
           releaseKind: .beta(2),
           date: (2015, 11, 03),
           requires: "10.10.5",
@@ -210,7 +224,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13U5061c")
           ]),
 
-    Xcode(version: V("7C46l", "7.2"),
+    Xcode(number: "7.2",
+          build: "7C46l",
           releaseKind: .beta(1),
           date: (2015, 10, 27),
           requires: "10.10.5",
@@ -221,7 +236,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13T393")
           ]),
 
-    Xcode(version: V("7B91b", "7.1"),
+    Xcode(number: "7.1",
+          build: "7B91b",
           releaseKind: .release,
           date: (2015, 10, 21),
           requires: "10.10.5",
@@ -242,7 +258,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW300")
           ]),
 
-    Xcode(version: V("7B85", "7.1"),
+    Xcode(number: "7.1",
+          build: "7B85",
           releaseKind: .beta(3),
           date: (2015, 10, 06),
           requires: "10.10.5",
@@ -253,7 +270,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13T5379f")
           ]),
 
-    Xcode(version: V("7A1001", "7.0.1"),
+    Xcode(number: "7.0.1",
+          build: "7A1001",
           releaseKind: .release,
           date: (2015, 09, 28),
           requires: "10.10.3",
@@ -273,7 +291,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW324")
           ]),
 
-    Xcode(version: V("7B75", "7.1"),
+    Xcode(number: "7.1",
+          build: "7B75",
           releaseKind: .beta(2),
           date: (2015, 09, 23),
           requires: "10.10.5",
@@ -284,7 +303,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13T5365h")
           ]),
 
-    Xcode(version: V("7A220", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A220",
           releaseKind: .release,
           date: (2015, 09, 16),
           requires: "10.10.3",
@@ -304,7 +324,8 @@ let xcodes7: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW326")
           ]),
 
-    Xcode(version: V("7B60", "7.1"),
+    Xcode(number: "7.1",
+          build: "7B60",
           releaseKind: .beta(1),
           date: (2015, 09, 09),
           requires: "10.10.5",
@@ -315,7 +336,8 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13T5347l")
           ]),
 
-    Xcode(version: V("7A218", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A218",
           releaseKind: .gmSeed(1),
           date: (2015, 09, 09),
           requires: "10.10.3",
@@ -325,7 +347,8 @@ let xcodes7: Array<Xcode> = [
             .watchOS(build: "13S343")
           ]),
 
-    Xcode(version: V("7A192o", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A192o",
           releaseKind: .beta(6),
           date: (2015, 08, 24),
           requires: "10.10.3",
@@ -335,7 +358,8 @@ let xcodes7: Array<Xcode> = [
             .watchOS(build: "13S5325c")
           ]),
 
-    Xcode(version: V("7A176x", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A176x",
           releaseKind: .beta(5),
           date: (2015, 08, 06),
           requires: "10.10.3",
@@ -346,7 +370,8 @@ let xcodes7: Array<Xcode> = [
             .watchOS(build: "13S5325c")
           ]),
 
-    Xcode(version: V("7A165t", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A165t",
           releaseKind: .beta(4),
           date: (2015, 07, 21),
           requires: "10.10.3",
@@ -357,7 +382,8 @@ let xcodes7: Array<Xcode> = [
             .watchOS(build: "13S5305d")
           ]),
 
-    Xcode(version: V("7A152u", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A152u",
           releaseKind: .beta(3),
           date: (2015, 07, 08),
           requires: "10.10.3",
@@ -368,7 +394,8 @@ let xcodes7: Array<Xcode> = [
             .watchOS(build: "13S5293f")
           ]),
 
-    Xcode(version: V("7A121l", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A121l",
           releaseKind: .beta(2),
           date: (2015, 06, 23),
           requires: "10.10.3",
@@ -379,7 +406,8 @@ let xcodes7: Array<Xcode> = [
             .watchOS(build: "13S5255c")
           ]),
     
-    Xcode(version: V("7A120f", "7.0"),
+    Xcode(number: "7.0",
+          build: "7A120f",
           releaseKind: .beta(1),
           date: (2015, 06, 08),
           requires: "10.10.3",

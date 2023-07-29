@@ -10,7 +10,8 @@ import Foundation
 import XcodeReleases
 
 let xcodes13: Array<Xcode> = [
-    Xcode(version: V("13F100", "13.4.1"),
+    Xcode(number: "13.4.1",
+          build: "13F100",
           releaseKind: .release,
           date: (2022, 06, 02),
           requires: "12.0",
@@ -30,7 +31,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes")
           ]),
      
-    Xcode(version: V("13F17a", "13.4"),
+    Xcode(number: "13.4",
+          build: "13F17a",
           releaseKind: .release,
           date: (2022, 05, 16),
           requires: "12.0",
@@ -50,7 +52,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")
           ]),
     
-    Xcode(version: V("13F17a", "13.4"),
+    Xcode(number: "13.4",
+          build: "13F17a",
           releaseKind: .releaseCandidate(1),
           date: (2022, 05, 12),
           requires: "12.0",
@@ -70,7 +73,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")
           ]),
     
-    Xcode(version: V("13E500a", "13.3.1"),
+    Xcode(number: "13.3.1",
+          build: "13E500a",
           releaseKind: .release,
           date: (2022, 04, 11),
           requires: "12.0",
@@ -90,7 +94,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3_1-release-notes")
           ]),
      
-    Xcode(version: V("13E113", "13.3"),
+    Xcode(number: "13.3",
+          build: "13E113",
           releaseKind: .release,
           date: (2022, 03, 14),
           requires: "12.0",
@@ -110,7 +115,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
-    Xcode(version: V("13E113", "13.3"),
+    Xcode(number: "13.3",
+          build: "13E113",
           releaseKind: .releaseCandidate(1),
           date: (2022, 03, 08),
           requires: "12.0",
@@ -130,7 +136,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
-    Xcode(version: V("13E5104i", "13.3"),
+    Xcode(number: "13.3",
+          build: "13E5104i",
           releaseKind: .beta(3),
           date: (2022, 02, 22),
           requires: "12.0",
@@ -150,7 +157,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
-    Xcode(version: V("13E5095k", "13.3"),
+    Xcode(number: "13.3",
+          build: "13E5095k",
           releaseKind: .beta(2),
           date: (2022, 02, 08),
           requires: "12.0",
@@ -170,7 +178,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
     
-    Xcode(version: V("13E5086k", "13.3"),
+    Xcode(number: "13.3",
+          build: "13E5086k",
           releaseKind: .beta(1),
           date: (2022, 01, 27),
           requires: "12.0",
@@ -190,7 +199,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
-    Xcode(version: V("13C100", "13.2.1"),
+    Xcode(number: "13.2.1",
+          build: "13C100",
           releaseKind: .release,
           date: (2021, 12, 17),
           requires: "11.3",
@@ -210,7 +220,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2_1-release-notes")
           ]),
     
-    Xcode(version: V("13C90", "13.2"),
+    Xcode(number: "13.2",
+          build: "13C90",
           releaseKind: .release,
           date: (2021, 12, 13),
           requires: "11.3",
@@ -230,7 +241,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
     
-    Xcode(version: V("13C90", "13.2"),
+    Xcode(number: "13.2",
+          build: "13C90",
           releaseKind: .releaseCandidate(1),
           date: (2021, 12, 7),
           requires: "11.3",
@@ -250,7 +262,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
      
-    Xcode(version: V("13C5081f", "13.2"),
+    Xcode(number: "13.2",
+          build: "13C5081f",
           releaseKind: .beta(2),
           date: (2021, 11, 16),
           requires: "11.3",
@@ -270,7 +283,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
      
-    Xcode(version: V("13C5066c", "13.2"),
+    Xcode(number: "13.2",
+          build: "13C5066c",
           releaseKind: .beta(1),
           date: (2021, 10, 27),
           requires: "11.3",
@@ -290,7 +304,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
      
-    Xcode(version: V("13A1030d", "13.1"),
+    Xcode(number: "13.1",
+          build: "13A1030d",
           releaseKind: .release,
           date: (2021, 10, 25),
           requires: "11.3",
@@ -310,7 +325,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes")
           ]),
     
-    Xcode(version: V("13A1030d", "13.1"),
+    Xcode(number: "13.1",
+          build: "13A1030d",
           releaseKind: .releaseCandidate(1),
           date: (2021, 10, 18),
           requires: "11.3",
@@ -330,7 +346,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes")
           ]),
     
-    Xcode(version: V("13A233", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A233",
           releaseKind: .release,
           date: (2021, 09, 20),
           requires: "11.3",
@@ -350,7 +367,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes")
           ]),
     
-    Xcode(version: V("13A233", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A233",
           releaseKind: .releaseCandidate(1),
           date: (2021, 09, 14),
           requires: "11.3",
@@ -370,7 +388,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes")
           ]),
     
-    Xcode(version: V("13A5212g", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A5212g",
           releaseKind: .beta(5),
           date: (2021, 08, 10),
           requires: "11.3",
@@ -390,7 +409,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
-    Xcode(version: V("13A5201i", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A5201i",
           releaseKind: .beta(4),
               date: (2021, 07, 27),
               requires: "11.3",
@@ -415,7 +435,8 @@ let xcodes13: Array<Xcode> = [
      The only thing that changed was the Xcode version number.
      The release notes imply it was a tools fix to address issues communicating with the Xcode Cloud feature
      */
-    Xcode(version: V("13A5192j", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A5192j",
           releaseKind: .beta(3),
           date: (2021, 07, 16),
           requires: "11.3",
@@ -435,7 +456,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
-    Xcode(version: V("13A5192i", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A5192i",
           releaseKind: .beta(3),
           date: (2021, 07, 14),
           requires: "11.3",
@@ -455,7 +477,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
-    Xcode(version: V("13A5155e", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A5155e",
           releaseKind: .beta(2),
           date: (2021, 06, 24),
           requires: "11.3",
@@ -475,7 +498,8 @@ let xcodes13: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
-    Xcode(version: V("13A5154h", "13.0"),
+    Xcode(number: "13.0",
+          build: "13A5154h",
           releaseKind: .beta(1),
           date: (2021, 06, 07),
           requires: "11.3",

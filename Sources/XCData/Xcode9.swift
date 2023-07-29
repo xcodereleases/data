@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes9: Array<Xcode> = [
     
-    Xcode(version: V("9F2000", "9.4.1"),
+    Xcode(number: "9.4.1",
+          build: "9F2000",
           releaseKind: .release,
           date: (2018, 06, 19),
           requires: "10.13.2",
@@ -31,7 +32,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/archive/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
-    Xcode(version: V("9F1027a", "9.4"),
+    Xcode(number: "9.4",
+          build: "9F1027a",
           releaseKind: .release,
           date: (2018, 05, 29),
           requires: "10.13.2",
@@ -51,7 +53,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
-    Xcode(version: V("9Q1019a", "9.4"),
+    Xcode(number: "9.4",
+          build: "9Q1019a",
           releaseKind: .beta(2),
           date: (2018, 05, 01),
           requires: "10.13.2",
@@ -71,7 +74,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta_2/Release_Notes_for_Xcode_9.4_beta_2.pdf")
           ]),
     
-    Xcode(version: V("9Q1004a", "9.4"),
+    Xcode(number: "9.4",
+          build: "9Q1004a",
           releaseKind: .beta(1),
           date: (2018, 04, 02),
           requires: "10.13.2",
@@ -92,7 +96,8 @@ let xcodes9: Array<Xcode> = [
           ]),
     
     
-    Xcode(version: V("9E501", "9.3.1"),
+    Xcode(number: "9.3.1",
+          build: "9E501",
           releaseKind: .release,
           date: (2018, 05, 10),
           requires: "10.13.2",
@@ -113,7 +118,8 @@ let xcodes9: Array<Xcode> = [
           ]),
     
 
-    Xcode(version: V("9E145", "9.3"),
+    Xcode(number: "9.3",
+          build: "9E145",
           releaseKind: .release,
           date: (2018, 03, 29),
           requires: "10.13.2",
@@ -134,7 +140,8 @@ let xcodes9: Array<Xcode> = [
           ]),
     
 
-    Xcode(version: V("9Q127n", "9.3"),
+    Xcode(number: "9.3",
+          build: "9Q127n",
           releaseKind: .beta(4),
           date: (2018, 03, 05),
           requires: "10.13.2",
@@ -154,7 +161,8 @@ let xcodes9: Array<Xcode> = [
           ]),
     
 
-    Xcode(version: V("9Q117m", "9.3"),
+    Xcode(number: "9.3",
+          build: "9Q117m",
           releaseKind: .beta(3),
           date: (2018, 02, 20),
           requires: "10.13.2",
@@ -173,7 +181,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("d23f0dc8a589b3bd6e224784f44aa441d81f1872"))
           ]),
 
-    Xcode(version: V("9Q107o", "9.3"),
+    Xcode(number: "9.3",
+          build: "9Q107o",
           releaseKind: .beta(2),
           date: (2018, 02, 06),
           requires: "10.13.2",
@@ -192,7 +201,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("953d43c6009f73a1893e0688d36fdf6407d16ee6"))
           ]),
 
-    Xcode(version: V("9Q98q", "9.3"),
+    Xcode(number: "9.3",
+          build: "9Q98q",
           releaseKind: .beta(1),
           date: (2018, 01, 24),
           requires: "10.13.2",
@@ -211,7 +221,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("3d1f4918810b173ff205b64a2006bb163d9cf5b1"))
           ]),
 
-    Xcode(version: V("9C40b", "9.2"),
+    Xcode(number: "9.2",
+          build: "9C40b",
           releaseKind: .release,
           date: (2017, 12, 04),
           requires: "10.12.6",
@@ -231,7 +242,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW936")
           ]),
 
-    Xcode(version: V("9C34b", "9.2"),
+    Xcode(number: "9.2",
+          build: "9C34b",
           releaseKind: .beta(2),
           date: (2017, 11, 06),
           requires: "10.12.6",
@@ -250,7 +262,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("405894ed89e08566955ffba2faf37a0bfbd6c3c0"))
           ]),
 
-    Xcode(version: V("9C32c", "9.2"),
+    Xcode(number: "9.2",
+          build: "9C32c",
           releaseKind: .beta(1),
           date: (2017, 10, 31),
           requires: "10.12.6",
@@ -269,7 +282,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("22b1a95b67ea688781a8c128bb047cc3f8d954b1"))
           ]),
 
-    Xcode(version: V("9B55", "9.1"),
+    Xcode(number: "9.1",
+          build: "9B55",
           releaseKind: .release,
           date: (2017, 10, 31),
           requires: "10.12.6",
@@ -289,7 +303,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW881")
           ]),
 
-    Xcode(version: V("9A1004", "9.0.1"),
+    Xcode(number: "9.0.1",
+          build: "9A1004",
           releaseKind: .release,
           date: (2017, 10, 15),
           requires: "10.12.6",
@@ -309,7 +324,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW922")
           ]),
 
-    Xcode(version: V("9B46", "9.1"),
+    Xcode(number: "9.1",
+          build: "9B46",
           releaseKind: .beta(2),
           date: (2017, 10, 09),
           requires: "10.12.6",
@@ -328,7 +344,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("d3dc799afac2f7b70ff0beb96dfeaddd044bbf92"))
           ]),
 
-    Xcode(version: V("9B37", "9.1"),
+    Xcode(number: "9.1",
+          build: "9B37",
           releaseKind: .beta(1),
           date: (2017, 09, 27),
           requires: "10.12.6",
@@ -347,7 +364,8 @@ let xcodes9: Array<Xcode> = [
                  checksums: .sha1("2d282eac5bbef51683fc857311ef900e8ca1fcf4"))
           ]),
 
-    Xcode(version: V("9A235", "9.0"),
+    Xcode(number: "9.0",
+          build: "9A235",
           releaseKind: .release,
           date: (2017, 09, 12),
           requires: "10.12.6",
@@ -367,7 +385,8 @@ let xcodes9: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW878")
           ]),
 
-    Xcode(version: V("9M214v", "9.0"),
+    Xcode(number: "9.0",
+          build: "9M214v",
           releaseKind: .beta(6),
           date: (2017, 08, 21),
           requires: "10.12.6",
@@ -378,7 +397,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5368a")
           ]),
 
-    Xcode(version: V("9M202q", "9.0"),
+    Xcode(number: "9.0",
+          build: "9M202q",
           releaseKind: .beta(5),
           date: (2017, 08, 07),
           requires: "10.12.4",
@@ -389,7 +409,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5347f")
           ]),
 
-    Xcode(version: V("9M189t", "9.0"),
+    Xcode(number: "9.0",
+          build: "9M189t",
           releaseKind: .beta(4),
           date: (2017, 07, 24),
           requires: "10.12.4",
@@ -400,7 +421,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5333e")
           ]),
 
-    Xcode(version: V("9M174d", "9.0"),
+    Xcode(number: "9.0",
+          build: "9M174d",
           releaseKind: .beta(3),
           date: (2017, 07, 10),
           requires: "10.12.4",
@@ -411,7 +433,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5324e")
           ]),
 
-    Xcode(version: V("9M137d", "9.0"),
+    Xcode(number: "9.0",
+          build: "9M137d",
           releaseKind: .beta(2),
           date: (2017, 06, 21),
           requires: "10.12.4",
@@ -422,7 +445,8 @@ let xcodes9: Array<Xcode> = [
             .tvOS(build: "15J5310e")
           ]),
 
-    Xcode(version: V("9M136h", "9.0"),
+    Xcode(number: "9.0",
+          build: "9M136h",
           releaseKind: .beta(1),
           date: (2017, 06, 05),
           requires: "10.12.4",

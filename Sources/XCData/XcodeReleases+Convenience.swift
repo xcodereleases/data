@@ -8,24 +8,11 @@
 import Foundation
 import XcodeReleases
 
-internal typealias V = Version
-
-extension Version {
-    
-    init(_ build: String, _ number: String) {
-        self.init(number: number, build: build)
-    }
-    
-    init(_ build: String) {
-        self.init(number: nil, build: build)
-    }
-    
-}
-
 extension Xcode {
     
     internal init(name: String = "Xcode",
-                  version: Version,
+                  number: String,
+                  build: String,
                   releaseKind: ReleaseKind,
                   date: (Int, Int, Int),
                   requires: String,
@@ -34,7 +21,7 @@ extension Xcode {
                   links: Array<Link>? = nil) {
         
         self.init(name: name,
-                  version: version,
+                  version: Version(number: number, build: build),
                   releaseKind: releaseKind,
                   releaseDate: ReleaseDate(year: date.0, month: date.1, day: date.2),
                   supportedOSRange: VersionRange(minimum: Version(number: requires, build: nil), maximum: nil),
@@ -84,23 +71,23 @@ extension Link {
 extension SDK {
     
     static func macOS(build: String, number: String) -> SDK {
-        return SDK(platform: .macOS, version: Version(build, number))
+        return SDK(platform: .macOS, version: Version(number: number, build: build))
     }
     
     static func iOS(build: String, number: String) -> SDK {
-        return SDK(platform: .iOS, version: Version(build, number))
+        return SDK(platform: .iOS, version: Version(number: number, build: build))
     }
     
     static func watchOS(build: String, number: String) -> SDK {
-        return SDK(platform: .watchOS, version: Version(build, number))
+        return SDK(platform: .watchOS, version: Version(number: number, build: build))
     }
     
     static func tvOS(build: String, number: String) -> SDK {
-        return SDK(platform: .tvOS, version: Version(build, number))
+        return SDK(platform: .tvOS, version: Version(number: number, build: build))
     }
     
     static func visionOS(build: String, number: String) -> SDK {
-        return SDK(platform: .visionOS, version: Version(build, number))
+        return SDK(platform: .visionOS, version: Version(number: number, build: build))
     }
     
     static func macOS(number: String) -> SDK {
@@ -148,23 +135,23 @@ extension SDK {
 extension Compiler {
     
     static func gcc(build: String, number: String) -> Compiler {
-        return Compiler(name: .gcc, version: Version(build, number))
+        return Compiler(name: .gcc, version: Version(number: number, build: build))
     }
     
     static func llvm_gcc(build: String, number: String) -> Compiler {
-        return Compiler(name: .llvm_gcc, version: Version(build, number))
+        return Compiler(name: .llvm_gcc, version: Version(number: number, build: build))
     }
     
     static func llvm(build: String, number: String) -> Compiler {
-        return Compiler(name: .llvm, version: Version(build, number))
+        return Compiler(name: .llvm, version: Version(number: number, build: build))
     }
     
     static func clang(build: String, number: String) -> Compiler {
-        return Compiler(name: .clang, version: Version(build, number))
+        return Compiler(name: .clang, version: Version(number: number, build: build))
     }
     
     static func swift(build: String, number: String) -> Compiler {
-        return Compiler(name: .swift, version: Version(build, number))
+        return Compiler(name: .swift, version: Version(number: number, build: build))
     }
     
     static func gcc(build: String) -> Compiler {

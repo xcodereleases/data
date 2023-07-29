@@ -11,7 +11,8 @@ import XcodeReleases
 
 let xcodes2: Array<Xcode> = [
     
-    Xcode(version: V("8M2558", "2.5"),
+    Xcode(number: "2.5",
+          build: "8M2558",
           releaseKind: .release,
           date: (2007, 10, 29),
           requires: "10.4",
@@ -24,7 +25,8 @@ let xcodes2: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_2.5_developer_tools/relnotesxcode25.pdf")
           ]),
     
-    Xcode(version: V("8M1910", "2.4.1"),
+    Xcode(number: "2.4.1",
+          build: "8M1910",
           releaseKind: .release,
           date: (2006, 10, 30),
           requires: "10.4",
@@ -34,7 +36,8 @@ let xcodes2: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_2.4.1/xcode_2.4.1.readme.pdf")
           ]),
     
-    Xcode(version: V("8K1079", "2.4"),
+    Xcode(number: "2.4",
+          build: "8K1079",
           releaseKind: .release,
           date: (2006, 08, 17),
           requires: "10.4",
@@ -44,7 +47,8 @@ let xcodes2: Array<Xcode> = [
             Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_2.4/xcode_2.4_readme.pdf")
           ]),
     
-    Xcode(version: V("8M1780", "2.3"),
+    Xcode(number: "2.3",
+          build: "8M1780",
           releaseKind: .release,
           date: (2006, 05, 23),
           requires: "10.4",
@@ -55,7 +59,8 @@ let xcodes2: Array<Xcode> = [
           ]),
     
     Xcode(name: "Xcode Tools",
-          version: V("8G1165", "2.2.1"),
+          number: "2.2.1",
+          build: "8G1165",
           releaseKind: .release,
           date: (2006, 01, 13),
           requires: "10.4",
@@ -66,19 +71,22 @@ let xcodes2: Array<Xcode> = [
           ]),
     
     Xcode(name: "Xcode Tools",
-          version: V("8M654", "2.2"),
+          number: "2.2",
+          build: "8M654",
           releaseKind: .release,
           date: (2005, 11, 10),
           requires: "10.4"),
     
     Xcode(name: "Xcode Tools",
-          version: V("8B1024", "2.1"),
+          number: "2.1",
+          build: "8B1024",
           releaseKind: .release,
           date: (2005, 06, 06),
           requires: "10.4"),
     
     Xcode(name: "Xcode Tools",
-          version: V("8A428", "2.0"),
+          number: "2.0",
+          build: "8A428",
           releaseKind: .release,
           date: (2005, 04, 29),
           requires: "10.4",

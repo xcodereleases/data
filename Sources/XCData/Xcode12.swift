@@ -10,7 +10,8 @@ import Foundation
 import XcodeReleases
 
 let xcodes12: Array<Xcode> = [
-    Xcode(version: V("12E507", "12.5.1"),
+    Xcode(number: "12.5.1",
+          build: "12E507",
           releaseKind: .release,
           date: (2021, 06, 21),
           requires: "11.0",
@@ -30,7 +31,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5_1-release-notes")
           ]),
     
-    Xcode(version: V("12E262", "12.5"),
+    Xcode(number: "12.5",
+          build: "12E262",
           releaseKind: .release,
           date: (2021, 04, 26),
           requires: "11.0",
@@ -50,7 +52,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes")
           ]),
     
-    Xcode(version: V("12E262", "12.5"),
+    Xcode(number: "12.5",
+          build: "12E262",
           releaseKind: .releaseCandidate(1),
           date: (2021, 04, 20),
           requires: "11.0",
@@ -70,7 +73,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-release-notes")
           ]),
     
-    Xcode(version: V("12E5244e", "12.5"),
+    Xcode(number: "12.5",
+          build: "12E5244e",
           releaseKind: .beta(3),
           date: (2021, 03, 02),
           requires: "11.0",
@@ -90,7 +94,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-beta-release-notes/")
           ]),
     
-    Xcode(version: V("12E5234g", "12.5"),
+    Xcode(number: "12.5",
+          build: "12E5234g",
           releaseKind: .beta(2),
           date: (2021, 02, 16),
           requires: "11.0",
@@ -110,7 +115,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-beta-release-notes/")
           ]),
     
-    Xcode(version: V("12E5220o", "12.5"),
+    Xcode(number: "12.5",
+          build: "12E5220o",
           releaseKind: .beta(1),
           date: (2021, 02, 01),
           requires: "11.0",
@@ -130,7 +136,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-beta-release-notes/")
           ]),
     
-    Xcode(version: V("12D4e", "12.4"),
+    Xcode(number: "12.4",
+          build: "12D4e",
           releaseKind: .release,
           date: (2021, 01, 26),
           requires: "10.15.4",
@@ -150,7 +157,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_4-release-notes")
           ]),
     
-    Xcode(version: V("12D4e", "12.4"),
+    Xcode(number: "12.4",
+          build: "12D4e",
           releaseKind: .releaseCandidate(1),
           date: (2021, 01, 21),
           requires: "10.15.4",
@@ -170,7 +178,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_4-rc-release-notes/")
           ]),
     
-    Xcode(version: V("12C33", "12.3"),
+    Xcode(number: "12.3",
+          build: "12C33",
           releaseKind: .release,
           date: (2020, 12, 14),
           requires: "10.15.4",
@@ -190,7 +199,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes/")
           ]),
     
-    Xcode(version: V("12C33", "12.3"),
+    Xcode(number: "12.3",
+          build: "12C33",
           releaseKind: .releaseCandidate(1),
           date: (2020, 12, 08),
           requires: "10.15.4",
@@ -210,7 +220,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-release-notes/")
           ]),
     
-    Xcode(version: V("12C5020f", "12.3"),
+    Xcode(number: "12.3",
+          build: "12C5020f",
           releaseKind: .beta(1),
           date: (2020, 11, 12),
           requires: "10.15.4",
@@ -230,7 +241,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_3-beta-release-notes")
           ]),
     
-    Xcode(version: V("12B45b", "12.2"),
+    Xcode(number: "12.2",
+          build: "12B45b",
           releaseKind: .release,
           date: (2020, 11, 12),
           requires: "10.15.4",
@@ -250,7 +262,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-release-notes")
           ]),
     
-    Xcode(version: V("12B5044c", "12.2"),
+    Xcode(number: "12.2",
+          build: "12B5044c",
           releaseKind: .releaseCandidate(1),
           date: (2020, 11, 05),
           requires: "10.15.4",
@@ -270,7 +283,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-release-notes")
           ]),
     
-    Xcode(version: V("12A7605b", "12.1.1"),
+    Xcode(number: "12.1.1",
+          build: "12A7605b",
           releaseKind: .releaseCandidate(1),
           date: (2020, 10, 30),
           requires: "10.15.4",
@@ -290,7 +304,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1_1-release-notes/")
           ]),
     
-    Xcode(version: V("12A7403", "12.1"),
+    Xcode(number: "12.1",
+          build: "12A7403",
           releaseKind: .gm,
           date: (2020, 10, 20),
           requires: "10.15.4",
@@ -310,7 +325,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes/")
           ]),
     
-    Xcode(version: V("12A7403", "12.1"),
+    Xcode(number: "12.1",
+          build: "12A7403",
           releaseKind: .gmSeed(1),
           date: (2020, 10, 13),
           requires: "10.15.4",
@@ -330,7 +346,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_1-release-notes")
           ]),
     
-    Xcode(version: V("12B5035g", "12.2"),
+    Xcode(number: "12.2",
+          build: "12B5035g",
           releaseKind: .beta(3),
           date: (2020, 10, 13),
           requires: "10.15.4",
@@ -350,7 +367,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-beta-release-notes/")
           ]),
     
-    Xcode(version: V("12B5025f", "12.2"),
+    Xcode(number: "12.2",
+          build: "12B5025f",
           releaseKind: .beta(2),
           date: (2020, 09, 29),
           requires: "10.15.4",
@@ -370,7 +388,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-beta-release-notes/")
           ]),
     
-    Xcode(version: V("12A7300", "12.0.1"),
+    Xcode(number: "12.0.1",
+          build: "12A7300",
           releaseKind: .gm,
           date: (2020, 09, 24),
           requires: "10.15.4",
@@ -390,7 +409,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_0_1-release-notes")
           ]),
 
-    Xcode(version: V("12A7209", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A7209",
           releaseKind: .gm,
           date: (2020, 09, 17),
           requires: "10.15.4",
@@ -410,7 +430,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes/")
           ]),
 
-    Xcode(version: V("12B5018i", "12.2"),
+    Xcode(number: "12.2",
+          build: "12B5018i",
           releaseKind: .beta(1),
           date: (2020, 09, 17),
           requires: "10.15.4",
@@ -430,7 +451,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12_2-beta-release-notes")
           ]),
 
-    Xcode(version: V("12A7209", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A7209",
           releaseKind: .gmSeed(1),
           date: (2020, 09, 15),
           requires: "10.15.4",
@@ -450,7 +472,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes/")
           ]),
 
-    Xcode(version: V("12A8189n", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A8189n",
           releaseKind: .beta(6),
           date: (2020, 08, 25),
           requires: "10.15.4",
@@ -470,7 +493,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-beta-release-notes")
           ]),
     
-    Xcode(version: V("12A8189h", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A8189h",
           releaseKind: .beta(5),
           date: (2020, 08, 18),
           requires: "10.15.4",
@@ -490,7 +514,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-beta-release-notes")
           ]),
     
-    Xcode(version: V("12A8179i", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A8179i",
           releaseKind: .beta(4),
           date: (2020, 08, 04),
           requires: "10.15.4",
@@ -510,7 +535,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-beta-release-notes")
           ]),
 
-    Xcode(version: V("12A8169g", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A8169g",
           releaseKind: .beta(3),
           date: (2020, 07, 22),
           requires: "10.15.4",
@@ -530,7 +556,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-beta-release-notes")
           ]),
 
-    Xcode(name: "Xcode (Universal)", version: V("12A8161k", "12.0"),
+    Xcode(name: "Xcode (Universal)", number: "12.0",
+          build: "12A8161k",
           releaseKind: .beta(2),
           date: (2020, 07, 07),
           requires: "10.15.4",
@@ -548,7 +575,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-for-macos-universal-apps-beta-release-notes")
           ]),
 
-    Xcode(version: V("12A6163b", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A6163b",
           releaseKind: .beta(2),
           date: (2020, 07, 07),
           requires: "10.15.4",
@@ -568,7 +596,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-beta-release-notes")
           ]),
 
-    Xcode(name: "Xcode (Universal)", version: V("12A8158a", "12.0"),
+    Xcode(name: "Xcode (Universal)", number: "12.0",
+          build: "12A8158a",
           releaseKind: .beta(1),
           date: (2020, 06, 22),
           requires: "10.15.4",
@@ -586,7 +615,8 @@ let xcodes12: Array<Xcode> = [
             Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-12-for-macos-universal-apps-beta-release-notes")
           ]),
     
-    Xcode(version: V("12A6159", "12.0"),
+    Xcode(number: "12.0",
+          build: "12A6159",
           releaseKind: .beta(1),
           date: (2020, 06, 22),
           requires: "10.15.4",

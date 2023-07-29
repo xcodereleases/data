@@ -11,7 +11,8 @@ import XcodeReleases
 let xcodes1: Array<Xcode> = [
     
     Xcode(name: "Xcode Tools",
-          version: V("7K571", "1.5"),
+          number: "1.5",
+          build: "7K571",
           releaseKind: .release,
           date: (2004, 08, 04),
           requires: "10.3",
@@ -22,19 +23,22 @@ let xcodes1: Array<Xcode> = [
           ]),
     
     Xcode(name: "Xcode Tools",
-          version: V("7K249", "1.2"),
+          number: "1.2",
+          build: "7K249",
           releaseKind: .release,
           date: (2004, 04, 22),
           requires: "10.3"),
     
     Xcode(name: "Xcode Tools",
-          version: V("7K224", "1.1"),
+          number: "1.1",
+          build: "7K224",
           releaseKind: .release,
           date: (2003, 12, 19),
           requires: "10.3"),
     
     Xcode(name: "Xcode Tools",
-          version: V("7B85", "1.0"),
+          number: "1.0",
+          build: "7B85",
           releaseKind: .release,
           date: (2003, 09, 28),
           requires: "10.3",
