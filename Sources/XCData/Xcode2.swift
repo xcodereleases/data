@@ -15,7 +15,9 @@ let xcodes2: Array<Xcode> = [
           releaseKind: .release,
           date: (2007, 10, 29),
           requires: "10.4",
-          compilers: [.gcc(V("5370", "4.0"))],
+          compilers: [
+            .gcc(build: "5370", number: "4.0")
+          ],
           links: [
             Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_2.5_developer_tools/xcode25_8m2558_developerdvd.dmg",
                  checksums: .sha1("30884704b0a4b098f02ccbb753958cd5331b8982")),
@@ -80,5 +82,9 @@ let xcodes2: Array<Xcode> = [
           releaseKind: .release,
           date: (2005, 04, 29),
           requires: "10.4",
-          sdks: [.macOS(V(number: "10.2")), .macOS(V(number: "10.3")), .macOS(V(number: "10.4"))])
+          sdks: [
+            .macOS(number: "10.2"),
+            .macOS(number: "10.3"),
+            .macOS(number: "10.4")
+          ])
 ]

@@ -70,3 +70,131 @@ extension Link {
     }
     
 }
+
+
+extension SDK {
+    
+    static func macOS(build: String, number: String) -> SDK {
+        return SDK(platform: .macOS, version: Version(build, number))
+    }
+    
+    static func iOS(build: String, number: String) -> SDK {
+        return SDK(platform: .iOS, version: Version(build, number))
+    }
+    
+    static func watchOS(build: String, number: String) -> SDK {
+        return SDK(platform: .watchOS, version: Version(build, number))
+    }
+    
+    static func tvOS(build: String, number: String) -> SDK {
+        return SDK(platform: .tvOS, version: Version(build, number))
+    }
+    
+    static func visionOS(build: String, number: String) -> SDK {
+        return SDK(platform: .visionOS, version: Version(build, number))
+    }
+    
+    static func macOS(number: String) -> SDK {
+        return SDK(platform: .macOS, version: Version(number: number))
+    }
+    
+    static func iOS(number: String) -> SDK {
+        return SDK(platform: .iOS, version: Version(number: number))
+    }
+    
+    static func watchOS(number: String) -> SDK {
+        return SDK(platform: .watchOS, version: Version(number: number))
+    }
+    
+    static func tvOS(number: String) -> SDK {
+        return SDK(platform: .tvOS, version: Version(number: number))
+    }
+    
+    static func visionOS(number: String) -> SDK {
+        return SDK(platform: .visionOS, version: Version(number: number))
+    }
+    
+    static func macOS(build: String) -> SDK {
+        return SDK(platform: .macOS, version: Version(build: build))
+    }
+    
+    static func iOS(build: String) -> SDK {
+        return SDK(platform: .iOS, version: Version(build: build))
+    }
+    
+    static func watchOS(build: String) -> SDK {
+        return SDK(platform: .watchOS, version: Version(build: build))
+    }
+    
+    static func tvOS(build: String) -> SDK {
+        return SDK(platform: .tvOS, version: Version(build: build))
+    }
+    
+    static func visionOS(build: String) -> SDK {
+        return SDK(platform: .visionOS, version: Version(build: build))
+    }
+    
+}
+
+extension Compiler {
+    
+    static func gcc(build: String, number: String) -> Compiler {
+        return Compiler(name: .gcc, version: Version(build, number))
+    }
+    
+    static func llvm_gcc(build: String, number: String) -> Compiler {
+        return Compiler(name: .llvm_gcc, version: Version(build, number))
+    }
+    
+    static func llvm(build: String, number: String) -> Compiler {
+        return Compiler(name: .llvm, version: Version(build, number))
+    }
+    
+    static func clang(build: String, number: String) -> Compiler {
+        return Compiler(name: .clang, version: Version(build, number))
+    }
+    
+    static func swift(build: String, number: String) -> Compiler {
+        return Compiler(name: .swift, version: Version(build, number))
+    }
+    
+    static func gcc(build: String) -> Compiler {
+        return Compiler(name: .gcc, version: Version(build: build))
+    }
+    
+    static func llvm_gcc(build: String) -> Compiler {
+        return Compiler(name: .llvm_gcc, version: Version(build: build))
+    }
+    
+    static func llvm(build: String) -> Compiler {
+        return Compiler(name: .llvm, version: Version(build: build))
+    }
+    
+    static func clang(build: String) -> Compiler {
+        return Compiler(name: .clang, version: Version(build: build))
+    }
+    
+    static func swift(build: String) -> Compiler {
+        return Compiler(name: .swift, version: Version(build: build))
+    }
+    
+    static func gcc(number: String) -> Compiler {
+        return Compiler(name: .gcc, version: Version(number: number))
+    }
+    
+    static func llvm_gcc(number: String) -> Compiler {
+        return Compiler(name: .llvm_gcc, version: Version(number: number))
+    }
+    
+    static func llvm(number: String) -> Compiler {
+        return Compiler(name: .llvm, version: Version(number: number))
+    }
+    
+    static func clang(number: String) -> Compiler {
+        return Compiler(name: .clang, version: Version(number: number))
+    }
+    
+    static func swift(number: String) -> Compiler {
+        return Compiler(name: .swift, version: Version(number: number))
+    }
+}
