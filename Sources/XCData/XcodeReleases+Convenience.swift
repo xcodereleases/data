@@ -45,6 +45,15 @@ extension Xcode {
         
     }
     
+    public var major: String {
+        let number = version.number!
+        if let period = number.firstIndex(of: ".") {
+            return String(number[..<period])
+        } else {
+            return number
+        }
+    }
+    
 }
 
 extension Dictionary where Key == Checksum, Value == String {

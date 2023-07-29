@@ -23,6 +23,8 @@ struct JSONExport: ParsableCommand {
         return URL(fileURLWithPath: (siteFolder as NSString).expandingTildeInPath)
     }
     
+    private var apiRoot: String { "api/1" }
+    
     func run() throws {
         
         let all = XcodeReleases(xcodes: Xcode.allVersions)
@@ -30,11 +32,13 @@ struct JSONExport: ParsableCommand {
         
         try generateOldStyleData(from: all.xcodes)
         
-        try generateJSON("all", xcodes: all)
         try generateRSS("all", xcodes: all)
-        
-        try generateJSON("released", xcodes: released)
         try generateRSS("released", xcodes: released)
+        
+        try generateJSON("all", xcodes: all)
+        try generateJSON("released", xcodes: released)
+        
+        try generateSearchJSON(xcodes: all)
     }
     
     func generateOldStyleData(from xcodes: Array<Xcode>) throws {
@@ -43,25 +47,40 @@ struct JSONExport: ParsableCommand {
         if pretty { options.insert(.prettyPrinted) }
         let oldStyleData = try JSONSerialization.data(withJSONObject: oldStyleJSON, options: options)
         
-        let file = URL(fileURLWithPath: "data.json", relativeTo: siteURL)
-        
-        print("Writing:", file.absoluteURL.path)
-        
-        try oldStyleData.write(to: file)
+        try write(oldStyleData, to: "data.json")
     }
     
     func generateJSON(_ name: String, xcodes: XcodeReleases) throws {
+        try _generateJSON(xcodes, to: "\(apiRoot)/\(name).json")
+    }
+    
+    func generateSearchJSON(xcodes: XcodeReleases) throws {
+        print("Search JSON is currently unnecessary")
+        return
+        
+        let groupedByBuild = xcodes.xcodes.grouped(by: \.version.build)
+        for (group, xcodes) in groupedByBuild {
+            guard let group else { continue }
+            let path = "\(apiRoot)/builds/\(group).json"
+            try _generateJSON(XcodeReleases(xcodes: xcodes), to: path)
+        }
+        
+        let groupedByMajor = xcodes.xcodes.grouped(by: \.major)
+        for (group, xcodes) in groupedByMajor {
+            let path = "\(apiRoot)/versions/\(group).json"
+            try _generateJSON(XcodeReleases(xcodes: xcodes), to: path)
+        }
+        
+    }
+    
+    func _generateJSON(_ xcodes: XcodeReleases, to path: String) throws {
         let encoder = JSONEncoder()
         encoder.outputFormatting = [.sortedKeys, .withoutEscapingSlashes]
         if pretty { encoder.outputFormatting.insert(.prettyPrinted) }
         
         let data = try encoder.encode(xcodes)
+        try write(data, to: path)
         
-        let file = URL(fileURLWithPath: "api/\(name).json", relativeTo: siteURL)
-        
-        print("Writing:", file.absoluteURL.path)
-        
-        try data.write(to: file)
     }
     
     func generateRSS(_ name: String, xcodes: XcodeReleases) throws {
@@ -92,8 +111,17 @@ struct JSONExport: ParsableCommand {
 """
         
         let data = Data(rss.utf8)
-        
-        let file = URL(fileURLWithPath: "api/\(name).rss", relativeTo: siteURL)
+        try write(data, to: "api/\(name).rss")
+    }
+    
+    private func write(_ data: Data, to path: String) throws {
+        let file = URL(fileURLWithPath: path, relativeTo: siteURL)
+        let folder = file.deletingLastPathComponent()
+        var isDir: ObjCBool = false
+        if FileManager.default.fileExists(atPath: folder.path, isDirectory: &isDir) == false || isDir.boolValue == false {
+            print("Creating: ", folder.absoluteURL.path)
+            try FileManager.default.createDirectory(at: folder, withIntermediateDirectories: true)
+        }
         
         print("Writing:", file.absoluteURL.path)
         
