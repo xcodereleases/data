@@ -10,6 +10,30 @@ import XcodeReleases
 
 let xcodes15: Array<Xcode> = [
     Xcode(number: "15.0",
+          build: "15A5219j",
+          releaseKind: .beta(6),
+          date: (2023, 08, 08),
+          requires: "13.4",
+          sdks: [
+            .macOS(number: "14.0", build: "23A5312c"),
+            .iOS(number: "17.0", build: "21A5303c"),
+            .watchOS(number: "10.0", build: "21R5332e"),
+            .tvOS(number: "17.0", build: "21J5330e"),
+            .visionOS(number: "1.0", build: "21N5207h")
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.0.40.1"),
+            .swift(number: "5.9", build: "5.9.0.128.2")
+          ],
+          links: [
+            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_6/Xcode_15_beta_6.xip", checksums: .sha1("f19855468fdba728e5a5b87e62a2b3ce99583226")),
+            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_5_Simulator_Runtime/iOS_17_beta_5_Simulator_Runtime.dmg", checksums: .sha1("23ba536f29eaba53ef940b0a593aac5fcfe919fa")),
+            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_5_Simulator_Runtime/tvOS_17_beta_5_Simulator_Runtime.dmg", checksums: .sha1("e0d3bc152b4b5b548237d2ed978fb107c1e5b30e")),
+            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_5_Simulator_Runtime/watchOS_10_beta_5_Simulator_Runtime.dmg", checksums: .sha1("4f0205dad610dcab8f71a1a1617a50f7f6e55fcc"))
+          ]),
+    
+    Xcode(number: "15.0",
           build: "15A5209g",
           releaseKind: .beta(5),
           date: (2023, 07, 25),
