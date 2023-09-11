@@ -10,6 +10,60 @@ import XcodeReleases
 
 let xcodes15: Array<Xcode> = [
     Xcode(number: "15.0",
+          build: "15A5229m",
+          releaseKind: .beta(8),
+          date: (2023, 08, 29),
+          requires: "13.4",
+          sdks: [
+            .macOS(number: "14.0", build: "23A5334a"),
+            .iOS(number: "17.0", build: "21A5325a"),
+            .watchOS(number: "10.0", build: "21R5354a"),
+            .tvOS(number: "17.0", build: "21J5351a"),
+            .visionOS(number: "1.0", build: "21N5233e")
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.0.40.1"),
+            .swift(number: "5.9", build: "5.9.0.128.106")
+          ],
+          links: [
+            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_8/Xcode_15_beta_8.xip",
+                 checksums: .sha1("c374ebd0848f75a7f22701b3fe2966a4a36aab90")),
+            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_8_Simulator_Runtime/iOS_17_beta_8_Simulator_Runtime.dmg", checksums: .sha1("20c82ed6781ed91d0da0c19f003b38567a870c91")),
+            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_8_Simulator_Runtime/tvOS_17_beta_8_Simulator_Runtime.dmg", checksums: .sha1("41a0915646566b92f5e211b16ac3eabc10785a77")),
+            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_8_Simulator_Runtime/watchOS_10_beta_8_Simulator_Runtime.dmg", checksums: .sha1("b9ba1c3c1db236efcc89083a15fbf9e4149ee78b")),
+            Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_3_Simulator_Runtime/visionOS_1_beta_3_Simulator_Runtime.dmg", checksums: .sha1("9eccc96de95bb0911639f11c47bd3da20bc4e921"))
+          ]),
+    
+    Xcode(number: "15.0",
+          build: "15A5229h",
+          releaseKind: .beta(7),
+          date: (2023, 08, 22),
+          requires: "13.4",
+          sdks: [
+            .macOS(number: "14.0", build: "23A5326c"),
+            .iOS(number: "17.0", build: "21A5317a"),
+            .watchOS(number: "10.0", build: "21R5346a"),
+            .tvOS(number: "17.0", build: "21J5345a"),
+            .visionOS(number: "1.0", build: "21N5207h"),
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.0.40.1"),
+            .swift(number: "5.9", build: "5.9.0.128.106")
+          ],
+          links: [
+            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_7/Xcode_15_beta_7.xip",
+                 checksums: .sha1("ebb5e5197742be03ae0a0da06dde6779a9d6de45")),
+            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_7_Simulator_Runtime/iOS_17_beta_7_Simulator_Runtime.dmg",
+                 checksums: .sha1("764f92a354d76b1bd599ea5de486381163df160e")),
+            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_7_Simulator_Runtime/tvOS_17_beta_7_Simulator_Runtime.dmg",
+                 checksums: .sha1("86a2eb30f4753ade0df098d26a04dfc2e11d459b")),
+            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_7_Simulator_Runtime/watchOS_10_beta_7_Simulator_Runtime.dmg",
+                 checksums: .sha1("5280d60b4342313c0cd6961e29fd35ff095318d7"))
+          ]),
+    
+    Xcode(number: "15.0",
           build: "15A5219j",
           releaseKind: .beta(6),
           date: (2023, 08, 08),
@@ -179,5 +233,5 @@ let xcodes15: Array<Xcode> = [
             Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta/tvOS_17_beta_Simulator_Runtime.dmg",
                  checksums: .sha1("4d37876c5c92a84ad9595fd600e0803f3e7dcb32"))
           ]),
-
+    
 ]
