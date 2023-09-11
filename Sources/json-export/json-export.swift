@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Cocoa
 import XcodeReleases
 import XCData
 import ArgumentParser
@@ -13,25 +14,26 @@ import ArgumentParser
 @main
 struct JSONExport: ParsableCommand {
     
-    @Flag(help: "Generate pretty-printed JSON files")
-    var pretty = false
-    
-    @Option(help: "The path to the root of the Jekyll site")
-    var siteFolder: String
-    
-    private var siteURL: URL {
-        return URL(fileURLWithPath: (siteFolder as NSString).expandingTildeInPath)
-    }
-    
-    private var apiRoot: String { "api/1" }
+//    @Flag(help: "Generate pretty-printed JSON files")
+    var pretty = true
+
+//    @Option(help: "The path to the root of the Jekyll site")
+//    var siteFolder: String
+//
+//    private var siteURL: URL {
+//        return URL(fileURLWithPath: (siteFolder as NSString).expandingTildeInPath)
+//    }
+//
+//    private var apiRoot: String { "api/1" }
     
     func run() throws {
         
         let all = XcodeReleases(xcodes: Xcode.allVersions)
         let released = XcodeReleases(xcodes: all.xcodes.filter { $0.releaseKind.isReleased == true })
         
-        try generateOldStyleData(from: all.xcodes)
+        let json = try generateOldStyleData(from: all.xcodes)
         
+        /*
         try generateRSS("all", xcodes: all)
         try generateRSS("released", xcodes: released)
         
@@ -39,17 +41,24 @@ struct JSONExport: ParsableCommand {
         try generateJSON("released", xcodes: released)
         
         try generateSearchJSON(xcodes: all)
+         */
+        
+        NSPasteboard.general.clearContents()
+        NSPasteboard.general.setString(json, forType: .string)
+        print("data.json contents copied to clipboard!")
     }
     
-    func generateOldStyleData(from xcodes: Array<Xcode>) throws {
+    func generateOldStyleData(from xcodes: Array<Xcode>) throws -> String {
         let oldStyleJSON = xcodes.map(\.oldStyleDictionary)
         var options: JSONSerialization.WritingOptions = [.sortedKeys, .withoutEscapingSlashes]
         if pretty { options.insert(.prettyPrinted) }
         let oldStyleData = try JSONSerialization.data(withJSONObject: oldStyleJSON, options: options)
         
-        try write(oldStyleData, to: "data.json")
+//        try write(oldStyleData, to: "data.json")
+        
+        return String(data: oldStyleData, encoding: .utf8)!
     }
-    
+    /*
     func generateJSON(_ name: String, xcodes: XcodeReleases) throws {
         try _generateJSON(xcodes, to: "\(apiRoot)/\(name).json")
     }
@@ -127,6 +136,6 @@ struct JSONExport: ParsableCommand {
         
         try data.write(to: file)
     }
-    
+    */
 }
 
