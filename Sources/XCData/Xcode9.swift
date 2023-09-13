@@ -27,9 +27,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1.2", build: "902.0.54")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4.1/Xcode_9.4.1.xip",
-                 checksums: .sha1("6236a6d7c9da0449f8c3220d568ae952819f4a3a")),
-            Link(notes: "https://developer.apple.com/library/archive/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.4.1/Xcode_9.4.1.xip",
+                   sha1: "6236a6d7c9da0449f8c3220d568ae952819f4a3a"),
+            .notes("https://developer.apple.com/library/archive/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
     Xcode(number: "9.4",
@@ -48,9 +48,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1.2", build: "902.0.54")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4/Xcode_9.4.xip",
-                 checksums: .sha1("17d22ca295922a810ae69b0ae1bab7b1e3304b1d")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.4/Xcode_9.4.xip",
+                   sha1: "17d22ca295922a810ae69b0ae1bab7b1e3304b1d"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
     Xcode(number: "9.4",
@@ -69,9 +69,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1.1", build: "902.0.53")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta_2/Xcode_9.4_beta_2.xip",
-                 checksums: .sha1("306fc15deb90228194226d2556c07220ce2d060f")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta_2/Release_Notes_for_Xcode_9.4_beta_2.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta_2/Xcode_9.4_beta_2.xip",
+                   sha1: "306fc15deb90228194226d2556c07220ce2d060f"),
+            .notes("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta_2/Release_Notes_for_Xcode_9.4_beta_2.pdf")
           ]),
     
     Xcode(number: "9.4",
@@ -90,9 +90,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1.1", build: "902.0.50")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta.xip",
-                 checksums: .sha1("0300e0f756c87cf732c07ddf768dcacf3fa3112b")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta_Release_Notes.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta.xip",
+                   sha1: "0300e0f756c87cf732c07ddf768dcacf3fa3112b"),
+            .notes("https://download.developer.apple.com/Developer_Tools/Xcode_9.4_beta/Xcode_9.4_beta_Release_Notes.pdf")
           ]),
     
     
@@ -112,9 +112,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1", build: "902.0.48902.0.48")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3.1/Xcode_9.3.1.xip",
-                 checksums: .sha1("f10bf92c8dfb0dda451688d0335bab0d1cea2ce7")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.3.1/Xcode_9.3.1.xip",
+                   sha1: "f10bf92c8dfb0dda451688d0335bab0d1cea2ce7"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
 
@@ -134,9 +134,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1", build: "902.0.48")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3/Xcode_9.3.xip",
-                 checksums: .sha1("8c054e8b318b9d567177a8c2e230a9a6c7a603a6")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.3/Xcode_9.3.xip",
+                   sha1: "8c054e8b318b9d567177a8c2e230a9a6c7a603a6"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-DontLinkElementID_1")
           ]),
     
 
@@ -156,8 +156,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1", build: "902.0.43")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_4/Xcode_9.3_beta_4.xip",
-                 checksums: .sha1("cb213d2a7164c62ee312d9f6aa89e5b1e7e5630d"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_4/Xcode_9.3_beta_4.xip",
+                   sha1: "cb213d2a7164c62ee312d9f6aa89e5b1e7e5630d")
           ]),
     
 
@@ -177,8 +177,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1", build: "902.0.41")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_3/Xcode_9.3_beta_3.xip",
-                 checksums: .sha1("d23f0dc8a589b3bd6e224784f44aa441d81f1872"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_3/Xcode_9.3_beta_3.xip",
+                   sha1: "d23f0dc8a589b3bd6e224784f44aa441d81f1872")
           ]),
 
     Xcode(number: "9.3",
@@ -197,8 +197,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1", build: "902.0.38")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_2/Xcode_9.3_beta_2.xip",
-                 checksums: .sha1("953d43c6009f73a1893e0688d36fdf6407d16ee6"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta_2/Xcode_9.3_beta_2.xip",
+                   sha1: "953d43c6009f73a1893e0688d36fdf6407d16ee6")
           ]),
 
     Xcode(number: "9.3",
@@ -217,8 +217,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.1", build: "902.0.34")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta/Xcode_9.3_beta.xip",
-                 checksums: .sha1("3d1f4918810b173ff205b64a2006bb163d9cf5b1"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.3_beta/Xcode_9.3_beta.xip",
+                   sha1: "3d1f4918810b173ff205b64a2006bb163d9cf5b1")
           ]),
 
     Xcode(number: "9.2",
@@ -237,9 +237,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0.3", build: "900.0.74.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.2/Xcode_9.2.xip",
-                 checksums: .sha1("cd93fc78fbbb34e135a4c4f0121f9fe559260399")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW936")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.2/Xcode_9.2.xip",
+                   sha1: "cd93fc78fbbb34e135a4c4f0121f9fe559260399"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW936")
           ]),
 
     Xcode(number: "9.2",
@@ -258,8 +258,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0.3", build: "900.0.72")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.2_Beta_2/Xcode_9.2_Beta_2.xip",
-                 checksums: .sha1("405894ed89e08566955ffba2faf37a0bfbd6c3c0"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.2_Beta_2/Xcode_9.2_Beta_2.xip",
+                   sha1: "405894ed89e08566955ffba2faf37a0bfbd6c3c0")
           ]),
 
     Xcode(number: "9.2",
@@ -278,8 +278,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0.3", build: "900.0.71")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.2_Beta/Xcode_9.2_Beta.xip",
-                 checksums: .sha1("22b1a95b67ea688781a8c128bb047cc3f8d954b1"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.2_Beta/Xcode_9.2_Beta.xip",
+                   sha1: "22b1a95b67ea688781a8c128bb047cc3f8d954b1")
           ]),
 
     Xcode(number: "9.1",
@@ -298,9 +298,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0.2", build: "900.0.69.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.1/Xcode_9.1.xip",
-                 checksums: .sha1("3bfa10edf51e461cfb0459d2a2bdd2228dc9ff70")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW881")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.1/Xcode_9.1.xip",
+                   sha1: "3bfa10edf51e461cfb0459d2a2bdd2228dc9ff70"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW881")
           ]),
 
     Xcode(number: "9.0.1",
@@ -319,9 +319,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0", build: "900.0.65.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.0.1/Xcode_9.0.1.xip",
-                 checksums: .sha1("fe80d3396ff6b91659b4b7888893101dae5b1ad9")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW922")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.0.1/Xcode_9.0.1.xip",
+                   sha1: "fe80d3396ff6b91659b4b7888893101dae5b1ad9"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW922")
           ]),
 
     Xcode(number: "9.1",
@@ -340,8 +340,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0.1", build: "900.0.68")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.1_beta_2/Xcode_9.1_beta2.xip",
-                 checksums: .sha1("d3dc799afac2f7b70ff0beb96dfeaddd044bbf92"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.1_beta_2/Xcode_9.1_beta2.xip",
+                   sha1: "d3dc799afac2f7b70ff0beb96dfeaddd044bbf92")
           ]),
 
     Xcode(number: "9.1",
@@ -360,8 +360,8 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0.1", build: "900.0.66")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9.1_beta/Xcode_9.1_beta.xip",
-                 checksums: .sha1("2d282eac5bbef51683fc857311ef900e8ca1fcf4"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9.1_beta/Xcode_9.1_beta.xip",
+                   sha1: "2d282eac5bbef51683fc857311ef900e8ca1fcf4")
           ]),
 
     Xcode(number: "9.0",
@@ -380,9 +380,9 @@ let xcodes9: Array<Xcode> = [
             .swift(number: "4.0", build: "900.0.65")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_9/Xcode_9.xip",
-                 checksums: .sha1("d934fa6304d3aa890b02c3998e139be5a355469d")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW878")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_9/Xcode_9.xip",
+                   sha1: "d934fa6304d3aa890b02c3998e139be5a355469d"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW878")
           ]),
 
     Xcode(number: "9.0",

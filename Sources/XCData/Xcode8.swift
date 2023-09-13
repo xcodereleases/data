@@ -27,9 +27,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.1", build: "802.0.53")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3.3/Xcode_8.3.3.xip",
-                 checksums: .sha1("67023787df49c91ff5d6a67e12d165bc610f0022")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW870")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.3/Xcode_8.3.3.xip",
+                   sha1: "67023787df49c91ff5d6a67e12d165bc610f0022"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW870")
           ]),
 
     Xcode(number: "8.3.2",
@@ -48,9 +48,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.1", build: "802.0.53")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3.2/Xcode_8.3.2.xip",
-                 checksums: .sha1("4e7e97e6e2c5c92432a04e657dfe94226849cb51")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW853")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.2/Xcode_8.3.2.xip",
+                   sha1: "4e7e97e6e2c5c92432a04e657dfe94226849cb51"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW853")
           ]),
 
     Xcode(number: "8.3.1",
@@ -69,9 +69,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.1", build: "802.0.51")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3.1/Xcode_8.3.1.xip",
-                 checksums: .sha1("320e0c26daec62ef2fbc67bac26642fc6f2b0a90")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW848")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.3.1/Xcode_8.3.1.xip",
+                   sha1: "320e0c26daec62ef2fbc67bac26642fc6f2b0a90"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW848")
           ]),
 
     Xcode(number: "8.3",
@@ -90,9 +90,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.1", build: "802.0.48")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.3/Xcode_8.3.xip",
-                 checksums: .sha1("a6a6bad2206d56fbd04b38c17429ca032825147b")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW160")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.3/Xcode_8.3.xip",
+                   sha1: "a6a6bad2206d56fbd04b38c17429ca032825147b"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW160")
           ]),
 
     Xcode(number: "8.3",
@@ -172,9 +172,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.0.2", build: "800.0.63")
          ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.2.1/Xcode_8.2.1.xip",
-                 checksums: .sha1("84c69fcf79bc65388dbea75161b88d9984acea1f")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW157")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.2.1/Xcode_8.2.1.xip",
+                   sha1: "84c69fcf79bc65388dbea75161b88d9984acea1f"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW157")
           ]),
 
     Xcode(number: "8.2",
@@ -194,9 +194,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.0.2", build: "800.0.63")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.2/Xcode_8.2.xip",
-                 checksums: .sha1("e2d13308b544bf2ee6d6f8212cccbf29513d3ef1")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW9")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.2/Xcode_8.2.xip",
+                   sha1: "e2d13308b544bf2ee6d6f8212cccbf29513d3ef1"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW9")
           ]),
 
     Xcode(number: "8.2",
@@ -240,9 +240,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.0.1", build: "800.0.58.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8.1/Xcode_8.1.xip",
-                 checksums: .sha1("6c084896634167054685874871aeda2b41f0a621")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW24")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8.1/Xcode_8.1.xip",
+                   sha1: "6c084896634167054685874871aeda2b41f0a621"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW24")
           ]),
 
     Xcode(number: "8.1",
@@ -310,9 +310,9 @@ let xcodes8: Array<Xcode> = [
             .swift(number: "3.0", build: "800.0.46.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_8/Xcode_8.xip",
-                 checksums: .sha1("57c57b5913bf6d12844e404a82e6d5deae1c6453")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW78")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_8/Xcode_8.xip",
+                   sha1: "57c57b5913bf6d12844e404a82e6d5deae1c6453"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW78")
           ]),
 
     Xcode(number: "8.0",

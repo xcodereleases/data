@@ -27,9 +27,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.2", build: "602.0.53.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.4/Xcode_6.4.dmg",
-                 checksums: .sha1("672e3dcb7727fc6db071e5a8528b70aa03900bb0")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW364")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_6.4/Xcode_6.4.dmg",
+                   sha1: "672e3dcb7727fc6db071e5a8528b70aa03900bb0"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW364")
           ]),
 
     Xcode(number: "6.4",
@@ -59,9 +59,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.2", build: "602.0.53.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.3.2/Xcode_6.3.2.dmg",
-                 checksums: .sha1("f6a909c476eb154f0138a4b5d91843ade8b18b90")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW368")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_6.3.2/Xcode_6.3.2.dmg",
+                   sha1: "f6a909c476eb154f0138a4b5d91843ade8b18b90"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW368")
           ]),
 
     Xcode(number: "6.4",
@@ -92,9 +92,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.2", build: "602.0.49.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.3.1/Xcode_6.3.1.dmg",
-                 checksums: .sha1("dc0725b13bac25d576302667259f0b0f038c471a")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW370")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_6.3.1/Xcode_6.3.1.dmg",
+                   sha1: "dc0725b13bac25d576302667259f0b0f038c471a"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW370")
           ]),
 
     Xcode(number: "6.4",
@@ -119,9 +119,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.2", build: "602.0.49.3")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.3/Xcode_6.3.dmg",
-                 checksums: .sha1("fb17a4c95d15c086cb870ef42dcd06f3a8d19596")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW378")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_6.3/Xcode_6.3.dmg",
+                   sha1: "fb17a4c95d15c086cb870ef42dcd06f3a8d19596"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW378")
           ]),
 
     Xcode(number: "6.3",
@@ -152,9 +152,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.1", build: "600.0.57.4")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_6.2/Xcode_6.2.dmg",
-                 checksums: .sha1("01944eb7ad415c95e2b24e18c10da5b3555b6c7f")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW412")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_6.2/Xcode_6.2.dmg",
+                   sha1: "01944eb7ad415c95e2b24e18c10da5b3555b6c7f"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW412")
           ]),
 
     Xcode(number: "6.3",
@@ -209,9 +209,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.1", build: "600.0.56.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg",
-                 checksums: .sha1("a54e4b327889e3ee3c952ef5292adc076c21df02")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW423")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_6.1.1/xcode_6.1.1.dmg",
+                   sha1: "a54e4b327889e3ee3c952ef5292adc076c21df02"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW423")
           ]),
 
     Xcode(number: "6.2",
@@ -237,9 +237,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.1", build: "600.0.54.20")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_6.1/56841_xcode_6.1.dmg",
-                 checksums: .sha1("4fc070a1347cc880ab2ed2225a7c9e4d5d6515c0")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW432")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_6.1/56841_xcode_6.1.dmg",
+                   sha1: "4fc070a1347cc880ab2ed2225a7c9e4d5d6515c0"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW432")
           ]),
 
     Xcode(number: "6.1",
@@ -269,9 +269,9 @@ let xcodes6: Array<Xcode> = [
             .swift(number: "1.0", build: "600.0.51.4")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_6.0.1/xcode_6.0.1.dmg",
-                 checksums: .sha1("496d56181861dd7ed1807895897d45403eb4ed44")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW450")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_6.0.1/xcode_6.0.1.dmg",
+                   sha1: "496d56181861dd7ed1807895897d45403eb4ed44"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW450")
           ]),
 
     Xcode(number: "6.1",
@@ -286,7 +286,7 @@ let xcodes6: Array<Xcode> = [
           date: (2014, 09, 09),
           requires: "10.9.4",
           links: [
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW453")
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW453")
           ]),
 
     Xcode(number: "6.0",

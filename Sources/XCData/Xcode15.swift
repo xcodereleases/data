@@ -53,13 +53,17 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.128.106")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_8/Xcode_15_beta_8.xip",
-                 checksums: .sha1("c374ebd0848f75a7f22701b3fe2966a4a36aab90")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_8_Simulator_Runtime/iOS_17_beta_8_Simulator_Runtime.dmg", checksums: .sha1("20c82ed6781ed91d0da0c19f003b38567a870c91")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_8_Simulator_Runtime/tvOS_17_beta_8_Simulator_Runtime.dmg", checksums: .sha1("41a0915646566b92f5e211b16ac3eabc10785a77")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_8_Simulator_Runtime/watchOS_10_beta_8_Simulator_Runtime.dmg", checksums: .sha1("b9ba1c3c1db236efcc89083a15fbf9e4149ee78b")),
-            Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_3_Simulator_Runtime/visionOS_1_beta_3_Simulator_Runtime.dmg", checksums: .sha1("9eccc96de95bb0911639f11c47bd3da20bc4e921"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_8/Xcode_15_beta_8.xip",
+                   sha1: "c374ebd0848f75a7f22701b3fe2966a4a36aab90"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_8_Simulator_Runtime/iOS_17_beta_8_Simulator_Runtime.dmg",
+                     sha1: "20c82ed6781ed91d0da0c19f003b38567a870c91"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_8_Simulator_Runtime/tvOS_17_beta_8_Simulator_Runtime.dmg",
+                     sha1: "41a0915646566b92f5e211b16ac3eabc10785a77"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_8_Simulator_Runtime/watchOS_10_beta_8_Simulator_Runtime.dmg",
+                     sha1: "b9ba1c3c1db236efcc89083a15fbf9e4149ee78b"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_3_Simulator_Runtime/visionOS_1_beta_3_Simulator_Runtime.dmg",
+                     sha1: "9eccc96de95bb0911639f11c47bd3da20bc4e921")
           ]),
     
     Xcode(number: "15.0",
@@ -79,15 +83,15 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.128.106")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_7/Xcode_15_beta_7.xip",
-                 checksums: .sha1("ebb5e5197742be03ae0a0da06dde6779a9d6de45")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_7_Simulator_Runtime/iOS_17_beta_7_Simulator_Runtime.dmg",
-                 checksums: .sha1("764f92a354d76b1bd599ea5de486381163df160e")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_7_Simulator_Runtime/tvOS_17_beta_7_Simulator_Runtime.dmg",
-                 checksums: .sha1("86a2eb30f4753ade0df098d26a04dfc2e11d459b")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_7_Simulator_Runtime/watchOS_10_beta_7_Simulator_Runtime.dmg",
-                 checksums: .sha1("5280d60b4342313c0cd6961e29fd35ff095318d7"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_7/Xcode_15_beta_7.xip",
+                   sha1: "ebb5e5197742be03ae0a0da06dde6779a9d6de45"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_7_Simulator_Runtime/iOS_17_beta_7_Simulator_Runtime.dmg",
+                     sha1: "764f92a354d76b1bd599ea5de486381163df160e"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_7_Simulator_Runtime/tvOS_17_beta_7_Simulator_Runtime.dmg",
+                     sha1: "86a2eb30f4753ade0df098d26a04dfc2e11d459b"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_7_Simulator_Runtime/watchOS_10_beta_7_Simulator_Runtime.dmg",
+                     sha1: "5280d60b4342313c0cd6961e29fd35ff095318d7")
           ]),
     
     Xcode(number: "15.0",
@@ -107,11 +111,15 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.128.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_6/Xcode_15_beta_6.xip", checksums: .sha1("f19855468fdba728e5a5b87e62a2b3ce99583226")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_5_Simulator_Runtime/iOS_17_beta_5_Simulator_Runtime.dmg", checksums: .sha1("23ba536f29eaba53ef940b0a593aac5fcfe919fa")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_5_Simulator_Runtime/tvOS_17_beta_5_Simulator_Runtime.dmg", checksums: .sha1("e0d3bc152b4b5b548237d2ed978fb107c1e5b30e")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_5_Simulator_Runtime/watchOS_10_beta_5_Simulator_Runtime.dmg", checksums: .sha1("4f0205dad610dcab8f71a1a1617a50f7f6e55fcc"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_6/Xcode_15_beta_6.xip",
+                   sha1: "f19855468fdba728e5a5b87e62a2b3ce99583226"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_5_Simulator_Runtime/iOS_17_beta_5_Simulator_Runtime.dmg",
+                     sha1: "23ba536f29eaba53ef940b0a593aac5fcfe919fa"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_5_Simulator_Runtime/tvOS_17_beta_5_Simulator_Runtime.dmg",
+                     sha1: "e0d3bc152b4b5b548237d2ed978fb107c1e5b30e"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_5_Simulator_Runtime/watchOS_10_beta_5_Simulator_Runtime.dmg",
+                     sha1: "4f0205dad610dcab8f71a1a1617a50f7f6e55fcc")
           ]),
     
     Xcode(number: "15.0",
@@ -131,13 +139,17 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.124.4")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_5/Xcode_15_beta_5.xip",
-                 checksums: .sha1("6ee6c925fc96ca62eb372d1f833c75cd95e8f2d3")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_4_Simulator_Runtime/iOS_17_beta_4_Simulator_Runtime.dmg", checksums: .sha1("0ac9863c3d86a7f414e85b1f7fef3b7f2f2139f2")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_4_Simulator_Runtime/watchOS_10_beta_4_Simulator_Runtime.dmg", checksums: .sha1("f19fc992bf58d3b81cb50ef01862ae0878d9d042")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_4_Simulator_Runtime/tvOS_17_beta_4_Simulator_Runtime.dmg", checksums: .sha1("71b1923a72c61ecea1a651fd72431370524fc2f1")),
-            Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_2_Simulator_Runtime/visionOS_1_beta_2_Simulator_Runtime.dmg", checksums: .sha1("5fa0348eca9c0f5fa69d169e328bb18318cba074"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_5/Xcode_15_beta_5.xip",
+                   sha1: "6ee6c925fc96ca62eb372d1f833c75cd95e8f2d3"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_4_Simulator_Runtime/iOS_17_beta_4_Simulator_Runtime.dmg",
+                     sha1: "0ac9863c3d86a7f414e85b1f7fef3b7f2f2139f2"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_4_Simulator_Runtime/watchOS_10_beta_4_Simulator_Runtime.dmg",
+                     sha1: "f19fc992bf58d3b81cb50ef01862ae0878d9d042"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_4_Simulator_Runtime/tvOS_17_beta_4_Simulator_Runtime.dmg",
+                     sha1: "71b1923a72c61ecea1a651fd72431370524fc2f1"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_2_Simulator_Runtime/visionOS_1_beta_2_Simulator_Runtime.dmg",
+                     sha1: "5fa0348eca9c0f5fa69d169e328bb18318cba074")
           ]),
     
     Xcode(number: "15.0",
@@ -157,18 +169,18 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.120.7")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_4/Xcode_15_beta_4.xip",
-                 checksums: .sha1("5da0a1e6ad538e78a59de38a41e6dbab05a3ac1f")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_4/Xcode_15_beta_4.xip",
+                   sha1: "5da0a1e6ad538e78a59de38a41e6dbab05a3ac1f"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
             
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_3/iOS_17_beta_3_Simulator_Runtime.dmg",
-                 checksums: .sha1("c767c32b63693b190197890c0e8727dd81fea3e2")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_3/watchOS_10_beta_3_Simulator_Runtime.dmg",
-                 checksums: .sha1("076a572cf59b559e351360dbf9c5277ee192afd9")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_3/tvOS_17_beta_3_Simulator_Runtime.dmg",
-                 checksums: .sha1("d454e19729457caa6aa37153d5bf368f8eaf6e4e")),
-            Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta/visionOS_1_beta_Simulator_Runtime.dmg",
-                 checksums: .sha1("b6cb08ec1a9a9319393062d24308ede86e4f183a"))
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_3/iOS_17_beta_3_Simulator_Runtime.dmg",
+                     sha1: "c767c32b63693b190197890c0e8727dd81fea3e2"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_3/watchOS_10_beta_3_Simulator_Runtime.dmg",
+                     sha1: "076a572cf59b559e351360dbf9c5277ee192afd9"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_3/tvOS_17_beta_3_Simulator_Runtime.dmg",
+                     sha1: "d454e19729457caa6aa37153d5bf368f8eaf6e4e"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta/visionOS_1_beta_Simulator_Runtime.dmg",
+                     sha1: "b6cb08ec1a9a9319393062d24308ede86e4f183a")
           ]),
     
     Xcode(number: "15.0",
@@ -188,18 +200,18 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.120.7")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_3/Xcode_15_beta_3.xip",
-                 checksums: .sha1("0ce6f0d26fd2b982b0dc62c218416c769a70d4f8")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_3/Xcode_15_beta_3.xip",
+                   sha1: "0ce6f0d26fd2b982b0dc62c218416c769a70d4f8"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
             
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_3/iOS_17_beta_3_Simulator_Runtime.dmg",
-                 checksums: .sha1("c767c32b63693b190197890c0e8727dd81fea3e2")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_3/watchOS_10_beta_3_Simulator_Runtime.dmg",
-                 checksums: .sha1("076a572cf59b559e351360dbf9c5277ee192afd9")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_3/tvOS_17_beta_3_Simulator_Runtime.dmg",
-                 checksums: .sha1("d454e19729457caa6aa37153d5bf368f8eaf6e4e")),
-            Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta/visionOS_1_beta_Simulator_Runtime.dmg",
-                 checksums: .sha1("b6cb08ec1a9a9319393062d24308ede86e4f183a"))
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_3/iOS_17_beta_3_Simulator_Runtime.dmg",
+                     sha1: "c767c32b63693b190197890c0e8727dd81fea3e2"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_3/watchOS_10_beta_3_Simulator_Runtime.dmg",
+                     sha1: "076a572cf59b559e351360dbf9c5277ee192afd9"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_3/tvOS_17_beta_3_Simulator_Runtime.dmg",
+                     sha1: "d454e19729457caa6aa37153d5bf368f8eaf6e4e"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta/visionOS_1_beta_Simulator_Runtime.dmg",
+                     sha1: "b6cb08ec1a9a9319393062d24308ede86e4f183a")
           ]),
     
     Xcode(number: "15.0",
@@ -219,18 +231,18 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.114.10")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_2/Xcode_15_beta_2.xip",
-                 checksums: .sha1("eb041f673cc57a192f27fa92b44314c72456877d")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta_2/Xcode_15_beta_2.xip",
+                   sha1: "eb041f673cc57a192f27fa92b44314c72456877d"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
             
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_2/iOS_17_beta_2_Simulator_Runtime.dmg",
-                 checksums: .sha1("ac301c943f02fcfcea6aac87f200e6eead28e309")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_2/watchOS_10_beta_2_Simulator_Runtime.dmg",
-                 checksums: .sha1("ed2387ce60e2a0c82ef44a0aadae61c2fd20ef9d")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_2/tvOS_17_beta_2_Simulator_Runtime.dmg",
-                 checksums: .sha1("adb815faa4d951b16eafd66cc0ecaa9f2c7b4ff5")),
-            Link(runtime: .visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta/visionOS_1_beta_Simulator_Runtime.dmg",
-                 checksums: .sha1("b6cb08ec1a9a9319393062d24308ede86e4f183a")),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta_2/iOS_17_beta_2_Simulator_Runtime.dmg",
+                     sha1: "ac301c943f02fcfcea6aac87f200e6eead28e309"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta_2/watchOS_10_beta_2_Simulator_Runtime.dmg",
+                     sha1: "ed2387ce60e2a0c82ef44a0aadae61c2fd20ef9d"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta_2/tvOS_17_beta_2_Simulator_Runtime.dmg",
+                     sha1: "adb815faa4d951b16eafd66cc0ecaa9f2c7b4ff5"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta/visionOS_1_beta_Simulator_Runtime.dmg",
+                     sha1: "b6cb08ec1a9a9319393062d24308ede86e4f183a"),
           ]),
     
     Xcode(number: "15.0",
@@ -249,16 +261,16 @@ let xcodes15: Array<Xcode> = [
             .swift(number: "5.9", build: "5.9.0.114.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_15_beta/Xcode_15_beta.xip",
-                 checksums: .sha1("681573706f7c4bc24eecb5d9c3fd3230d053e225")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15_beta/Xcode_15_beta.xip",
+                   sha1: "681573706f7c4bc24eecb5d9c3fd3230d053e225"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes"),
             
-            Link(runtime: .iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta/iOS_17_beta_Simulator_Runtime.dmg",
-                 checksums: .sha1("4b3a005bd43511fcf6be43c7534b4fb5f2951b05")),
-            Link(runtime: .watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta/watchOS_10_beta_Simulator_Runtime.dmg",
-                 checksums: .sha1("d8de3abe3e7f7bead50c6a5f39ab5ee2fc0ae44b")),
-            Link(runtime: .tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta/tvOS_17_beta_Simulator_Runtime.dmg",
-                 checksums: .sha1("4d37876c5c92a84ad9595fd600e0803f3e7dcb32"))
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17_beta/iOS_17_beta_Simulator_Runtime.dmg",
+                     sha1: "4b3a005bd43511fcf6be43c7534b4fb5f2951b05"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10_beta/watchOS_10_beta_Simulator_Runtime.dmg",
+                     sha1: "d8de3abe3e7f7bead50c6a5f39ab5ee2fc0ae44b"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17_beta/tvOS_17_beta_Simulator_Runtime.dmg",
+                     sha1: "4d37876c5c92a84ad9595fd600e0803f3e7dcb32")
           ]),
     
 ]

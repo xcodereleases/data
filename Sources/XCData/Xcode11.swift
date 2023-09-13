@@ -27,9 +27,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.7/Xcode_11.7.xip",
-                 checksums: .sha1("6cf1dbd6646d790a99e70501e0c6560f4e0b9f46")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.7/Xcode_11.7.xip",
+                   sha1: "6cf1dbd6646d790a99e70501e0c6560f4e0b9f46"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-release-notes")
           ]),
     
     Xcode(number: "11.7",
@@ -48,9 +48,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.7_beta/Xcode_11.7_beta.xip",
-                 checksums: .sha1("6cf1dbd6646d790a99e70501e0c6560f4e0b9f46")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-beta-release-notes/")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.7_beta/Xcode_11.7_beta.xip",
+                   sha1: "6cf1dbd6646d790a99e70501e0c6560f4e0b9f46"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-11_7-beta-release-notes/")
           ]),
 
     Xcode(number: "11.6",
@@ -69,9 +69,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.6/Xcode_11.6.xip",
-                 checksums: .sha1("1313680c15af41fa39be95457a13134ec7699ccc")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.6/Xcode_11.6.xip",
+                   sha1: "1313680c15af41fa39be95457a13134ec7699ccc"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-11_6-release-notes")
           ]),
 
     Xcode(number: "11.6",
@@ -90,9 +90,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.6_beta/Xcode_11.6_beta.xip",
-                 checksums: .sha1("a65fbe2314b3abff410ea9eaeb02eed055fd55df")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_6_beta_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.6_beta/Xcode_11.6_beta.xip",
+                   sha1: "a65fbe2314b3abff410ea9eaeb02eed055fd55df"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_6_beta_release_notes")
           ]),
 
     Xcode(number: "11.5",
@@ -111,9 +111,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.5/Xcode_11.5.xip",
-                 checksums: .sha1("4654b261841d0336cb90ea1c82d15fd7aa03c982")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.5/Xcode_11.5.xip",
+                   sha1: "4654b261841d0336cb90ea1c82d15fd7aa03c982"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_release_notes")
           ]),
 
     Xcode(number: "11.5",
@@ -132,9 +132,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.5_GM_Seed/Xcode_11.5_GM_Seed.xip",
-                 checksums: .sha1("4654b261841d0336cb90ea1c82d15fd7aa03c982")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_gm_seed_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.5_GM_Seed/Xcode_11.5_GM_Seed.xip",
+                   sha1: "4654b261841d0336cb90ea1c82d15fd7aa03c982"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_gm_seed_release_notes")
           ]),
     
     Xcode(number: "11.5",
@@ -153,9 +153,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.5_beta_2/Xcode_11.5_beta_2.xip",
-                 checksums: .sha1("5c18ee9ecd77439d0981005d6d69ef2ea6894a6c")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_2_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.5_beta_2/Xcode_11.5_beta_2.xip",
+                   sha1: "5c18ee9ecd77439d0981005d6d69ef2ea6894a6c"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_2_release_notes")
           ]),
 
     Xcode(number: "11.5",
@@ -174,9 +174,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.4", build: "1103.0.32.9")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.5_beta/Xcode_11.5_beta.xip",
-                 checksums: .sha1("65aec9569554c8952bb145f9d33a65895ef1966d")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.5_beta/Xcode_11.5_beta.xip",
+                   sha1: "65aec9569554c8952bb145f9d33a65895ef1966d"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_5_beta_release_notes")
           ]),
 
     Xcode(number: "11.4.1",
@@ -195,9 +195,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2.2", build: "1103.0.32.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.4.1/Xcode_11.4.1.xip",
-                 checksums: .sha1("32a106e48c9907cd230d6a27e923e9aaf6685358")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_1_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.4.1/Xcode_11.4.1.xip",
+                   sha1: "32a106e48c9907cd230d6a27e923e9aaf6685358"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_1_release_notes")
           ]),
 
     Xcode(number: "11.4",
@@ -216,9 +216,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2", build: "1103.0.32.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.4/Xcode_11.4.xip",
-                 checksums: .sha1("7c1151670760be55c5c8b09be1aa2a17291dc468")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.4/Xcode_11.4.xip",
+                   sha1: "7c1151670760be55c5c8b09be1aa2a17291dc468"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_release_notes")
           ]),
     
     Xcode(number: "11.4",
@@ -237,9 +237,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2", build: "1103.0.30")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta_3/Xcode_11.4_beta_3.xip",
-                 checksums: .sha1("6fdfcf4e915fa54cfffba828fb5f314caeb37b13")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_3_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta_3/Xcode_11.4_beta_3.xip",
+                   sha1: "6fdfcf4e915fa54cfffba828fb5f314caeb37b13"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_3_release_notes")
           ]),
 
     Xcode(number: "11.4",
@@ -258,9 +258,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2", build: "1103.2.32.5")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta_2/Xcode_11.4_beta_2.xip",
-                 checksums: .sha1("a55e450133c2d49e1986f33026768fe8dbb223aa")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_2_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta_2/Xcode_11.4_beta_2.xip",
+                   sha1: "a55e450133c2d49e1986f33026768fe8dbb223aa"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_2_release_notes")
           ]),
 
     Xcode(number: "11.4",
@@ -279,9 +279,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.2", build: "1103.0.22")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta/Xcode_11.4_beta.xip",
-                 checksums: .sha1("14e4e508734112a8f582d58651e1b0459bc575ec")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.4_beta/Xcode_11.4_beta.xip",
+                   sha1: "14e4e508734112a8f582d58651e1b0459bc575ec"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_4_beta_release_notes")
           ]),
 
     Xcode(number: "11.3.1",
@@ -300,9 +300,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.3", build: "1100.0.282.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.3.1/Xcode_11.3.1.xip",
-                 checksums: .sha1("d5773e61189595cbb639c3e1c460b38d8c1e19ae")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_1_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.3.1/Xcode_11.3.1.xip",
+                   sha1: "d5773e61189595cbb639c3e1c460b38d8c1e19ae"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_1_release_notes")
           ]),
 
     Xcode(number: "11.3",
@@ -321,9 +321,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.3", build: "1100.0.282.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.3/Xcode_11.3.xip",
-                 checksums: .sha1("7c192e5023cb5d538c601ce301dc69972102d99f")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.3/Xcode_11.3.xip",
+                   sha1: "7c192e5023cb5d538c601ce301dc69972102d99f"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_release_notes")
           ]),
 
     Xcode(number: "11.3",
@@ -342,9 +342,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.3", build: "1100.0.282")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.3_beta/Xcode_11.3_beta.xip",
-                 checksums: .sha1("2f455410ec068e233125f964a6209c3f5447f735")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_beta_release_notes/")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.3_beta/Xcode_11.3_beta.xip",
+                   sha1: "2f455410ec068e233125f964a6209c3f5447f735"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_3_beta_release_notes/")
           ]),
 
     Xcode(number: "11.2.1",
@@ -363,9 +363,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.2", build: "1100.0.278")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.2.1/Xcode_11.2.1.xip",
-                 checksums: .sha1("c315f36b0e9e524ee9f9cd796c820e2bed83bac4")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.2.1/Xcode_11.2.1.xip",
+                   sha1: "c315f36b0e9e524ee9f9cd796c820e2bed83bac4"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_release_notes")
           ]),
 
     Xcode(number: "11.2.1",
@@ -384,9 +384,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.2", build: "1100.0.278")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.2.1_GM_Seed/Xcode_11.2.1_GM_Seed.xip",
-                 checksums: .sha1("fc4ebcd7ed261d35d01084c73df54c1ef979c834")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_gm_seed_release_notes/")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.2.1_GM_Seed/Xcode_11.2.1_GM_Seed.xip",
+                   sha1: "fc4ebcd7ed261d35d01084c73df54c1ef979c834"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_1_gm_seed_release_notes/")
           ]),
 
     Xcode(number: "11.2",
@@ -405,9 +405,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.2", build: "1100.0.278")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.2/Xcode_11.2.xip",
-                 checksums: .sha1("086dc9123834779f47303f264993770b58ab1d9d")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.2/Xcode_11.2.xip",
+                   sha1: "086dc9123834779f47303f264993770b58ab1d9d"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_release_notes")
           ]),
 
     Xcode(number: "11.2",
@@ -426,9 +426,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.1", build: "1100.0.275.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.2_beta_2/Xcode_11.2_beta_2.xip",
-                 checksums: .sha1("f7201b2d2277d365a0252cfee9769dd08a0e9516")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_2_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.2_beta_2/Xcode_11.2_beta_2.xip",
+                   sha1: "f7201b2d2277d365a0252cfee9769dd08a0e9516"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_2_release_notes")
           ]),
 
     Xcode(number: "11.1",
@@ -447,9 +447,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.1/Xcode_11.1.xip",
-                 checksums: .sha1("c370f332d6a65f878b40d1e9d14b9ef8f1b13aae")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.1/Xcode_11.1.xip",
+                   sha1: "c370f332d6a65f878b40d1e9d14b9ef8f1b13aae"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/")
           ]),
 
     Xcode(number: "11.2",
@@ -468,9 +468,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1.1", build: "1100.0.274.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.2_beta/Xcode_11.2_beta.xip",
-                 checksums: .sha1("c57a2e109cfc651d203b09e4614f8729717767cb")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_release_notes/")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.2_beta/Xcode_11.2_beta.xip",
+                   sha1: "c57a2e109cfc651d203b09e4614f8729717767cb"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_2_beta_release_notes/")
           ]),
 
     Xcode(number: "11.1",
@@ -489,9 +489,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11.1_GM_Seed/Xcode_11.1_GM_Seed.xip",
-                 checksums: .sha1("c370f332d6a65f878b40d1e9d14b9ef8f1b13aae")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11.1_GM_Seed/Xcode_11.1_GM_Seed.xip",
+                   sha1: "c370f332d6a65f878b40d1e9d14b9ef8f1b13aae"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_1_release_notes/")
           ]),
 
     Xcode(number: "11.0",
@@ -510,9 +510,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11/Xcode_11.xip",
-                 checksums: .sha1("56d3480bb706429c4c15e422d65804ad039338bc")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11/Xcode_11.xip",
+                   sha1: "56d3480bb706429c4c15e422d65804ad039338bc"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
           ]),
 
     Xcode(number: "11.0",
@@ -531,9 +531,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed_2/Xcode_11_GM_Seed_2.xip",
-                 checksums: .sha1("56d3480bb706429c4c15e422d65804ad039338bc")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed_2/Xcode_11_GM_Seed_2.xip",
+                   sha1: "56d3480bb706429c4c15e422d65804ad039338bc"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -552,9 +552,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed/Xcode_11_GM_Seed.xip",
-                 checksums: .sha1("ec44755a2101dc4c72cc7b35cfb68e2208f7c522")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_GM_Seed/Xcode_11_GM_Seed.xip",
+                   sha1: "ec44755a2101dc4c72cc7b35cfb68e2208f7c522"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -573,9 +573,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_7/Xcode_11_Beta_7.xip",
-                 checksums: .sha1("33eef80728577557f640d7b114864d58ab3b0679")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_7_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_7/Xcode_11_Beta_7.xip",
+                   sha1: "33eef80728577557f640d7b114864d58ab3b0679"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_7_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -594,9 +594,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.270.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_6/Xcode_11_Beta_6.xip",
-                 checksums: .sha1("30c11cf25ff14231e12e0abc117f296dcf8de021")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_6_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_6/Xcode_11_Beta_6.xip",
+                   sha1: "30c11cf25ff14231e12e0abc117f296dcf8de021"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_6_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -615,9 +615,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.266.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_5/Xcode_11_Beta_5.xip",
-                 checksums: .sha1("7ce156434cb6dfdb3cf743c843cf9f65c3044487")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_5_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_5/Xcode_11_Beta_5.xip",
+                   sha1: "7ce156434cb6dfdb3cf743c843cf9f65c3044487"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_5_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -636,9 +636,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.257.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_4/Xcode_11_Beta_4.xip",
-                 checksums: .sha1("0dceb035c3a3258af3fa7b3d08756da2c80f7808")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_4_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_4/Xcode_11_Beta_4.xip",
+                   sha1: "0dceb035c3a3258af3fa7b3d08756da2c80f7808"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_4_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -657,9 +657,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.212.5")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_3/Xcode_11_Beta_3.xip",
-                 checksums: .sha1("a39d703a28c3af7679c1dfd3f65a18bd4999fed4")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_3_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_3/Xcode_11_Beta_3.xip",
+                   sha1: "a39d703a28c3af7679c1dfd3f65a18bd4999fed4"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_3_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -678,9 +678,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.43.3")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_2/Xcode_11_Beta_2.xip",
-                 checksums: .sha1("f8f9583bb83d44c37522f82ef92697fb784e3652")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_2_release_notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_11_Beta_2/Xcode_11_Beta_2.xip",
+                   sha1: "f8f9583bb83d44c37522f82ef92697fb784e3652"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_2_release_notes")
           ]),
     
     Xcode(number: "11.0",
@@ -699,9 +699,9 @@ let xcodes11: Array<Xcode> = [
             .swift(number: "5.1", build: "1100.0.38.29")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/WWDC_2019/Xcode_11_Beta/Xcode_11_Beta.xip",
-                 checksums: .sha1("5a1bdd7898ffb69acc76864b69a01404eb522683")),
-            Link(notes: "https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_release_notes")
+            .xcode("https://download.developer.apple.com/WWDC_2019/Xcode_11_Beta/Xcode_11_Beta.xip",
+                   sha1: "5a1bdd7898ffb69acc76864b69a01404eb522683"),
+            .notes("https://developer.apple.com/documentation/xcode_release_notes/xcode_11_beta_release_notes")
           ]),
 
 ]

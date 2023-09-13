@@ -28,9 +28,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.2", build: "703.0.18.8")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg",
-                 checksums: .sha1("3016654b6f3574b937cbb5f7dd11c98bd3ab7b4e")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW217")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.3.1/Xcode_7.3.1.dmg",
+                   sha1: "3016654b6f3574b937cbb5f7dd11c98bd3ab7b4e"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW217")
           ]),
 
     Xcode(number: "7.3.1",
@@ -62,9 +62,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.2", build: "703.0.18.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.3/Xcode_7.3.dmg",
-                 checksums: .sha1("2a9ad88e2144022fc81cdc1976e79b3d35a235b8")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW233")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.3/Xcode_7.3.dmg",
+                   sha1: "2a9ad88e2144022fc81cdc1976e79b3d35a235b8"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW233")
           ]),
 
     Xcode(number: "7.3",
@@ -120,9 +120,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.1.1", build: "700.1.101.15")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.2.1/Xcode_7.2.1.dmg",
-                 checksums: .sha1("afebf0fb8f537948c04b0439cab0cc93136f158c")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW264")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.2.1/Xcode_7.2.1.dmg",
+                   sha1: "afebf0fb8f537948c04b0439cab0cc93136f158c"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW264")
           ]),
 
     Xcode(number: "7.3",
@@ -166,9 +166,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.1.1", build: "700.1.101.15")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.2/Xcode_7.2.dmg",
-                 checksums: .sha1("df227623ba15036c0684e3c1edb0ee034b8ef692")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW270")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.2/Xcode_7.2.dmg",
+                   sha1: "df227623ba15036c0684e3c1edb0ee034b8ef692"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW270")
           ]),
 
     Xcode(number: "7.1.1",
@@ -183,9 +183,9 @@ let xcodes7: Array<Xcode> = [
             .tvOS(build: "13T393")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.1.1/Xcode_7.1.1.dmg",
-                 checksums: .sha1("33163b3cbff846224a2661c08ef8e737f0da0762")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW291")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.1.1/Xcode_7.1.1.dmg",
+                   sha1: "33163b3cbff846224a2661c08ef8e737f0da0762"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW291")
           ]),
 
     Xcode(number: "7.2",
@@ -253,9 +253,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.1", build: "700.1.101.6")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.1/Xcode_7.1.dmg",
-                 checksums: .sha1("d4e9b9e8e33eb2cc7793143761404fbb650090d4")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW300")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.1/Xcode_7.1.dmg",
+                   sha1: "d4e9b9e8e33eb2cc7793143761404fbb650090d4"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW300")
           ]),
 
     Xcode(number: "7.1",
@@ -286,9 +286,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.0", build: "700.0.59")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7.0.1/Xcode_7.0.1.dmg",
-                 checksums: .sha1("f750bd86359383a77d4b57714b05e6725eaec76c")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW324")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7.0.1/Xcode_7.0.1.dmg",
+                   sha1: "f750bd86359383a77d4b57714b05e6725eaec76c"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW324")
           ]),
 
     Xcode(number: "7.1",
@@ -319,9 +319,9 @@ let xcodes7: Array<Xcode> = [
             .swift(number: "2.0", build: "700.0.59")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_7/Xcode_7.dmg",
-                 checksums: .sha1("4afc067e5fc9266413c157167a123c8cdfdfb15e")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW326")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_7/Xcode_7.dmg",
+                   sha1: "4afc067e5fc9266413c157167a123c8cdfdfb15e"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW326")
           ]),
 
     Xcode(number: "7.1",

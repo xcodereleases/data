@@ -65,18 +65,6 @@ extension Link {
         return Link(url: URL(string: url)!, sizeInBytes: nil, checksums: [.sha1: sha1], kind: .simulatorRuntime(platform))
     }
     
-    internal init(xcode: String, checksums: Dictionary<Checksum, String>) {
-        self.init(url: URL(string: xcode)!, sizeInBytes: nil, checksums: checksums, kind: .xcode)
-    }
-    
-    internal init(notes: String) {
-        self.init(url: URL(string: notes)!, sizeInBytes: nil, checksums: nil, kind: .releaseNotes)
-    }
-    
-    internal init(runtime: Platform, url: String, checksums: Dictionary<Checksum, String>) {
-        self.init(url: URL(string: url)!, sizeInBytes: nil, checksums: checksums, kind: .simulatorRuntime(runtime))
-    }
-    
 }
 
 
@@ -110,18 +98,6 @@ extension SDK {
         return SDK(platform: .iOS, version: Version(number: number))
     }
     
-    static func watchOS(number: String) -> SDK {
-        return SDK(platform: .watchOS, version: Version(number: number))
-    }
-    
-    static func tvOS(number: String) -> SDK {
-        return SDK(platform: .tvOS, version: Version(number: number))
-    }
-    
-    static func visionOS(number: String) -> SDK {
-        return SDK(platform: .visionOS, version: Version(number: number))
-    }
-    
     static func macOS(build: String) -> SDK {
         return SDK(platform: .macOS, version: Version(build: build))
     }
@@ -136,10 +112,6 @@ extension SDK {
     
     static func tvOS(build: String) -> SDK {
         return SDK(platform: .tvOS, version: Version(build: build))
-    }
-    
-    static func visionOS(build: String) -> SDK {
-        return SDK(platform: .visionOS, version: Version(build: build))
     }
     
 }
@@ -166,32 +138,8 @@ extension Compiler {
         return Compiler(name: .swift, version: Version(number: number, build: build))
     }
     
-    static func gcc(build: String) -> Compiler {
-        return Compiler(name: .gcc, version: Version(build: build))
-    }
-    
-    static func llvm_gcc(build: String) -> Compiler {
-        return Compiler(name: .llvm_gcc, version: Version(build: build))
-    }
-    
     static func llvm(build: String) -> Compiler {
         return Compiler(name: .llvm, version: Version(build: build))
-    }
-    
-    static func clang(build: String) -> Compiler {
-        return Compiler(name: .clang, version: Version(build: build))
-    }
-    
-    static func swift(build: String) -> Compiler {
-        return Compiler(name: .swift, version: Version(build: build))
-    }
-    
-    static func gcc(number: String) -> Compiler {
-        return Compiler(name: .gcc, version: Version(number: number))
-    }
-    
-    static func llvm_gcc(number: String) -> Compiler {
-        return Compiler(name: .llvm_gcc, version: Version(number: number))
     }
     
     static func llvm(number: String) -> Compiler {
@@ -200,9 +148,5 @@ extension Compiler {
     
     static func clang(number: String) -> Compiler {
         return Compiler(name: .clang, version: Version(number: number))
-    }
-    
-    static func swift(number: String) -> Compiler {
-        return Compiler(name: .swift, version: Version(number: number))
     }
 }

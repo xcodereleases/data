@@ -27,9 +27,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "425.0.28")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6.3/xcode4630916281a.dmg",
-                 checksums: .sha1("f8f9d8a3eec9c46072c02e0007f6abe411e674f8")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW600")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.6.3/xcode4630916281a.dmg",
+                   sha1: "f8f9d8a3eec9c46072c02e0007f6abe411e674f8"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW600")
           ]),
 
     Xcode(number: "4.6.2",
@@ -48,9 +48,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "425.0.28")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6.2/xcode4620419895a.dmg",
-                 checksums: .sha1("5b1918ac6173f6444196cf497a419d79970608c2")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW603")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.6.2/xcode4620419895a.dmg",
+                   sha1: "5b1918ac6173f6444196cf497a419d79970608c2"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW603")
           ]),
 
     Xcode(number: "4.6.1",
@@ -69,9 +69,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "425.0.27")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6.1/xcode4610419628a.dmg",
-                 checksums: .sha1("a3bde15a30da0faba2080fb91ef65cdf7956a1ed")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW612")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.6.1/xcode4610419628a.dmg",
+                   sha1: "a3bde15a30da0faba2080fb91ef65cdf7956a1ed"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW612")
           ]),
 
     Xcode(number: "4.6",
@@ -90,9 +90,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "425.0.24")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.6/xcode460417218a.dmg",
-                 checksums: .sha1("e677cd170fd5090ea0670bb31cb2023b58a9d323")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.6/release_notes_xcode46gm.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.6/xcode460417218a.dmg",
+                   sha1: "e677cd170fd5090ea0670bb31cb2023b58a9d323"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.6/release_notes_xcode46gm.pdf")
           ]),
 
     Xcode(number: "4.6",
@@ -155,9 +155,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "421.11.66")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/xcode4520418508a.dmg",
-                 checksums: .sha1("2dea0b49f9f35b91ad2abc7f3b71889679febac1")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/release_notes_xcode_4.5.2.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/xcode4520418508a.dmg",
+                   sha1: "2dea0b49f9f35b91ad2abc7f3b71889679febac1"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/release_notes_xcode_4.5.2.pdf")
           ]),
 
     Xcode(number: "4.5.1",
@@ -176,9 +176,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "421.11.66")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.1/xcode4510417539a.dmg",
-                 checksums: .sha1("1a9e80e73f23ca0b6da961c0b691f1a94fe7e348")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.5.1/release_notes_xcode_4.5.1.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.5.1/xcode4510417539a.dmg",
+                   sha1: "1a9e80e73f23ca0b6da961c0b691f1a94fe7e348"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.5.1/release_notes_xcode_4.5.1.pdf")
           ]),
 
     Xcode(number: "4.5",
@@ -197,9 +197,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.1", build: "421.11.65")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.5/xcode_4.5.dmg",
-                 checksums: .sha1("e461491c9251bb955ce60e2f7d7dfbc5f934321d")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW643")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.5/xcode_4.5.dmg",
+                   sha1: "e461491c9251bb955ce60e2f7d7dfbc5f934321d"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW643")
           ]),
 
     Xcode(number: "4.4.1",
@@ -218,9 +218,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.0", build: "421.0.60")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.4.1/xcode_4.4.1_6938145.dmg",
-                 checksums: .sha1("4b8e927c7c58885fe91a36a21952604285b8d60f")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW670")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.4.1/xcode_4.4.1_6938145.dmg",
+                   sha1: "4b8e927c7c58885fe91a36a21952604285b8d60f"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW670")
           ]),
 
     Xcode(number: "4.5",
@@ -278,8 +278,8 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "3.1", build: "318.0.61")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3.3_for_lion/xcode_4.3.3_for_lion.dmg",
-                 checksums: .sha1("d806ca8937b43a22d2f4e7c9ad8cc06e2a7298d8"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.3.3_for_lion/xcode_4.3.3_for_lion.dmg",
+                   sha1: "d806ca8937b43a22d2f4e7c9ad8cc06e2a7298d8")
           ]),
 
     Xcode(number: "4.3.2",
@@ -296,8 +296,8 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "3.1", build: "318.0.58")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3.2/xcode_432_lion.dmg",
-                 checksums: .sha1("8e2723f24f2a58af78317c115e1dc8e4f3c96b43"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.3.2/xcode_432_lion.dmg",
+                   sha1: "8e2723f24f2a58af78317c115e1dc8e4f3c96b43")
           ]),
 
     Xcode(number: "4.4",
@@ -314,9 +314,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "4.0", build: "421.0.57")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/xcode446938108a.dmg",
-                 checksums: .sha1("d04393543564f85c2f4d82e507d596d3070e9aba")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/release_notes_xcode44gm.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/xcode446938108a.dmg",
+                   sha1: "d04393543564f85c2f4d82e507d596d3070e9aba"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/release_notes_xcode44gm.pdf")
           ]),
 
     Xcode(number: "4.3.1",
@@ -333,8 +333,8 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "3.1", build: "318.0.54")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3.1_for_lion_21267/xcode_431_lion.dmg",
-                 checksums: .sha1("82d89d4029665cca28d806361e4607d9875ac9a4"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.3.1_for_lion_21267/xcode_431_lion.dmg",
+                   sha1: "82d89d4029665cca28d806361e4607d9875ac9a4")
           ]),
 
     Xcode(number: "4.4",
@@ -360,9 +360,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "3.1", build: "318.0.45")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.3_for_lion_21266/xcode_43_lion.dmg",
-                 checksums: .sha1("be666d0285f492463ae4c189d265612a83cbf296")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW699")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.3_for_lion_21266/xcode_43_lion.dmg",
+                   sha1: "be666d0285f492463ae4c189d265612a83cbf296"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW699")
           ]),
 
     Xcode(number: "4.3",
@@ -392,8 +392,8 @@ let xcodes4: Array<Xcode> = [
             .iOS(build: "9A334")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.2.1_for_lion_21265/installxcode_421_lion.dmg",
-                 checksums: .sha1("2f800aadc6b51092e0375d34ac45702bcef59f5c"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.2.1_for_lion_21265/installxcode_421_lion.dmg",
+                   sha1: "2f800aadc6b51092e0375d34ac45702bcef59f5c")
           ]),
 
     Xcode(number: "4.2",
@@ -410,9 +410,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "3.0", build: "211.10.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_lion_21264/installxcode_42_lion.dmg",
-                 checksums: .sha1("de748f5d096c55666b3ac22ee6fbe0e512206b36")),
-            Link(notes: "https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW713")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_lion_21264/installxcode_42_lion.dmg",
+                   sha1: "de748f5d096c55666b3ac22ee6fbe0e512206b36"),
+            .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW713")
           ]),
 
     Xcode(number: "4.2",
@@ -429,9 +429,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "3.0", build: "211.10.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_snow_leopard/xcode_4.2_for_snow_leopard.dmg",
-                 checksums: .sha1("e65c19531be855c359eaad3f00a915213ecf2d41")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_snow_leopard/xcode_4.2_for_snow_leopard_readme.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_snow_leopard/xcode_4.2_for_snow_leopard.dmg",
+                   sha1: "e65c19531be855c359eaad3f00a915213ecf2d41"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.2_for_snow_leopard/xcode_4.2_for_snow_leopard_readme.pdf")
           ]),
 
     Xcode(number: "4.1",
@@ -446,9 +446,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "2.1", build: "163.7.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_snow_leopard_21110/xcode_4.1_for_snow_leopard.dmg",
-                 checksums: .sha1("5f55b5b906d9f7eeac842d63bd233a5c4021bfde")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_snow_leopard_21110/xcode_4.1_for_snow_leopard_readme.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_snow_leopard_21110/xcode_4.1_for_snow_leopard.dmg",
+                   sha1: "5f55b5b906d9f7eeac842d63bd233a5c4021bfde"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_snow_leopard_21110/xcode_4.1_for_snow_leopard_readme.pdf")
           ]),
 
     Xcode(number: "4.1",
@@ -463,8 +463,8 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "2.1", build: "163.7.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_lion_21263/installxcode_41_lion.dmg",
-                 checksums: .sha1("7ccb636d51d54e88c2d27be55cbff107d5be96a0"))
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.1_for_lion_21263/installxcode_41_lion.dmg",
+                   sha1: "7ccb636d51d54e88c2d27be55cbff107d5be96a0")
           ]),
 
     Xcode(number: "4.0.2",
@@ -480,9 +480,9 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "2.0", build: "137")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.2_and_ios_sdk_4.3/xcode_4.0.2_and_ios_sdk_4.3.dmg",
-                 checksums: .sha1("684265b6310566c5b0080b1a47e5ddc2c680c929")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.2_and_ios_sdk_4.3/final_xcode_4.0.2_readme.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.0.2_and_ios_sdk_4.3/xcode_4.0.2_and_ios_sdk_4.3.dmg",
+                   sha1: "684265b6310566c5b0080b1a47e5ddc2c680c929"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.0.2_and_ios_sdk_4.3/final_xcode_4.0.2_readme.pdf")
           ]),
 
     Xcode(number: "4.0.1",
@@ -491,9 +491,9 @@ let xcodes4: Array<Xcode> = [
           date: (2011, 03, 23),
           requires: "10.6.8",
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.1_and_ios_sdk_4.3/xcode_4.0.1_and_ios_sdk_4.3.dmg",
-                 checksums: .sha1("669258ed23e71482bc9e99f4bece6ac31f41dd38")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4.0.1_and_ios_sdk_4.3/xcode_4.0.1_readme.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.0.1_and_ios_sdk_4.3/xcode_4.0.1_and_ios_sdk_4.3.dmg",
+                   sha1: "669258ed23e71482bc9e99f4bece6ac31f41dd38"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.0.1_and_ios_sdk_4.3/xcode_4.0.1_readme.pdf")
           ]),
 
     Xcode(number: "4.0",
@@ -509,8 +509,8 @@ let xcodes4: Array<Xcode> = [
             .clang(number: "2.0", build: "137")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_4_and_ios_sdk_4.3__final/xcode_4_and_ios_sdk_4.3__final.dmg",
-                 checksums: .sha1("dd1b609fee9467d799e42d7ad7a2eb3838e35356")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_4_and_ios_sdk_4.3__final/xcode_4_rn.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4_and_ios_sdk_4.3__final/xcode_4_and_ios_sdk_4.3__final.dmg",
+                   sha1: "dd1b609fee9467d799e42d7ad7a2eb3838e35356"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_4_and_ios_sdk_4.3__final/xcode_4_rn.pdf")
           ]),
 ]

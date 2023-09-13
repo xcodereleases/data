@@ -26,9 +26,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6.1", build: "5.6.0.323.66")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.4.1/Xcode_13.4.1.xip",
-                 checksums: .sha1("40e8628555b6231b361471183f3ce17b378036fd")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.4.1/Xcode_13.4.1.xip",
+                   sha1: "40e8628555b6231b361471183f3ce17b378036fd"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4_1-release-notes")
           ]),
      
     Xcode(number: "13.4",
@@ -47,9 +47,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6.1", build: "5.6.0.323.66")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.4/Xcode_13.4.xip",
-                 checksums: .sha1("d71192968cf948eaefeec25c4e05576c2f4d5217")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.4/Xcode_13.4.xip",
+                   sha1: "d71192968cf948eaefeec25c4e05576c2f4d5217"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")
           ]),
     
     Xcode(number: "13.4",
@@ -68,9 +68,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6.1", build: "5.6.0.323.66")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.4_Release_Candidate/Xcode_13.4_Release_Candidate.xip",
-                 checksums: .sha1("d71192968cf948eaefeec25c4e05576c2f4d5217")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.4_Release_Candidate/Xcode_13.4_Release_Candidate.xip",
+                   sha1: "d71192968cf948eaefeec25c4e05576c2f4d5217"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_4-release-notes")
           ]),
     
     Xcode(number: "13.3.1",
@@ -89,9 +89,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6", build: "5.6.0.323.62")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.3.1/Xcode_13.3.1.xip",
-                 checksums: .sha1("0b01c5a2dd692cd6dbdd47d78bb2deb483b1d2f8")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3_1-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.3.1/Xcode_13.3.1.xip",
+                   sha1: "0b01c5a2dd692cd6dbdd47d78bb2deb483b1d2f8"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3_1-release-notes")
           ]),
      
     Xcode(number: "13.3",
@@ -110,9 +110,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6", build: "5.6.0.323.62")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.3/Xcode_13.3.xip",
-                 checksums: .sha1("4bb7ffed9abd20ab3e5376122341e0d0e4ea6a92")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.3/Xcode_13.3.xip",
+                   sha1: "4bb7ffed9abd20ab3e5376122341e0d0e4ea6a92"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
     Xcode(number: "13.3",
@@ -131,9 +131,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6", build: "5.6.0.323.62")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.3_Release_Candidate/Xcode_13.3_Release_Candidate.xip",
-                 checksums: .sha1("4bb7ffed9abd20ab3e5376122341e0d0e4ea6a92")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.3_Release_Candidate/Xcode_13.3_Release_Candidate.xip",
+                   sha1: "4bb7ffed9abd20ab3e5376122341e0d0e4ea6a92"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
     Xcode(number: "13.3",
@@ -152,9 +152,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6", build: "5.6.0.323.60")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.3_beta_3/Xcode_13.3_beta_3.xip",
-                 checksums: .sha1("b1f57105eff66113b4868fe09fe7fa2f7f8a294e")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.3_beta_3/Xcode_13.3_beta_3.xip",
+                   sha1: "b1f57105eff66113b4868fe09fe7fa2f7f8a294e"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
     Xcode(number: "13.3",
@@ -173,9 +173,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6", build: "5.6.0.322.3")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.3_beta_2/Xcode_13.3_beta_2.xip",
-                 checksums: .sha1("3a5dceae18e2c4727a2daf8865e3e56a351584c1")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.3_beta_2/Xcode_13.3_beta_2.xip",
+                   sha1: "3a5dceae18e2c4727a2daf8865e3e56a351584c1"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
     
     Xcode(number: "13.3",
@@ -194,9 +194,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.6", build: "5.6.0.320.8")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.3_beta/Xcode_13.3_beta.xip",
-                 checksums: .sha1("c4e1784135754cbdcb46f4e22d9bac46513887f7")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.3_beta/Xcode_13.3_beta.xip",
+                   sha1: "c4e1784135754cbdcb46f4e22d9bac46513887f7"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes")
           ]),
      
     Xcode(number: "13.2.1",
@@ -215,9 +215,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.2", build: "1300.0.47.5")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.2.1/Xcode_13.2.1.xip",
-                 checksums: .sha1("b26ec1bc789a076905904976549f5e1df1aebb40")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2_1-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.2.1/Xcode_13.2.1.xip",
+                   sha1: "b26ec1bc789a076905904976549f5e1df1aebb40"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2_1-release-notes")
           ]),
     
     Xcode(number: "13.2",
@@ -236,9 +236,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.2", build: "1300.0.47.5")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.2/Xcode_13.2.xip",
-                 checksums: .sha1("1e6bffb5623a56d33982f101520cde0a093d9f85")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.2/Xcode_13.2.xip",
+                   sha1: "1e6bffb5623a56d33982f101520cde0a093d9f85"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
     
     Xcode(number: "13.2",
@@ -257,9 +257,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.2", build: "1300.0.47.5")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.2_Release_Candidate/Xcode_13.2_Release_Candidate.xip",
-                 checksums: .sha1("1e6bffb5623a56d33982f101520cde0a093d9f85")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.2_Release_Candidate/Xcode_13.2_Release_Candidate.xip",
+                   sha1: "1e6bffb5623a56d33982f101520cde0a093d9f85"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
      
     Xcode(number: "13.2",
@@ -278,9 +278,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.2", build: "1300.0.47.2")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.2_beta_2/Xcode_13.2_beta_2.xip",
-                 checksums: .sha1("95ce1aed7b1874efd97b40596674968257faece4")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.2_beta_2/Xcode_13.2_beta_2.xip",
+                   sha1: "95ce1aed7b1874efd97b40596674968257faece4"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
      
     Xcode(number: "13.2",
@@ -299,9 +299,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.2", build: "1300.0.40.106")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.2_beta/Xcode_13.2_beta.xip",
-                 checksums: .sha1("3f646b172e33582fcc1f1e9c54ead41c6a8d2297")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.2_beta/Xcode_13.2_beta.xip",
+                   sha1: "3f646b172e33582fcc1f1e9c54ead41c6a8d2297"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_2-release-notes")
           ]),
      
     Xcode(number: "13.1",
@@ -320,9 +320,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.1", build: "1300.0.31.4")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.1/Xcode_13.1.xip",
-                 checksums: .sha1("b55777d005c7774e4756f29d875d241db1769d90")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.1/Xcode_13.1.xip",
+                   sha1: "b55777d005c7774e4756f29d875d241db1769d90"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes")
           ]),
     
     Xcode(number: "13.1",
@@ -341,9 +341,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5.1", build: "1300.0.31.4")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13.1_Release_Candidate/Xcode_13.1_Release_Candidate.xip",
-                 checksums: .sha1("b55777d005c7774e4756f29d875d241db1769d90")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13.1_Release_Candidate/Xcode_13.1_Release_Candidate.xip",
+                   sha1: "b55777d005c7774e4756f29d875d241db1769d90"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13_1-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -362,9 +362,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.31.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13/Xcode_13.xip",
-                 checksums: .sha1("424ea14d86899290722906b3790af37ce9eea606")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13/Xcode_13.xip",
+                   sha1: "424ea14d86899290722906b3790af37ce9eea606"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -383,9 +383,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.31.1")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_Release_Candidate/Xcode_13_Release_Candidate.xip",
-                 checksums: .sha1("424ea14d86899290722906b3790af37ce9eea606")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_Release_Candidate/Xcode_13_Release_Candidate.xip",
+                   sha1: "424ea14d86899290722906b3790af37ce9eea606"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -404,9 +404,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.29.102")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_5/Xcode_13_beta_5.xip",
-                 checksums: .sha1("1d01ddcfa634c5ef2d858c1b3284e42cd9c928b7")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_5/Xcode_13_beta_5.xip",
+                   sha1: "1d01ddcfa634c5ef2d858c1b3284e42cd9c928b7"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -425,9 +425,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.27.6")
           ],
               links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_4/Xcode_13_beta_4.xip",
-                 checksums: .sha1("0c2c2b0d0a9853390bf7accb00cc95c3723277a3")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_4/Xcode_13_beta_4.xip",
+                   sha1: "0c2c2b0d0a9853390bf7accb00cc95c3723277a3"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
     /*
@@ -451,9 +451,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.24.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_3/Xcode_13_beta3.xip",
-                 checksums: .sha1("9e2a6f2e6665fbe551dfd1f526b058cf930a968c")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_3/Xcode_13_beta3.xip",
+                   sha1: "9e2a6f2e6665fbe551dfd1f526b058cf930a968c"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -472,9 +472,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.24.13")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_3/Xcode_13_beta_3.xip",
-                 checksums: .sha1("8c1f13f2d76b4beb153b85670dde49640dc08c30")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_3/Xcode_13_beta_3.xip",
+                   sha1: "8c1f13f2d76b4beb153b85670dde49640dc08c30"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -493,9 +493,9 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.20.104")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_2/Xcode_13_beta_2.xip",
-                 checksums: .sha1("4bb6141976252823b170e0869adbf0ed817b7e42")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta_2/Xcode_13_beta_2.xip",
+                   sha1: "4bb6141976252823b170e0869adbf0ed817b7e42"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
     
     Xcode(number: "13.0",
@@ -514,8 +514,8 @@ let xcodes13: Array<Xcode> = [
             .swift(number: "5.5", build: "1300.0.19.104")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/Xcode_13_beta/Xcode_13_beta.xip",
-                 checksums: .sha1("c57bf73df0c488507c5353b7d7730bf1206529be")),
-            Link(notes: "https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_13_beta/Xcode_13_beta.xip",
+                   sha1: "c57bf73df0c488507c5353b7d7730bf1206529be"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-13-beta-release-notes")
           ]),
 ]

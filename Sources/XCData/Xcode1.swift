@@ -17,9 +17,9 @@ let xcodes1: Array<Xcode> = [
           date: (2004, 08, 04),
           requires: "10.3",
           links: [
-            Link(xcode: "https://download.developer.apple.com/Developer_Tools/xcode_v1.5/xcode_tools_1.5_cd.dmg.bin",
-                 checksums: .sha1("8791a663a35609f6e991f68f48f47f7ea1409fc7")),
-            Link(notes: "https://download.developer.apple.com/Developer_Tools/xcode_v1.5/554_xcode_tools_1.5_read_me.pdf")
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_v1.5/xcode_tools_1.5_cd.dmg.bin",
+                   sha1: "8791a663a35609f6e991f68f48f47f7ea1409fc7"),
+            .notes("https://download.developer.apple.com/Developer_Tools/xcode_v1.5/554_xcode_tools_1.5_read_me.pdf")
           ]),
     
     Xcode(name: "Xcode Tools",
@@ -51,7 +51,7 @@ let xcodes1: Array<Xcode> = [
             .gcc(number: "3.3", build: "1495")
           ],
           links: [
-            Link(xcode: "https://download.developer.apple.com/Mac_OS_X/Mac_OS_X_10.3_Build_7B85/7B85_Xcode_CD.dmg",
-                 checksums: .sha1("819faddc921e8e396fce003100c67d8b4e675ab0"))
+            .xcode("https://download.developer.apple.com/Mac_OS_X/Mac_OS_X_10.3_Build_7B85/7B85_Xcode_CD.dmg",
+                   sha1: "819faddc921e8e396fce003100c67d8b4e675ab0")
           ])
 ]
