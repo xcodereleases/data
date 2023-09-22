@@ -14,34 +14,35 @@ import ArgumentParser
 @main
 struct JSONExport: ParsableCommand {
     
-//    @Flag(help: "Generate pretty-printed JSON files")
-    var pretty = true
+    @Flag(help: "Generate pretty-printed JSON files")
+    var pretty = false
 
-//    @Option(help: "The path to the root of the Jekyll site")
-//    var siteFolder: String
-//
-//    private var siteURL: URL {
-//        return URL(fileURLWithPath: (siteFolder as NSString).expandingTildeInPath)
-//    }
-//
-//    private var apiRoot: String { "api/1" }
+    @Option(help: "The path to the root of the Jekyll site")
+    var siteFolder: String
+
+    private var siteURL: URL {
+        return URL(fileURLWithPath: (siteFolder as NSString).expandingTildeInPath)
+    }
+
+    private var apiRoot: String { "api/1" }
     
     func run() throws {
         
         let all = XcodeReleases(xcodes: Xcode.allVersions)
         let released = XcodeReleases(xcodes: all.xcodes.filter { $0.releaseKind.isReleased == true })
+        let current = XcodeReleases(xcodes: all.xcodes.filter { $0.isCurrent == true })
         
         let json = try generateOldStyleData(from: all.xcodes)
         
-        /*
         try generateRSS("all", xcodes: all)
         try generateRSS("released", xcodes: released)
         
         try generateJSON("all", xcodes: all)
         try generateJSON("released", xcodes: released)
+         
+        try generateJSON("current", xcodes: current)
         
         try generateSearchJSON(xcodes: all)
-         */
         
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(json, forType: .string)
@@ -58,7 +59,7 @@ struct JSONExport: ParsableCommand {
         
         return String(data: oldStyleData, encoding: .utf8)!
     }
-    /*
+    
     func generateJSON(_ name: String, xcodes: XcodeReleases) throws {
         try _generateJSON(xcodes, to: "\(apiRoot)/\(name).json")
     }
@@ -89,7 +90,6 @@ struct JSONExport: ParsableCommand {
         
         let data = try encoder.encode(xcodes)
         try write(data, to: path)
-        
     }
     
     func generateRSS(_ name: String, xcodes: XcodeReleases) throws {
@@ -120,7 +120,7 @@ struct JSONExport: ParsableCommand {
 """
         
         let data = Data(rss.utf8)
-        try write(data, to: "api/\(name).rss")
+        try write(data, to: "\(apiRoot)/\(name).rss")
     }
     
     private func write(_ data: Data, to path: String) throws {
@@ -136,6 +136,6 @@ struct JSONExport: ParsableCommand {
         
         try data.write(to: file)
     }
-    */
+    
 }
 
