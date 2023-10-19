@@ -9,6 +9,74 @@ import Foundation
 import XcodeReleases
 
 let xcodes15: Array<Xcode> = [
+    Xcode(number: "15.0.1",
+          build: "15A507",
+          releaseKind: .release,
+          date: (2023, 10, 18),
+          requires: "13.5",
+          sdks: [
+            .macOS(number: "14.0", build: "23A334"),
+            .iOS(number: "17.0", build: "21A326"),
+            .watchOS(number: "10.0", build: "21R354"),
+            .tvOS(number: "17.0", build: "21J351"),
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.0.40.1"),
+            .swift(number: "5.9", build: "5.9.0.128.108")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15.0.1/Xcode_15.0.1.xip",
+                   sha1: "ca99e27c55514de87965e33849dd7d9b910d61b1"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15_0_1-release-notes")
+          ]),
+    
+    Xcode(number: "15.0.1",
+          build: "15A507",
+          releaseKind: .releaseCandidate(1),
+          date: (2023, 10, 11),
+          requires: "13.5",
+          sdks: [
+            .macOS(number: "14.0", build: "23A334"),
+            .iOS(number: "17.0", build: "21A326"),
+            .watchOS(number: "10.0", build: "21R354"),
+            .tvOS(number: "17.0", build: "21J351"),
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.0.40.1"),
+            .swift(number: "5.9", build: "5.9.0.128.108")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15.0.1_Release_Candidate/Xcode_15.0.1_Release_Candidate.xip", 
+                   sha1: "ca99e27c55514de87965e33849dd7d9b910d61b1"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15_0_1-release-notes")
+          ]),
+    
+    Xcode(number: "15.1",
+          build: "15C5028h",
+          releaseKind: .beta(1),
+          date: (2023, 10, 03),
+          requires: "13.5",
+          sdks: [
+            .macOS(number: "14.0", build: "23A334"),
+            .iOS(number: "17.0", build: "21A326"),
+            .watchOS(number: "10.0", build: "21R354"),
+            .tvOS(number: "17.0", build: "21J351"),
+            .visionOS(number: "1.0", build: "21N5259i")
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.1.0.1.1"),
+            .swift(number: "5.9", build: "5.9.2.1.6")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15.1_beta/Xcode_15.1_beta.xip", 
+                   sha1: "6d268fe956b27d1f296413de66fad85585bbe357"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15_1-release-notes"),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17.0.1_Simulator_Runtime/iOS_17.0.1_Simulator_Runtime.dmg", 
+                     sha1: "bdf70a1b83f1866f39e81775d08b46acb8d23e92"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1_beta_4_Simulator_Runtime/visionOS_1_beta_4_Simulator_Runtime.dmg", 
+                     sha1: "34bec3d398a829410f7be08348f7fbc5bba8598f")
+          ]),
+    
     Xcode(number: "15.0",
           build: "15A240d",
           releaseKind: .release,
