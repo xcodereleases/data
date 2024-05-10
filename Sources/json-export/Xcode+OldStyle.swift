@@ -9,7 +9,45 @@ import Foundation
 import XcodeReleases
 
 extension Xcode {
-    
+
+    private var versionOrder: UInt64 {
+        let number = self.version.number ?? ""
+        var pieces = number.split(separator: ".", omittingEmptySubsequences: false).map { UInt64($0)! }
+        if pieces.count == 0 { pieces.append(0) }
+        if pieces.count == 1 { pieces.append(0) }
+        if pieces.count == 2 { pieces.append(0) }
+        if pieces.count != 3 { return 0 }
+
+        var base: UInt64 = pieces[0] * 1_000_000_000
+        base += pieces[1] * 1_000_000
+        base += pieces[2] * 1_000
+
+        if self.releaseKind.isReleased {
+            base += 999
+        } else if self.releaseKind.isReleaseCandidate {
+            base += (900 + UInt64(self.releaseKind.number ?? 0))
+        } else {
+            base += UInt64(self.releaseKind.number ?? 0)
+        }
+        return base
+    }
+
+    private var dateOrder: Int {
+        // yyyyMMdd
+        return (releaseDate.year * 10_000) + (releaseDate.month * 100) + releaseDate.day
+    }
+
+    private var swiftOrder: Int? {
+        guard let swift = compilers?.first(where: { $0.name == .swift }) else { return nil }
+        var pieces = (swift.version.number ?? "").split(separator: ".", omittingEmptySubsequences: false).map { Int($0)! }
+        if pieces.count == 0 { pieces.append(0) }
+        if pieces.count == 1 { pieces.append(0) }
+        if pieces.count == 2 { pieces.append(0) }
+        if pieces.count != 3 { return 0 }
+
+        return (pieces[0] * 1_000_000) + (pieces[1] * 1_000) + pieces[2]
+    }
+
     internal var oldStyleDictionary: [String: Any] {
         var old: [String: Any] = [:]
         
@@ -53,7 +91,11 @@ extension Xcode {
             
             old["links"] = links
         }
-        
+
+        old["_swiftOrder"] = self.swiftOrder ?? 0
+        old["_versionOrder"] = self.versionOrder
+        old["_dateOrder"] = self.dateOrder
+
         return old
     }
     
