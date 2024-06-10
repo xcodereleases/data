@@ -71,7 +71,7 @@ extension Xcode {
     }
     
     public static var allVersions: Array<Xcode> {
-        var everything = xcodes15 + xcodes14 + xcodes13 + xcodes12 + xcodes11 + xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
+        var everything = xcodes16 + xcodes15 + xcodes14 + xcodes13 + xcodes12 + xcodes11 + xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
         
         // first, bucket everything by version (ie, all 15.0.1 versions together, regardless of prerelease status)
         var groups = Dictionary<Int, Array<Xcode>>()

@@ -10,6 +10,31 @@ import XcodeReleases
 
 let xcodes15: Array<Xcode> = [
     Xcode(number: "15.4",
+          build: "15F31d",
+          releaseKind: .release,
+          date: (2024, 05, 13),
+          requires: "14.0",
+          sdks: [
+            .macOS(number: "14.5", build: "23F73"),
+            .iOS(number: "17.5", build: "21F77"),
+            .watchOS(number: "10.5", build: "21T569"),
+            .tvOS(number: "17.5", build: "21L566"),
+            .visionOS(number: "1.2", build: "21O5565d")
+          ],
+          compilers: [
+            .clang(number: "15.0.0", build: "1500.3.9.4"),
+            .swift(number: "5.10", build: "5.10.0.13")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_15.4/Xcode_15.4.xip", sha1: "0e841786aaaff88feedf648f2b8b273616c39fdb"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-15_4-release-notes"),
+            .runtime(.iOS, url: "https://download.developer.apple.com/Developer_Tools/iOS_17.5_Simulator_Runtime/iOS_17.5_Simulator_Runtime.dmg", sha1: "124bbb48c4e14e60b02df18619084d010932f885"),
+            .runtime(.watchOS, url: "https://download.developer.apple.com/Developer_Tools/watchOS_10.5_Simulator_Runtime/watchOS_10.5_Simulator_Runtime.dmg", sha1: "44f7308895d686650175ed92a279807780ee3343"),
+            .runtime(.tvOS, url: "https://download.developer.apple.com/Developer_Tools/tvOS_17.5_Simulator_Runtime/tvOS_17.5_Simulator_Runtime.dmg", sha1: "d13485c3bb2164d8b71d7696d664f019dc46f311"),
+            .runtime(.visionOS, url: "https://download.developer.apple.com/Developer_Tools/visionOS_1.2_Simulator_Runtime/visionOS_1.2_Simulator_Runtime.dmg", sha1: "dd405762c8729af741ef33e06fac57b4e11ede80")
+          ]),
+
+    Xcode(number: "15.4",
           build: "15F31c",
           releaseKind: .releaseCandidate(1),
           date: (2024, 05, 07),
