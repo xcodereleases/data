@@ -9,6 +9,69 @@ import Foundation
 import XcodeReleases
 
 let xcodes16: Array<Xcode> = [
+    Xcode(number: "16.4",
+          build: "16F6",
+          releaseKind: .release,
+          date: (2025, 05, 27),
+          requires: "15.3",
+          sdks: [
+            .macOS(number: "15.5", build: "24F74"),
+            .iOS(number: "18.5", build: "22F76"),
+            .watchOS(number: "11.5", build: "22T572"),
+            .tvOS(number: "18.5", build: "22L572"),
+            .visionOS(number: "2.5", build: "22O473")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.0.13.5"),
+            .swift(number: "6.1.2", build: "6.1.2.1.2")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_16.4/Xcode_16.4.xip", sha1: "a4bdd0259a4b286011b7092b9345507a41831e2d"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-16_4-release-notes")
+          ]),
+    
+    Xcode(number: "16.4",
+          build: "16F6",
+          releaseKind: .releaseCandidate(1),
+          date: (2025, 05, 15),
+          requires: "15.3",
+          sdks: [
+            .macOS(number: "15.5", build: "24F74"),
+            .iOS(number: "18.5", build: "22F76"),
+            .watchOS(number: "11.5", build: "22T572"),
+            .tvOS(number: "18.5", build: "22L572"),
+            .visionOS(number: "2.5", build: "22O473")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.0.13.5"),
+            .swift(number: "6.1.2", build: "6.1.2.1.2")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_16.4_Release_Candidate/Xcode_16.4_Release_Candidate.xip", sha1: "a4bdd0259a4b286011b7092b9345507a41831e2d"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-16_4-release-notes")
+          ]),
+    
+    Xcode(number: "16.4",
+          build: "16F1t",
+          releaseKind: .beta(1),
+          date: (2025, 04, 28),
+          requires: "15.3",
+          sdks: [
+            .macOS(number: "15.5", build: "24F5065a"),
+            .iOS(number: "18.5", build: "22F5065a"),
+            .watchOS(number: "11.5", build: "22T5564a"),
+            .tvOS(number: "18.5", build: "22L5564a"),
+            .visionOS(number: "2.5", build: "22O5464a")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.0.13.5"),
+            .swift(number: "6.1.2", build: "6.1.2.1.2")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_16.4_beta/Xcode_16.4_beta.xip", sha1: "257754cead4dc67999b8608323d0423126b08ee9"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-16_4-release-notes")
+          ]),
+    
     Xcode(number: "16.3",
           build: "16E140",
           releaseKind: .release,
