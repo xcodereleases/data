@@ -70,8 +70,8 @@ extension Xcode {
         return number
     }
     
-    public static var allVersions: Array<Xcode> {
-        var everything = xcodes16 + xcodes15 + xcodes14 + xcodes13 + xcodes12 + xcodes11 + xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
+    public static let allVersions: Array<Xcode> = {
+        var everything = xcodes26 + xcodes16 + xcodes15 + xcodes14 + xcodes13 + xcodes12 + xcodes11 + xcodes10 + xcodes9 + xcodes8 + xcodes7 + xcodes6 + xcodes5 + xcodes4 + xcodes3 + xcodes2 + xcodes1
         
         // first, bucket everything by version (ie, all 15.0.1 versions together, regardless of prerelease status)
         var groups = Dictionary<Int, Array<Xcode>>()
@@ -133,23 +133,27 @@ extension Xcode {
         // 15.x and 16.x are current.
         
         // get the largest major version of these "current" Xcodes
-        let latestMajorVersion = currentXcodes.map(\.majorVersion).max()!
+        let majorVersions = Set(currentXcodes.map(\.majorVersion)).sorted(by: >)
+        
+        let latestMajorVersion = majorVersions[0]
+        let previousMajorVersion = majorVersions[1]
         
         // build a range that includes the largest major version and the version prior to it
-        let rangeOfCurrentMajorVersions = (latestMajorVersion-1) ... latestMajorVersion
+        // NOTE: these are not guaranteed to be consecutive, as evidenced by the Xcode 16 -> 26 jump.
+        let rangeOfCurrentMajorVersions = previousMajorVersion ... latestMajorVersion
         
         // remove all Xcodes that are not from the two latest major versions
         currentXcodes = currentXcodes.filter { rangeOfCurrentMajorVersions.contains($0.majorVersion) }
         
         // mark these remaining Xcodes as "current"
         for releasedXcode in currentXcodes {
-            print("\(releasedXcode.displayName) is current")
             if let idx = everything.firstIndex(of: releasedXcode) {
                 everything[idx].isCurrent = true
+                print("\(everything[idx].displayName) is current")
             }
         }
         
         return everything
-    }
+    }()
     
 }
