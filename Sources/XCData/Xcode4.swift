@@ -156,7 +156,7 @@ let xcodes4: Array<Xcode> = [
           ],
           links: [
             .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/Xcode_4.5.2.dmg",
-                   sha1: "2dea0b49f9f35b91ad2abc7f3b71889679febac1"),
+                   sha1: "8abedc3686855caea06958477e1b5575c7f652ba"),
             .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.5.2/release_notes_xcode_4.5.2.pdf")
           ]),
 
@@ -315,7 +315,7 @@ let xcodes4: Array<Xcode> = [
           ],
           links: [
             .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/Xcode_4.4.dmg",
-                   sha1: "d04393543564f85c2f4d82e507d596d3070e9aba"),
+                   sha1: "4177eb557b28faabe071293dfbb552bfc2f35a50"),
             .notes("https://download.developer.apple.com/Developer_Tools/xcode_4.4_21362/release_notes_xcode44gm.pdf")
           ]),
 
@@ -393,7 +393,7 @@ let xcodes4: Array<Xcode> = [
           ],
           links: [
             .xcode("https://download.developer.apple.com/Developer_Tools/xcode_4.2.1_for_lion_21265/installxcode_421_lion.dmg",
-                   sha1: "8abedc3686855caea06958477e1b5575c7f652ba")
+                   sha1: "2f800aadc6b51092e0375d34ac45702bcef59f5c")
           ]),
 
     Xcode(number: "4.2",
