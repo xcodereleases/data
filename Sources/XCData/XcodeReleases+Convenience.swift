@@ -53,16 +53,16 @@ extension Dictionary where Key == Checksum, Value == String {
 
 extension Link {
     
-    static func xcode(_ url: String, sizeInBytes: Int? = nil, sha1: String) -> Link {
-        return Link(url: URL(string: url)!, sizeInBytes: sizeInBytes, checksums: [.sha1: sha1], kind: .xcode)
+    static func xcode(_ url: String, architectures: [Architecture]? = nil, sizeInBytes: Int? = nil, sha1: String) -> Link {
+        return Link(url: URL(string: url)!, architectures: architectures, sizeInBytes: sizeInBytes, checksums: [.sha1: sha1], kind: .xcode)
     }
     
     static func notes(_ url: String) -> Link {
-        return Link(url: URL(string: url)!, sizeInBytes: nil, checksums: nil, kind: .releaseNotes)
+        return Link(url: URL(string: url)!, architectures: nil, sizeInBytes: nil, checksums: nil, kind: .releaseNotes)
     }
     
     static func runtime(_ platform: Platform, sizeInBytes: Int? = nil, url: String, sha1: String) -> Link {
-        return Link(url: URL(string: url)!, sizeInBytes: sizeInBytes, checksums: [.sha1: sha1], kind: .simulatorRuntime(platform))
+        return Link(url: URL(string: url)!, architectures: nil, sizeInBytes: sizeInBytes, checksums: [.sha1: sha1], kind: .simulatorRuntime(platform))
     }
     
 }

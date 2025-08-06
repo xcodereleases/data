@@ -94,6 +94,7 @@ extension Xcode {
             let sortedXcodes = groups[group]!.sorted(by: { $0.sortingNumber < $1.sortingNumber })
             
             // get the last one
+            // TODO: this breaks for multiple releases of the same thing (Universal versus Apple Silicon)
             guard let lastXcodeInGroup = sortedXcodes.last else { continue }
             
             // if it's prerelease, then it was never superceded by a release version for this number

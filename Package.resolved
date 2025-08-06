@@ -1,25 +1,24 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "swift-argument-parser",
-        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
-        "state": {
-          "branch": null,
-          "revision": "46989693916f56d1186bd59ac15124caef896560",
-          "version": "1.3.1"
-        }
-      },
-      {
-        "package": "XcodeReleases",
-        "repositoryURL": "https://github.com/xcodereleases/xcodereleases.git",
-        "state": {
-          "branch": "main",
-          "revision": "195c76255a8f3f27c463b3821233bfdfc6a95c81",
-          "version": null
-        }
+  "originHash" : "91f8ea13f63a55f39cf88af8d59cc9291c679b69970285ad499b0ca03209565e",
+  "pins" : [
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser.git",
+      "state" : {
+        "revision" : "46989693916f56d1186bd59ac15124caef896560",
+        "version" : "1.3.1"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "xcodereleases",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/xcodereleases/xcodereleases.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "b1fef53a1d97d3917a0f426503755381df225e77"
+      }
+    }
+  ],
+  "version" : 3
 }

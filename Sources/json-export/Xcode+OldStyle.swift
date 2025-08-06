@@ -79,7 +79,15 @@ extension Xcode {
             var links: [String: Any] = [:]
             
             if let download = xcodeLinks?.first {
-                links["download"] = ["url": download.url.absoluteString]
+                var dlInfo: [String: Any] = [
+                    "url": download.url.absoluteString
+                ]
+                
+                if let architectures = download.architectures, architectures.isEmpty == false {
+                    dlInfo["architectures"] = architectures.map(\.rawValue)
+                }
+                
+                links["download"] = dlInfo
                 
                 if let sha1 = download.checksums?[.sha1] {
                     old["checksums"] = [Checksum.sha1.rawValue: sha1]
