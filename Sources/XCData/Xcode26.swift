@@ -10,6 +10,53 @@ import XcodeReleases
 
 let xcodes26: Array<Xcode> = [
     Xcode(number: "26.0",
+          build: "17A324",
+          releaseKind: .release,
+          date: (2025, 09, 15),
+          requires: "15.6",
+          sdks: [
+            .macOS(number: "26.0", build: "25A352"),
+            .iOS(number: "26.0", build: "23A339"),
+            .watchOS(number: "26.0", build: "23R351"),
+            .tvOS(number: "26.0", build: "23J352"),
+            .visionOS(number: "26.0", build: "23M336")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.3.19.1"),
+            .swift(number: "6.2", build: "6.2.0.19.9")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26/Xcode_26_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "1a45bc64cecd134b46adaf5ee1ed577bd2e901c2"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.0",
+          build: "17A324",
+          releaseKind: .release,
+          date: (2025, 09, 15),
+          requires: "15.6",
+          sdks: [
+            .macOS(number: "26.0", build: "25A352"),
+            .iOS(number: "26.0", build: "23A339"),
+            .watchOS(number: "26.0", build: "23R351"),
+            .tvOS(number: "26.0", build: "23J352"),
+            .visionOS(number: "26.0", build: "23M336")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.3.19.1"),
+            .swift(number: "6.2", build: "6.2.0.19.9")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26/Xcode_26_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "6ff54e55537cc50c89cdc84085e4a4d151b58e9f"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes")
+          ]),
+    
+    Xcode(number: "26.0",
           build: "17A321",
           releaseKind: .releaseCandidate(1),
           date: (2025, 09, 09),
