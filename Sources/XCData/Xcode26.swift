@@ -10,6 +10,53 @@ import XcodeReleases
 
 let xcodes26: Array<Xcode> = [
     Xcode(number: "26.0",
+          build: "17A321",
+          releaseKind: .releaseCandidate(1),
+          date: (2025, 09, 09),
+          requires: "15.6",
+          sdks: [
+            .macOS(number: "26.0", build: "25A352"),
+            .iOS(number: "26.0", build: "23A337"),
+            .watchOS(number: "26.0", build: "23R351"),
+            .tvOS(number: "26.0", build: "23J351"),
+            .visionOS(number: "26.0", build: "23M335")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.3.19.1"),
+            .swift(number: "6.2", build: "6.2.0.19.9")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26_Release_Candidate/Xcode_26_Release_Candidate_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "f6e0ca2990be217a06a3c3c18cd1e19668bcd3fa"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.0",
+          build: "17A321",
+          releaseKind: .releaseCandidate(1),
+          date: (2025, 09, 09),
+          requires: "15.6",
+          sdks: [
+            .macOS(number: "26.0", build: "25A352"),
+            .iOS(number: "26.0", build: "23A337"),
+            .watchOS(number: "26.0", build: "23R351"),
+            .tvOS(number: "26.0", build: "23J351"),
+            .visionOS(number: "26.0", build: "23M335")
+          ],
+          compilers: [
+            .clang(number: "17.0.0", build: "1700.3.19.1"),
+            .swift(number: "6.2", build: "6.2.0.19.9")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26_Release_Candidate/Xcode_26_Release_Candidate_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "a34d15dbce643221898b26673e6872b84cec9191"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes")
+          ]),
+    
+    Xcode(number: "26.0",
           build: "17A5305k",
           releaseKind: .beta(7),
           date: (2025, 08, 28),
@@ -55,6 +102,7 @@ let xcodes26: Array<Xcode> = [
                    sha1: "09b82fab3f7661b05681def994485e8e8ef55974"),
             .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26-release-notes")
           ]),
+    
     Xcode(number: "26.0",
           build: "17A5305f",
           releaseKind: .beta(6),
