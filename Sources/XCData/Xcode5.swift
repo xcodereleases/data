@@ -21,8 +21,8 @@ let xcodes5: Array<Xcode> = [
             .clang(number: "5.1", build: "503.0.40")
           ],
           links: [
-            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.1.1/xcode_5.1.1.dmg",
-                   sha1: "e4bb45174324c3a4b7c66fa1db1083ccbbe2334e"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.1.1/Xcode_5.1.1.dmg",
+                   sha1: "f88f50b4bca04022d49f7046cb02240596757aa3"),
             .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW504")
           ]),
 
@@ -36,7 +36,7 @@ let xcodes5: Array<Xcode> = [
             .clang(number: "5.1", build: "503.0.38")
           ],
           links: [
-            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.1/xcode_5.1.dmg",
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.1/Xcode_5.1.dmg",
                    sha1: "7ee6f5917078f1fd509e539f1bde85d85ec23b20"),
             .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW512")
           ]),
@@ -81,8 +81,8 @@ let xcodes5: Array<Xcode> = [
             .clang(number: "5.0", build: "500.2.79")
           ],
           links: [
-            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.0.2/xcode_5.0.2.dmg",
-                   sha1: "de23e3f4644dbb434ed862a3ce002e2de555f6f2"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.0.2/Xcode_5.0.2.dmg",
+                   sha1: "3636f71eb036ab5818b5c10b7d758c8c06bf78af"),
             .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW536")
           ]),
 
@@ -96,8 +96,8 @@ let xcodes5: Array<Xcode> = [
             .clang(number: "5.0", build: "500.2.79")
           ],
           links: [
-            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.0.1/xcode_5.0.1.dmg",
-                   sha1: "8d24b0ee4761ea4135a58c1dd915fce81360e1e7"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5.0.1/Xcode_5.0.1.dmg",
+                   sha1: "c4972cd8d7473817ada4e985e1e6eb5c5b69133f"),
             .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW544")
           ]),
 
@@ -117,8 +117,8 @@ let xcodes5: Array<Xcode> = [
             .clang(number: "5.0", build: "500.2.75")
           ],
           links: [
-            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5/xcode_5.dmg",
-                   sha1: "991ea0361c13f92d6cd7e31644dcdc1f329ffe03"),
+            .xcode("https://download.developer.apple.com/Developer_Tools/xcode_5/Xcode_5.dmg",
+                   sha1: "e12bd921435f5859aff6404f6b630cafa003f890"),
             .notes("https://developer.apple.com/library/content/releasenotes/DeveloperTools/RN-Xcode/Chapters/Introduction.html#//apple_ref/doc/uid/TP40001051-CH1-SW578")
           ]),
 
